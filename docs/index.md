@@ -1,4 +1,4 @@
-Welcome to CS14 SI!
+Welcome to CS12 SI!
 ===================
 This is where all of the labs will be posted.
 
@@ -45,3 +45,7 @@ attention to you.
 5. Sign in - There will usually be a working computer for
 you to sign into when you arrive. Please use it to check in
 (even if you’re not on time).
+
+
+
+
