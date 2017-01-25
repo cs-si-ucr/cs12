@@ -21,7 +21,7 @@ writing essays and checking Facebook, I promise you I will be able to help you
 learn something new that will help your perform better in the course.
 
 However, if you are having trouble in the class or think you might run into
-trouble, you should definitely attend. CS 14 has a high dropout rate, along
+trouble, you should definitely attend. CS 12 has a high dropout rate, along
 with a high failure rate, so if you are running into trouble, let me help you.
 Do not be intimidated if you are trying to start coming later in the quarter
 (though try not to wait that long), I will help bring you up to speed.
