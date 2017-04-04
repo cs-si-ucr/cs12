@@ -14,9 +14,10 @@ g++ main.cpp
 # input redirection:
 ./a.out < AliceInWonderland.txt
 ```
+Rules:
 
 * A line of text ends with the newline character `'\n'`
-* A word is separated by spaces
+* A word is separated by spaces and newlines
 * A character is any character including spaces and newlines
 
 There is a program in linux that already does this.
@@ -25,6 +26,9 @@ Run it to verify your results.
 
 ```bash
 wc AliceInWonderland.txt
+# Sample output:
+# [line  word  char filename]
+# 100   300   1000  AliceInWonderland.txt
 ```
 
 Exercise 2
