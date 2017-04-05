@@ -106,21 +106,22 @@
             <div class="section">
               
                 <h2 id="exercise-1">Exercise 1</h2>
-<p>Debug a function through unit testing.</p>
+<p>Unit test a hidden function.</p>
 <p>Download the file located <a href="">here</a> to your cloud9 workspace.</p>
 <pre><code>wget
 </code></pre>
 
-<p>Write some code to test the function contained in the file you downloaded.</p>
+<p>Write some code to test the function code you just downloaded.</p>
 <p>The function is hidden from you, so you will need to figure out what is wrong with it using only inputs and outputs (called black-box testing).
-The function in question is the following:</p>
+The function in question has the following signature:</p>
 <pre><code class="c++">void replace(string&amp;, string, string);
 </code></pre>
 
 <p>The function accepts a string to modify (first parameter), a term to replace (second parameter), and what to replace each term with (third parameter).</p>
-<p>There is something wrong with the function.
-Your job is <strong>not</strong> to tell me how to fix the function (you do not have the source code), but to tell me what is wrong with it.</p>
-<p>You will not be able to compile your unit test code without providing a function declaration for the replace function inside your test code.</p>
+<p>The function may or may not be in working order.
+Your job is to tell me whether the function is correct (passes all your test cases), or incorrect (fails at least one of your test cases).
+Feel free to ask me to clarify the function spec for you at any time.</p>
+<p>You will not be able to compile your unit test code without providing a declaration for the replace function inside your test code.</p>
 <p>The command you should use to compile your code is the following:</p>
 <pre><code class="c++">g++ reverse.o myTests.cpp
 </code></pre>
