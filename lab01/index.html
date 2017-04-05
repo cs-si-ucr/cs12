@@ -172,6 +172,20 @@ transposed:
 </code></pre>
 
 <p>You represent matrices in c++ with a vector of vectors, <code>vector&lt;vector&lt;int&gt; &gt;</code>.</p>
+<p>Here is a function you can paste at the beginning of your program (after <code>using namespace std;</code>) that will allow you to print vectors using cout:</p>
+<pre><code class="c++">template &lt;typename T&gt;
+ostream&amp; operator&lt;&lt;(ostream&amp; o, const vector&lt;T&gt;&amp; v) {
+    cout &lt;&lt; '{';
+    if (v.size() &gt; 0) {
+        for (unsigned i = 0; i &lt; v.size() - 1; ++i) {
+            o &lt;&lt; v.at(i) &lt;&lt; &quot;, &quot;;
+        }
+        o &lt;&lt; v.at(v.size() - 1);
+    }
+    o &lt;&lt; '}';
+    return o;
+}
+</code></pre>
               
             </div>
           </div>
