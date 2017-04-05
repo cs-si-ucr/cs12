@@ -120,12 +120,13 @@ The function in question is the following:</p>
 <p>The function accepts a string to modify (first parameter), a term to replace (second parameter), and what to replace each term with (third parameter).</p>
 <p>There is something wrong with the function.
 Your job is <strong>not</strong> to tell me how to fix the function (you do not have the source code), but to tell me what is wrong with it.</p>
-<p>You will not be able to compile your unit test code without providing a function declaration for the replace function.</p>
-<p>Compile your code with the following:</p>
+<p>You will not be able to compile your unit test code without providing a function declaration for the replace function inside your test code.</p>
+<p>The command you should use to compile your code is the following:</p>
 <pre><code class="c++">g++ reverse.o myTests.cpp
 </code></pre>
 
-<p><code>myTests.cpp</code> in this case is your unit test program.</p>
+<p><code>myTests.cpp</code> in this case is your unit test program.
+(you will learn what <code>g++</code> is doing here in more detail later)</p>
 <h2 id="exercise-2">Exercise 2</h2>
 <p>Count the number of characters, words, and lines there are in the entire text of Alice in Wonderland.</p>
 <p>You can find a copy of the text <a href="https://raw.githubusercontent.com/cs-si-ucr/cs12/master/etc/AliceInWonderland.txt">here</a>.</p>
