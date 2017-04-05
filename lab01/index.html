@@ -68,6 +68,9 @@
                 <li class="toctree-l3"><a href="#exercise-3">Exercise 3</a></li>
                 
             
+                <li class="toctree-l3"><a href="#exercise-4">Exercise 4</a></li>
+                
+            
             </ul>
         
     </li>
@@ -129,32 +132,26 @@ Feel free to ask me to clarify the function spec for you at any time.</p>
 <p><code>myTests.cpp</code> in this case is your unit test program.
 (you will learn what <code>g++</code> is doing here in more detail later)</p>
 <h2 id="exercise-2">Exercise 2</h2>
-<p>Count the number of characters, words, and lines there are in the entire text of Alice in Wonderland.</p>
-<p>You can find a copy of the text <a href="https://raw.githubusercontent.com/cs-si-ucr/cs12/master/etc/AliceInWonderland.txt">here</a>.</p>
+<p>Count the frequency of positive numbers from <code>stdin</code>.</p>
+<p><strong>Input</strong>:
+The first number represents the largest value provided.
+It is followed by an unknown number of integers.</p>
+<p>Report the frequency of each value.</p>
+<p>Run this script to generate your own custom data file:</p>
+<pre><code class="bash">&gt;data; for i in `seq 100`; do bc &lt;&lt;&lt;&quot;$RANDOM % 20&quot; &gt;&gt; data; done
+</code></pre>
+
 <p>You are not required to use c++ file input techniques.
 Instead, use input redirection.</p>
 <pre><code class="bash"># compile:
 g++ main.cpp
 # input redirection:
-./a.out &lt; AliceInWonderland.txt
-</code></pre>
-
-<p>Rules:</p>
-<ul>
-<li>A line of text ends with the newline character <code>'\n'</code></li>
-<li>A word is separated by spaces and newlines</li>
-<li>A character is any character including spaces and newlines</li>
-</ul>
-<p>There is a program in linux that already does this.
-It is called <code>wc</code> (word count).
-Run it to verify your results.</p>
-<pre><code class="bash">wc AliceInWonderland.txt
-# Sample output:
-# [line  word  char filename]
-# 100   300   1000  AliceInWonderland.txt
+./a.out &lt; data
 </code></pre>
 
 <h2 id="exercise-3">Exercise 3</h2>
+<p>Write counting sort (see SI Leader for explanation).</p>
+<h2 id="exercise-4">Exercise 4</h2>
 <p>Transpose a square matrix.
 The matrix can be any size, but is guaranteed to be square (width and height are the same).</p>
 <p>Here is an example of a 3x3 matrix:</p>
@@ -186,6 +183,9 @@ ostream&amp; operator&lt;&lt;(ostream&amp; o, const vector&lt;T&gt;&amp; v) {
     return o;
 }
 </code></pre>
+
+<p><strong>Hint</strong>:
+You do not need to transpose this matrix in-place.</p>
               
             </div>
           </div>
