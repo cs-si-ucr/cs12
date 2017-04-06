@@ -54,6 +54,16 @@
             "location": "/lab01/#exercise-4", 
             "text": "Transpose a square matrix.\nThe matrix can be any size, but is guaranteed to be square (width and height are the same).  Here is an example of a 3x3 matrix:  input:\n\n0 1 2\n3 4 5\n6 7 8\n\ntransposed:\n\n0 3 6\n1 4 7\n2 5 8  You represent matrices in c++ with a vector of vectors,  vector vector int   .  Here is a function you can paste at the beginning of your program (after  using namespace std; ) that will allow you to print vectors using cout:  template  typename T \nostream  operator (ostream  o, const vector T  v) {\n    cout   '{';\n    if (v.size()   0) {\n        for (unsigned i = 0; i   v.size() - 1; ++i) {\n            o   v.at(i)    ,  ;\n        }\n        o   v.at(v.size() - 1);\n    }\n    o   '}';\n    return o;\n}  Hint :\nYou do not need to transpose this matrix in-place.", 
             "title": "Exercise 4"
+        }, 
+        {
+            "location": "/dis01_2/", 
+            "text": "Introduction\n\n\nHello World!", 
+            "title": "Dis 2 Week 1: Selection Sort Case Study"
+        }, 
+        {
+            "location": "/dis01_2/#introduction", 
+            "text": "Hello World!", 
+            "title": "Introduction"
         }
     ]
 }
