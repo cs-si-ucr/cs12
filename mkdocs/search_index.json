@@ -72,12 +72,12 @@
         }, 
         {
             "location": "/lab02/", 
-            "text": "Exercise 1\n\n\nWrite a program that lists all of its arguments.\n\n\nExample:\n\n\n$ ./a.out hi there 2 3 4 20\nbr\n\nhi there 2 3 4 20\n$\n\n\n\n\nExercise 2\n\n\nWrite a program that prints the sum of all the numbers in a file.\nThe file will only contain integers.\nThe file name will be provided by the user at runtime.\n\n\nBonus 1\n:\nIf the file contains non-integer terms, ignore them.\n\n\nBonus 2\n:\nPrint the sum of the integers on each line, followed by the sum of all the integers.\n\n\nExercise 2", 
+            "text": "Exercise 1\n\n\nWrite a program that lists all of its arguments.\n\n\nExample:\n\n\n$ ./a.out hi there 2 3 4 20\nhi there 2 3 4 20\n$\n\n\n\n\nExercise 2\n\n\nWrite a program that prints the sum of all the numbers in a file.\nThe file will only contain integers.\nThe file name will be provided by the user at runtime.\n\n\nBonus 1\n:\nIf the file contains non-integer terms, ignore them.\n\n\nBonus 2\n:\nPrint the sum of the integers on each line, followed by the sum of all the integers.\n\n\nExercise 2", 
             "title": "Lab Week 2: Streams"
         }, 
         {
             "location": "/lab02/#exercise-1", 
-            "text": "Write a program that lists all of its arguments.  Example:  $ ./a.out hi there 2 3 4 20 br \nhi there 2 3 4 20\n$", 
+            "text": "Write a program that lists all of its arguments.  Example:  $ ./a.out hi there 2 3 4 20\nhi there 2 3 4 20\n$", 
             "title": "Exercise 1"
         }, 
         {
