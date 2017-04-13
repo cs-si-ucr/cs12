@@ -92,8 +92,13 @@
         }, 
         {
             "location": "/dis02_2/", 
-            "text": "", 
+            "text": "Merge\n\n\nSometimes, we want to join two sorted collections of numbers.\n\n\n[Algorithm on board]\n\n\nWrite a function that performs this operation.", 
             "title": "Week 2 Dis 2: Case Study"
+        }, 
+        {
+            "location": "/dis02_2/#merge", 
+            "text": "Sometimes, we want to join two sorted collections of numbers.  [Algorithm on board]  Write a function that performs this operation.", 
+            "title": "Merge"
         }
     ]
 }
