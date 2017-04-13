@@ -2,9 +2,9 @@ site_name: "CS 12 SI: Spring 2017"
 pages:
     - [index.md, "Home"]
     - [lab01.md, "Week 1 Lab: CS 10 Review"]
-    - [dis01_2.md, "Week 1 Dis 2 : Selection Sort Case Study"]
-    #- [lab02.md, "Lab Week 2"]
-    #- [lab_week_03.md, "Lab Week 3"]
+    - [dis01_2.md, "Week 1 Dis 2: Selection Sort Case Study"]
+    - [lab02.md, "Lab Week 2: Streams"]
+    - [dis02_2.md, "Week 2 Dis 2: Case Study"]
     #- [lab_week_04.md, "Lab Week 4"]
     #- [lab_week_05.md, "Lab Week 5"]
     #- [lab_week_06.md, "Lab Week 6"]
