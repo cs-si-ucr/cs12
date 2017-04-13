@@ -58,7 +58,7 @@
         {
             "location": "/dis01_2/", 
             "text": "Introduction\n\n\nSelection sort is a naive sorting algorithm.\n\n\nGiven an unsorted vector of integers, find the position of the smallest element.\n\nSwap that element to index 0 of the vector.\n\nThen, find the smallest element in the index range \n[1, v.size()-1]\n.\n\nSwap that element to index 1 of the vector.\n\nThen, find the smallest element in the index range \n[2, v.size()-1]\n.\n\nSwap that element to index 2 of the vector.\n\nRepeat finding the smallest element and swapping into place until there are no more elements to sort.\n\n\nThis process guarantees a sorted vector at the end.\nIn the case described above, the vector will be in ascending order.\n\n\nStarter Code\n\n\nTake a look at the starter code below.\n\n\nWe will complete either \nfillVec\n or \nprintVec\n together.\n\n\n#include \niostream\n\n#include \nvector\n\n#include \ncstdlib\n\n#include \nctime\n\n\n// This is a program that will run an INSERTION SORT on a vector\n\nusing namespace std;\n\nint min(const vector\nint\n v, int);\nvoid selectionSort(vector\nint\n v);\nvoid fillVec(vector\nint\n v);\nvoid printVec(const vector\nint\n v);\n\nint main() {\n    srand(time(0));\n\n    vector\nint\n test(10);\n\n    fillVec(test);\n    printVec(test);\n    selectionSort(test);\n    printVec(test);\n\n    return 0;\n}\n\n/* This function gets the position of the smallest element in the vector\n *\n * Accepts:\n *     const vector\nint\n v - the vector to search\n *     int start            - the position to start looking for the smallest value\n * Returns:\n *     int - the position of the smallest element (-1 if there is no value)\n */\nint min(const vector\nint\n v, int start) {\n    return -1;\n}\n\n/* Performs selection sort on the vector\n *\n * Accepts:\n *     vector\nint\n v - the vector to sort\n * Returns:\n *     void\n */\nvoid selectionSort(vector\nint\n v) {\n}\n\n/* Fills a vector with random values in [0, v.size()]\n * Accepts:\n *     vector\nint\n v - the vector to fill with random data\n * Returns:\n *     void\n */\nvoid fillVec(vector\nint\n v) {\n}\n\n/* Prints a vector to stdout\n *\n * Accepts:\n *     vector\nint\n v - the vector to print\n * Returns:\n *     void\n */\nvoid printVec(const vector\nint\n v) {\n}", 
-            "title": "Week 1 Dis 2 : Selection Sort Case Study"
+            "title": "Week 1 Dis 2: Selection Sort Case Study"
         }, 
         {
             "location": "/dis01_2/#introduction", 
@@ -72,7 +72,7 @@
         }, 
         {
             "location": "/lab02/", 
-            "text": "Exercise 1\n\n\nWrite a program that lists all of its arguments.\n\n\nExample:\n\n\n$ ./a.out hi there 2 3 4 20\nhi there 2 3 4 20\n$\n\n\n\n\nExercise 2\n\n\nWrite a program that prints the sum of all the numbers in a file.\nThe file will only contain integers.\nThe file name will be provided by the user at runtime.\n\n\nPrint the sum of the integers on each line, followed by the sum of all the integers.\n\n\nBonus\n:\nIf the file contains non-integer terms, ignore them.\n\n\nExercise 3\n\n\nWrite a program that \"normalizes\" all of the integers in a file.\n\n\nBy normalize, I mean that it takes each integer and puts it on a separate line.\nYou may ignore non-integer file terms at your option.", 
+            "text": "Exercise 1\n\n\nWrite a program that lists all of its arguments.\n\n\nExample:\n\n\n$ ./a.out hi there 2 3 4 20\nhi there 2 3 4 20\n$\n\n\n\n\nExercise 2\n\n\nWrite a program that \"normalizes\" all of the integers in a file.\n\n\nBy normalize, I mean that it takes each integer and puts it on a separate line.\nYou may ignore non-integer file terms at your option.\n\n\n\n\n\nExercise 3\n\n\nWrite a program that prints the sum of all the numbers in a file.\nThe file will only contain integers.\nThe file name will be provided by the user at runtime.\n\n\nPrint the sum of the integers on each line, followed by the sum of all the integers.\n\n\nBonus\n:\nIf the file contains non-integer terms, ignore them.", 
             "title": "Lab Week 2: Streams"
         }, 
         {
@@ -82,13 +82,18 @@
         }, 
         {
             "location": "/lab02/#exercise-2", 
-            "text": "Write a program that prints the sum of all the numbers in a file.\nThe file will only contain integers.\nThe file name will be provided by the user at runtime.  Print the sum of the integers on each line, followed by the sum of all the integers.  Bonus :\nIf the file contains non-integer terms, ignore them.", 
+            "text": "Write a program that \"normalizes\" all of the integers in a file.  By normalize, I mean that it takes each integer and puts it on a separate line.\nYou may ignore non-integer file terms at your option.", 
             "title": "Exercise 2"
         }, 
         {
             "location": "/lab02/#exercise-3", 
-            "text": "Write a program that \"normalizes\" all of the integers in a file.  By normalize, I mean that it takes each integer and puts it on a separate line.\nYou may ignore non-integer file terms at your option.", 
+            "text": "Write a program that prints the sum of all the numbers in a file.\nThe file will only contain integers.\nThe file name will be provided by the user at runtime.  Print the sum of the integers on each line, followed by the sum of all the integers.  Bonus :\nIf the file contains non-integer terms, ignore them.", 
             "title": "Exercise 3"
+        }, 
+        {
+            "location": "/dis02_2/", 
+            "text": "", 
+            "title": "Week 2 Dis 2: Case Study"
         }
     ]
 }
