@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Lab Week 2: Streams - CS 12 SI: Spring 2017</title>
+  <title>Week 3 Dis 1: Classes - CS 12 SI: Spring 2017</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Lab Week 2: Streams";
-    var mkdocs_page_input_path = "lab02.md";
-    var mkdocs_page_url = "/lab02/";
+    var mkdocs_page_name = "Week 3 Dis 1: Classes";
+    var mkdocs_page_input_path = "dis03_1.md";
+    var mkdocs_page_url = "/dis03_1/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -68,21 +68,8 @@
 <li>
           
             <li>
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Lab Week 2: Streams</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#exercise-1">Exercise 1</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#exercise-2">Exercise 2</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#exercise-3">Exercise 3</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab02/">Lab Week 2: Streams</a>
         
     </li>
 <li>
@@ -95,8 +82,21 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../dis03_1/">Week 3 Dis 1: Classes</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Week 3 Dis 1: Classes</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-1">Exercise 1</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-2">Exercise 2</a></li>
+                
+            
+            </ul>
         
     </li>
 <li>
@@ -123,7 +123,7 @@
     
       
     
-    <li>Lab Week 2: Streams</li>
+    <li>Week 3 Dis 1: Classes</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -133,37 +133,31 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="exercise-1">Exercise 1</h2>
-<p>Write a program that lists all of its arguments.</p>
-<p>Example:</p>
-<pre><code class="bash">$ ./a.out hi there 2 3 4 20
-hi there 2 3 4 20
-$
+                <h2 id="introduction">Introduction</h2>
+<p>This week you learned about structs and classes.</p>
+<p>We will focus on classes because structs are basically the same thing (in <code>c++</code>).</p>
+<p>For this discussion and for lab tomorrow, we will explore how classes work by making our own.</p>
+<p>Classes (and the objects that are made from them) are often used to model real-world situations.
+The particular case we will be exploring is that of a small fruit stand at a market.</p>
+<p>To keep track of inventory, we model each item as a particular fruit.
+Fruits have a name, a weight, and a price.
+The class we will be making will store the name, weight in pounds, price in dollars, and price per pound.
+An example of this class's private data members is given below:</p>
+<pre><code class="c++">class Fruit {
+    private:
+        string name;
+        double weight;
+        double price;
+        double pricePerPound;
+};
 </code></pre>
 
+<h2 id="exercise-1">Exercise 1</h2>
+<p>What constructors should we make for this class?
+Discuss within your group(s) for a few minutes, and share with other groups afterward.</p>
+<p>Implement these constructors after discussion.</p>
 <h2 id="exercise-2">Exercise 2</h2>
-<p>Write a program that takes each integer in a file and puts it on a separate line.
-You should ask for the name of the input and output files from the user.</p>
-<p>Do <em><strong>not</strong></em> allow the input and output filenames to be the same!</p>
-<p><strong>Bonus 1</strong>:
-If the file contains non-integer terms, do not put them in the resulting file.</p>
-<p><strong>Bonus 2</strong>:
-Allow the user to pass in filenames via command line arguments.
-The first argument should be the input file name.
-The second should be the output file name.</p>
-<p>If only one argument is passed in, assume it is the input file name and ask for the output file name.</p>
-<p>If no arguments are passed in, ask for both the input and output file names.</p>
-<!-- note to maintainer: this is very similar to their lab, but presumably harder.
-     Make sure this is only given after the deadline. If that cannot be done,
-     comment this exercise out. -->
-
-<h2 id="exercise-3">Exercise 3</h2>
-<p>Write a program that prints the sum of all the numbers in a file.
-The file will only contain integers.
-The file name will be provided by the user at runtime.</p>
-<p>Print the sum of the integers on each line, followed by the sum of all the integers.</p>
-<p><strong>Bonus</strong>:
-If the file contains non-integer terms, ignore them.</p>
+<p>kkkkkkkkkkkk</p>
               
             </div>
           </div>
@@ -171,10 +165,8 @@ If the file contains non-integer terms, ignore them.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../dis02_2/" class="btn btn-neutral float-right" title="Week 2 Dis 2: Merge Case Study">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../dis01_2/" class="btn btn-neutral" title="Week 1 Dis 2: Selection Sort Case Study"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../dis02_2/" class="btn btn-neutral" title="Week 2 Dis 2: Merge Case Study"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -200,10 +192,8 @@ If the file contains non-integer terms, ignore them.</p>
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../dis01_2/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../dis02_2/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../dis02_2/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
