@@ -102,7 +102,7 @@
         }, 
         {
             "location": "/dis03_1/", 
-            "text": "Introduction\n\n\nThis week you learned about structs and classes.\n\n\nWe will focus on classes because structs are basically the same thing (in \nc++\n).\n\n\nFor this discussion and for lab tomorrow, we will explore how classes work by making our own.\n\n\nClasses (and the objects that are made from them) are often used to model real-world situations.\nThe particular case we will be exploring is that of a small fruit stand at a market.\n\n\nTo keep track of inventory, we model each item as a particular fruit.\nFruits have a name, a weight, and a price.\nThe class we will be making will store the name, weight in pounds, price in dollars, and price per pound.\nAn example of this class's private data members is given below:\n\n\nclass Fruit {\n    private:\n        string name;\n        double weight;\n        double price;\n        double pricePerPound;\n};\n\n\n\n\nExercise 1\n\n\nWhat constructors should we make for this class?\nDiscuss within your group(s) for a few minutes, and share with other groups afterward.\n\n\nImplement these constructors after discussion.\n\n\nExercise 2\n\n\nkkkkkkkkkkkk", 
+            "text": "Introduction\n\n\nThis week you learned about structs and classes.\n\n\nWe will focus on classes because structs are basically the same thing (in \nc++\n).\n\n\nFor this discussion and for lab tomorrow, we will explore how classes work by making our own.\n\n\nClasses (and the objects that are made from them) are often used to model real-world situations.\nThe particular case we will be exploring is that of a small fruit stand at a market.\n\n\nTo keep track of inventory, we model each item as a particular fruit.\nFruits have a name, a weight, and a price.\nThe class we will be making will store the name, weight in pounds, price in dollars, and price per pound.\nAn example of this class's private data members is given below:\n\n\nclass Fruit {\n    private:\n        string name;\n        double weight;\n        double price;\n        double pricePerPound;\n};\n\n\n\n\nExercise 1\n\n\nWhat constructors should we make for this class?\nDiscuss within your group(s) for a few minutes, and share with other groups afterward.\n\n\nImplement these constructors after discussion.\n\n\n[The rest of the exercises will be completed during lab]", 
             "title": "Week 3 Dis 1: Classes"
         }, 
         {
@@ -112,13 +112,8 @@
         }, 
         {
             "location": "/dis03_1/#exercise-1", 
-            "text": "What constructors should we make for this class?\nDiscuss within your group(s) for a few minutes, and share with other groups afterward.  Implement these constructors after discussion.", 
+            "text": "What constructors should we make for this class?\nDiscuss within your group(s) for a few minutes, and share with other groups afterward.  Implement these constructors after discussion.  [The rest of the exercises will be completed during lab]", 
             "title": "Exercise 1"
-        }, 
-        {
-            "location": "/dis03_1/#exercise-2", 
-            "text": "kkkkkkkkkkkk", 
-            "title": "Exercise 2"
         }
     ]
 }
