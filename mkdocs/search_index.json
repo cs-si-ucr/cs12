@@ -114,6 +114,26 @@
             "location": "/dis03_1/#exercise-1", 
             "text": "What constructors should we make for this class?\nDiscuss within your group(s) for a few minutes, and share with other groups afterward.  Implement these constructors after discussion.  [The rest of the exercises will be completed during lab]", 
             "title": "Exercise 1"
+        }, 
+        {
+            "location": "/lab03/", 
+            "text": "Print Function\n\n\nWrite a display fucntion for the \nFruit\n class.\n\n\nAccessor Functions\n\n\nDiscuss with your group which accessors should exist for the \nFruit\n class.\nShare your results with other groups.\n\n\nMutator Functions\n\n\nDiscuss with your group which mutators should exist for the \nFruit\n class.\nShare your results with other groups.", 
+            "title": "Lab Week 3: Classes"
+        }, 
+        {
+            "location": "/lab03/#print-function", 
+            "text": "Write a display fucntion for the  Fruit  class.", 
+            "title": "Print Function"
+        }, 
+        {
+            "location": "/lab03/#accessor-functions", 
+            "text": "Discuss with your group which accessors should exist for the  Fruit  class.\nShare your results with other groups.", 
+            "title": "Accessor Functions"
+        }, 
+        {
+            "location": "/lab03/#mutator-functions", 
+            "text": "Discuss with your group which mutators should exist for the  Fruit  class.\nShare your results with other groups.", 
+            "title": "Mutator Functions"
         }
     ]
 }
