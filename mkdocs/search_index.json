@@ -117,8 +117,13 @@
         }, 
         {
             "location": "/lab03/", 
-            "text": "Print Function\n\n\nWrite a print fucntion for the \nFruit\n class.\n\n\nAccessor Functions\n\n\nDiscuss with your group which accessors should exist for the \nFruit\n class.\nShare your results with other groups.\n\n\nMutator Functions\n\n\nDiscuss with your group which mutators should exist for the \nFruit\n class.\nShare your results with other groups.", 
+            "text": "Introduction\n\n\nWe will be continuing work on the \nFruit\n class from yesterday's discussion.\nCheck out the problem description from yesterday in case you missed it (through the menu on the left).\n\n\nPrint Function\n\n\nWrite a print fucntion for the \nFruit\n class.\n\n\nAccessor Functions\n\n\nDiscuss with your group which accessors should exist for the \nFruit\n class.\nShare your results with other groups.\n\n\nMutator Functions\n\n\nDiscuss with your group which mutators should exist for the \nFruit\n class.\nShare your results with other groups.", 
             "title": "Lab Week 3: Classes"
+        }, 
+        {
+            "location": "/lab03/#introduction", 
+            "text": "We will be continuing work on the  Fruit  class from yesterday's discussion.\nCheck out the problem description from yesterday in case you missed it (through the menu on the left).", 
+            "title": "Introduction"
         }, 
         {
             "location": "/lab03/#print-function", 
