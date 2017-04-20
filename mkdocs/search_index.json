@@ -139,6 +139,21 @@
             "location": "/lab03/#mutator-functions", 
             "text": "Discuss with your group which mutators should exist for the  Fruit  class.\nShare your results with other groups.", 
             "title": "Mutator Functions"
+        }, 
+        {
+            "location": "/dis03_2/", 
+            "text": "Binary Search\n\n\nBinary Search is an algorithm used to quickly determine the position of a particular value in a sorted collection of values.\n\n\nTake a \nvector\nint\n v\n as an example.\nFirst, we must assume that all of v's elements are in sorted order.\nIf we want to find the value \n15\n, we start in the middle.\nIf the value there is greater than \n15\n, we know that what we're looking for must be to the left!\n\n\nSo we repeat the process for the left half;\nLook at the middle value in the remaining range.\nIf the value there is less than \n15\n we know that the value must be to the right!\n\n\nOf course, if we find \n15\n at any point, we're done.\nIf we run out of elements to check, \n15\n doesn't exist in \nv\n.\n\n\nRuntime Analysis\n\n\nBy inspection, we see that each time we look for a value, we get rid of half of the remaining elements to search through.\nThe mathematical equivalent to this is: given size \nn\n, how many times does \n2\n divide \nn\n.\nThis can be answered with the \nlog\n function.\n\n\nIn the \nbest\n case, we will find the value we're looking for immediately.\n\n\nIn the \nworst\n case, it will take us \nlog(n)\n tries, where \nn\n is the number of elements.", 
+            "title": "Week 3 Dis 2: Binary Search Case Study"
+        }, 
+        {
+            "location": "/dis03_2/#binary-search", 
+            "text": "Binary Search is an algorithm used to quickly determine the position of a particular value in a sorted collection of values.  Take a  vector int  v  as an example.\nFirst, we must assume that all of v's elements are in sorted order.\nIf we want to find the value  15 , we start in the middle.\nIf the value there is greater than  15 , we know that what we're looking for must be to the left!  So we repeat the process for the left half;\nLook at the middle value in the remaining range.\nIf the value there is less than  15  we know that the value must be to the right!  Of course, if we find  15  at any point, we're done.\nIf we run out of elements to check,  15  doesn't exist in  v .", 
+            "title": "Binary Search"
+        }, 
+        {
+            "location": "/dis03_2/#runtime-analysis", 
+            "text": "By inspection, we see that each time we look for a value, we get rid of half of the remaining elements to search through.\nThe mathematical equivalent to this is: given size  n , how many times does  2  divide  n .\nThis can be answered with the  log  function.  In the  best  case, we will find the value we're looking for immediately.  In the  worst  case, it will take us  log(n)  tries, where  n  is the number of elements.", 
+            "title": "Runtime Analysis"
         }
     ]
 }
