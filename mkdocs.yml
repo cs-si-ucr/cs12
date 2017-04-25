@@ -8,14 +8,7 @@ pages:
     - [dis03_1.md, "Week 3 Dis 1: Classes"]
     - [lab03.md, "Lab Week 3: Classes"]
     - [dis03_2.md, "Week 3 Dis 2: Binary Search Case Study"]
-    #- [lab_week_04.md, "Lab Week 4"]
-    #- [lab_week_05.md, "Lab Week 5"]
-    #- [lab_week_06.md, "Lab Week 6"]
-    #- [lab_week_07.md, "Lab Week 7"]
-    #- [lab_week_08.md, "Lab Week 8"]
-    #- [dis_week_08.md, "Discussion Week 8"]
-    #- [lab_week_09.md, "Lab Week 9"]
-    #- [lab_week_10.md, "Lab Week 10"]
-    #- [notes.md, "Notes"]
+    - [dis04_1.md, "Week 4 Dis 1: Classes, Part 2"]
+    #- [dis05_1.md, "Week 5 Dis 1: Midterm Reiew"]
 theme: readthedocs
 
