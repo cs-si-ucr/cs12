@@ -179,6 +179,16 @@
             "location": "/dis04_1/#separate-files-include-and-modular-compilation", 
             "text": "Is it a syntactical requirement to separate code into multiple files?  Why do we separate code into multiple files?  What is Modular Compilation?  How does  include  play a role in Modular Compilation?  Modular Compilation rules?   // main.cpp\n\n#include  Class.h \n\n/* rest of file */  // Class.cpp\n\n#include  Class.h \n\n/* Class definitions here */  // Class.h\n#ifndef __CLASS_H__\n#define __CLASS_H__\n\n/* Class declaration here */\n\n#endif  # compile Class:\ng++ -c Class.cpp\n# compile main:\ng++ -c main.cpp\n# link everything together:\ng++ *.o", 
             "title": "Separate Files, include, and Modular Compilation"
+        }, 
+        {
+            "location": "/lab04/", 
+            "text": "Point.cpp\n\n\nlink to file", 
+            "title": "Lab Week 4: Classes, Part 2"
+        }, 
+        {
+            "location": "/lab04/#pointcpp", 
+            "text": "link to file", 
+            "title": "Point.cpp"
         }
     ]
 }
