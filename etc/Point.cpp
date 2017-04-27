@@ -1,33 +1,33 @@
 #include <iostream>
 
-class Vec2 {
+class Point {
     private:
         double x, y;
     public:
-        Vec2() : x(0), y(0) {}
-        Vec2(double x, double y) : x(x), y(y){}
+        Point() : x(0), y(0) {}
+        Point(double x, double y) : x(x), y(y){}
         void print() const {
             cout << '(' << x << ", " << y << ')';
         }
-        Vec2 operator+(Vec2 v) const {
-            return Vec2(x + v.x, y + v.y);
+        Point operator+(Point v) const {
+            return Point(x + v.x, y + v.y);
         }
-        Vec2 operator-(Vec2 v) const {
-            return Vec2(x - v.x, y - v.y);
+        Point operator-(Point v) const {
+            return Point(x - v.x, y - v.y);
         }
-	Vec2 operator*(double n) const { // scale
-            return Vec2(x * n, y * n);
+        Point operator*(double n) const {
+            return Point(x * n, y * n);
         }
-        double operator*(Vec2 v) const { // dot product
+        double operator*(Point v) const {
             return x * v.x + y * v.y;
         }
-        Vec2 operator+=(Vec2 v) {
+        Point operator+=(Point v) {
             *this = *this + v;
         }
-        Vec2 operator-=(Vec2 v) {
+        Point operator-=(Point v) {
             *this = *this - v;
         }
-        Vec2 operator*=(double n) {
+        Point operator*=(double n) {
             *this = *this * n;
         }
         void normalize() {
