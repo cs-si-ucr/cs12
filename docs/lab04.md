@@ -27,3 +27,9 @@ The function should return `true` or `false` to indicate whether or not a `Fruit
 * A `clear` function that gets rid of all the `Fruit` in the `Basket`.
 
 * A `total` function that returns the cost of everything in the `Basket`.
+
+<!-- note to maintainer:
+
+Through experience, this is not enough material to last the whole lab.
+
+-->
