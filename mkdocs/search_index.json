@@ -182,13 +182,18 @@
         }, 
         {
             "location": "/lab04/", 
-            "text": "Point.cpp\n\n\nlink to file", 
+            "text": "Modular Compilation\n\n\nUsing the \nFruit\n class from last week, separate each part into one of \nFruit.h\n, \nFruit.cpp\n, and \nmain.cpp\n.\nCompile each .cpp file separately, and link to gether to generate an executable.\n\n\nFix any mistakes in the \nFruit\n class as necessary\n\n\nBasket Class\n\n\nCreate a \nBasket\n class.\nA \nBasket\n object should be able to hold any number of \nFruit\n objects.\n\n\nThe interface is as follows:\n\n\n\n\n\n\nAn \nadd\n function that accepts a \nFruit\n object to add to the \nBasket\n\nFruits of the same name should not be allowed to be added twice.\nBecause of this, the function should return \ntrue\n or \nfalse\n to indicate whether or not the \nFruit\n was added.\n\n\n\n\n\n\nA \nremove\n function that accepts the name (a \nstring\n) of the \nFruit\n to remove.\nThe function should return \ntrue\n or \nfalse\n to indicate whether or not a \nFruit\n with that name was added.\n\n\n\n\n\n\nA \nprint\n function.\n\n\n\n\n\n\nA \nclear\n function that gets rid of all the \nFruit\n in the \nBasket\n.\n\n\n\n\n\n\nA \ntotal\n function that returns the cost of everything in the \nBasket\n.", 
             "title": "Lab Week 4: Classes, Part 2"
         }, 
         {
-            "location": "/lab04/#pointcpp", 
-            "text": "link to file", 
-            "title": "Point.cpp"
+            "location": "/lab04/#modular-compilation", 
+            "text": "Using the  Fruit  class from last week, separate each part into one of  Fruit.h ,  Fruit.cpp , and  main.cpp .\nCompile each .cpp file separately, and link to gether to generate an executable.  Fix any mistakes in the  Fruit  class as necessary", 
+            "title": "Modular Compilation"
+        }, 
+        {
+            "location": "/lab04/#basket-class", 
+            "text": "Create a  Basket  class.\nA  Basket  object should be able to hold any number of  Fruit  objects.  The interface is as follows:    An  add  function that accepts a  Fruit  object to add to the  Basket \nFruits of the same name should not be allowed to be added twice.\nBecause of this, the function should return  true  or  false  to indicate whether or not the  Fruit  was added.    A  remove  function that accepts the name (a  string ) of the  Fruit  to remove.\nThe function should return  true  or  false  to indicate whether or not a  Fruit  with that name was added.    A  print  function.    A  clear  function that gets rid of all the  Fruit  in the  Basket .    A  total  function that returns the cost of everything in the  Basket .", 
+            "title": "Basket Class"
         }
     ]
 }

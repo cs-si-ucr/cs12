@@ -115,7 +115,10 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#pointcpp">Point.cpp</a></li>
+                <li class="toctree-l3"><a href="#modular-compilation">Modular Compilation</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#basket-class">Basket Class</a></li>
                 
             
             </ul>
@@ -155,8 +158,34 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="pointcpp">Point.cpp</h2>
-<p><a href="https://github.com/cs-si-ucr/cs12/blob/master/etc/Point.cpp">link to file</a></p>
+                <h2 id="modular-compilation">Modular Compilation</h2>
+<p>Using the <code>Fruit</code> class from last week, separate each part into one of <code>Fruit.h</code>, <code>Fruit.cpp</code>, and <code>main.cpp</code>.
+Compile each .cpp file separately, and link to gether to generate an executable.</p>
+<p>Fix any mistakes in the <code>Fruit</code> class as necessary</p>
+<h2 id="basket-class">Basket Class</h2>
+<p>Create a <code>Basket</code> class.
+A <code>Basket</code> object should be able to hold any number of <code>Fruit</code> objects.</p>
+<p>The interface is as follows:</p>
+<ul>
+<li>
+<p>An <code>add</code> function that accepts a <code>Fruit</code> object to add to the <code>Basket</code>
+Fruits of the same name should not be allowed to be added twice.
+Because of this, the function should return <code>true</code> or <code>false</code> to indicate whether or not the <code>Fruit</code> was added.</p>
+</li>
+<li>
+<p>A <code>remove</code> function that accepts the name (a <code>string</code>) of the <code>Fruit</code> to remove.
+The function should return <code>true</code> or <code>false</code> to indicate whether or not a <code>Fruit</code> with that name was added.</p>
+</li>
+<li>
+<p>A <code>print</code> function.</p>
+</li>
+<li>
+<p>A <code>clear</code> function that gets rid of all the <code>Fruit</code> in the <code>Basket</code>.</p>
+</li>
+<li>
+<p>A <code>total</code> function that returns the cost of everything in the <code>Basket</code>.</p>
+</li>
+</ul>
               
             </div>
           </div>
