@@ -194,6 +194,21 @@
             "location": "/lab04/#basket-class", 
             "text": "Create a  Basket  class.\nA  Basket  object should be able to hold any number of  Fruit  objects.  The interface is as follows:    An  add  function that accepts a  Fruit  object to add to the  Basket \nFruits of the same name should not be allowed to be added twice.\nBecause of this, the function should return  true  or  false  to indicate whether or not the  Fruit  was added.    A  remove  function that accepts the name (a  string ) of the  Fruit  to remove.\nThe function should return  true  or  false  to indicate whether or not a  Fruit  with that name was added.    A  print  function.    A  clear  function that gets rid of all the  Fruit  in the  Basket .    A  total  function that returns the cost of everything in the  Basket .", 
             "title": "Basket Class"
+        }, 
+        {
+            "location": "/dis04_2/", 
+            "text": "Point\n\n\nThe \nPoint\n class can be found \nhere\n.\n\n\nPoints here, semantically, are different from the \nPoint\n covered in lecture.\nInstead of simply storing the coordinates, these Points behave like mathematical vectors.\nAs such, their interface is different.\n\n\nBefore continuing,\n1. Look over the \nPoint\n interface to understand how to use this class.\n2. Separate the \nPoint\n definition from its declaration.\n\n\nRectangle\n\n\nGo to piazza and copy Kris's \nRectangle\n interface as covered in lecture.\n\n\nImplement each function using this new \nPoint\n class.", 
+            "title": "Week 4 Dis 2: Rectangle"
+        }, 
+        {
+            "location": "/dis04_2/#point", 
+            "text": "The  Point  class can be found  here .  Points here, semantically, are different from the  Point  covered in lecture.\nInstead of simply storing the coordinates, these Points behave like mathematical vectors.\nAs such, their interface is different.  Before continuing,\n1. Look over the  Point  interface to understand how to use this class.\n2. Separate the  Point  definition from its declaration.", 
+            "title": "Point"
+        }, 
+        {
+            "location": "/dis04_2/#rectangle", 
+            "text": "Go to piazza and copy Kris's  Rectangle  interface as covered in lecture.  Implement each function using this new  Point  class.", 
+            "title": "Rectangle"
         }
     ]
 }

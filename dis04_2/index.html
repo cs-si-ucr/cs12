@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Week 3 Dis 2: Binary Search Case Study - CS 12 SI: Spring 2017</title>
+  <title>Week 4 Dis 2: Rectangle - CS 12 SI: Spring 2017</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Week 3 Dis 2: Binary Search Case Study";
-    var mkdocs_page_input_path = "dis03_2.md";
-    var mkdocs_page_url = "/dis03_2/";
+    var mkdocs_page_name = "Week 4 Dis 2: Rectangle";
+    var mkdocs_page_input_path = "dis04_2.md";
+    var mkdocs_page_url = "/dis04_2/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -96,18 +96,8 @@
 <li>
           
             <li>
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Week 3 Dis 2: Binary Search Case Study</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#binary-search">Binary Search</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#runtime-analysis">Runtime Analysis</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis03_2/">Week 3 Dis 2: Binary Search Case Study</a>
         
     </li>
 <li>
@@ -127,8 +117,18 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../dis04_2/">Week 4 Dis 2: Rectangle</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Week 4 Dis 2: Rectangle</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#point">Point</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#rectangle">Rectangle</a></li>
+                
+            
+            </ul>
         
     </li>
 <li>
@@ -155,7 +155,7 @@
     
       
     
-    <li>Week 3 Dis 2: Binary Search Case Study</li>
+    <li>Week 4 Dis 2: Rectangle</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -165,23 +165,17 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="binary-search">Binary Search</h2>
-<p>Binary Search is an algorithm used to quickly determine the position of a particular value in a sorted collection of values.</p>
-<p>Take a <code>vector&lt;int&gt; v</code> as an example.
-First, we must assume that all of v's elements are in sorted order.
-If we want to find the value <code>15</code>, we start in the middle.
-If the value there is greater than <code>15</code>, we know that what we're looking for must be to the left!</p>
-<p>So we repeat the process for the left half;
-Look at the middle value in the remaining range.
-If the value there is less than <code>15</code> we know that the value must be to the right!</p>
-<p>Of course, if we find <code>15</code> at any point, we're done.
-If we run out of elements to check, <code>15</code> doesn't exist in <code>v</code>.</p>
-<h2 id="runtime-analysis">Runtime Analysis</h2>
-<p>By inspection, we see that each time we look for a value, we get rid of half of the remaining elements to search through.
-The mathematical equivalent to this is: given size <code>n</code>, how many times does <code>2</code> divide <code>n</code>.
-This can be answered with the <code>log</code> function.</p>
-<p>In the <em>best</em> case, we will find the value we're looking for immediately.</p>
-<p>In the <em>worst</em> case, it will take us <code>log(n)</code> tries, where <code>n</code> is the number of elements.</p>
+                <h2 id="point">Point</h2>
+<p>The <code>Point</code> class can be found <a href="https://github.com/cs-si-ucr/cs12/blob/master/etc/Point.cpp">here</a>.</p>
+<p>Points here, semantically, are different from the <code>Point</code> covered in lecture.
+Instead of simply storing the coordinates, these Points behave like mathematical vectors.
+As such, their interface is different.</p>
+<p>Before continuing,
+1. Look over the <code>Point</code> interface to understand how to use this class.
+2. Separate the <code>Point</code> definition from its declaration.</p>
+<h2 id="rectangle">Rectangle</h2>
+<p>Go to piazza and copy Kris's <code>Rectangle</code> interface as covered in lecture.</p>
+<p>Implement each function using this new <code>Point</code> class.</p>
               
             </div>
           </div>
@@ -189,10 +183,8 @@ This can be answered with the <code>log</code> function.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../dis04_1/" class="btn btn-neutral float-right" title="Week 4 Dis 1: Classes, Part 2">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../lab03/" class="btn btn-neutral" title="Lab Week 3: Classes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../lab04/" class="btn btn-neutral" title="Lab Week 4: Classes, Part 2"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -218,10 +210,8 @@ This can be answered with the <code>log</code> function.</p>
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../lab03/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../lab04/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../dis04_1/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
