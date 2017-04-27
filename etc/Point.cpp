@@ -38,4 +38,10 @@ class Point {
         double length() const {
             return sqrt(*this * *this):
         }
+        double getX() const {
+            return x;
+        }
+        double getY() const {
+            return y;
+        }
 };
