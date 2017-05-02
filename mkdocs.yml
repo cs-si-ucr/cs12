@@ -11,6 +11,6 @@ pages:
     - [dis04_1.md, "Week 4 Dis 1: Classes, Part 2"]
     - [lab04.md, "Lab Week 4: Classes, Part 2"]
     - [dis04_2.md, "Week 4 Dis 2: Rectangle"]
-    #- [dis05_1.md, "Week 5 Dis 1: Midterm Reiew"]
+    - [dis05_1.md, "Week 5 Dis 1: Midterm Reiew"]
 theme: readthedocs
 
