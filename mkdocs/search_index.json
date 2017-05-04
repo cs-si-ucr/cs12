@@ -222,31 +222,41 @@
         }, 
         {
             "location": "/lab05/", 
-            "text": "Midterm Review\n\n\nI have a copy of the midterm.\nIf you would like to go over any of the problems from it, we will.\n\n\nArrays and cstrings\n\n\nIf you have any questions about arrays from your reading, now would be the time to ask them.\n\n\nToday, we will be working primarily with \nchar\n arrays, known as cstrings.\nCstrings are used to hold string information (without any of the member functions, of course).\nString literals, as we've discussed previously, actually have a type of \nconst char[]\n.\n\n\nCstrings are terminated by a character with value 0.\nThe character literal of that is \n\\0\n.\n\n\nstrlen\n\n\nTo explore the fact that cstrings are terminated with 0, write the \nstrlen\n function.\nThe declaration is given below:\n\n\nunsigned strlen(const char[]);\n\n\n\n\nstrcpy\n\n\nWrite a function that will copy one cstring to another.\nThe declaration is given below:\n\n\nvoid strcpy(char[], const char[]);\n\n\n\n\nstrcmp\n\n\nWrite a function that compares two strings lexicographically.\nThe function should behave similarly to \noperator\n(string, string)\n.\nThe declaration is given below:\n\n\n// accepts:\n//     two strings to compare\n// returns:\n//     -1: lhs \n  rhs\n//      0: lhs == rhs\n//      1: lhs  \n rhs\nint strcmp(const char[], const char[]);", 
+            "text": "Midterm Review\n\n\nI have a copy of the midterm.\nWe will be going over quistions from it.", 
             "title": "Lab Week 5: Midterm Review and Arrays"
         }, 
         {
             "location": "/lab05/#midterm-review", 
-            "text": "I have a copy of the midterm.\nIf you would like to go over any of the problems from it, we will.", 
+            "text": "I have a copy of the midterm.\nWe will be going over quistions from it.", 
             "title": "Midterm Review"
         }, 
         {
-            "location": "/lab05/#arrays-and-cstrings", 
+            "location": "/dis05_2/", 
+            "text": "Arrays and cstrings\n\n\nIf you have any questions about arrays from your reading, now would be the time to ask them.\n\n\nToday, we will be working primarily with \nchar\n arrays, known as cstrings.\nCstrings are used to hold string information (without any of the member functions, of course).\nString literals, as we've discussed previously, actually have a type of \nconst char[]\n.\n\n\nCstrings are terminated by a character with value 0.\nThe character literal of that is \n\\0\n.\n\n\nstrlen\n\n\nTo explore the fact that cstrings are terminated with 0, write the \nstrlen\n function.\nThe declaration is given below:\n\n\nunsigned strlen(const char[]);\n\n\n\n\nstrcpy\n\n\nWrite a function that will copy one cstring to another.\nThe declaration is given below:\n\n\nvoid strcpy(char[], const char[]);\n\n\n\n\nstrcat\n\n\nWrite a function that will append one cstring to the end of another.\nThe declaration is given below:\n\n\nvoid strcat(char[], const char[]);\n\n\n\n\nstrcmp\n\n\nWrite a function that compares two strings lexicographically.\nThe function should behave similarly to \noperator\n(string, string)\n.\nThe declaration is given below:\n\n\n// accepts:\n//     two strings to compare\n// returns:\n//     -1: lhs \n  rhs\n//      0: lhs == rhs\n//      1: lhs  \n rhs\nint strcmp(const char[], const char[]);", 
+            "title": "Week 5 Dis 2: Cstrings"
+        }, 
+        {
+            "location": "/dis05_2/#arrays-and-cstrings", 
             "text": "If you have any questions about arrays from your reading, now would be the time to ask them.  Today, we will be working primarily with  char  arrays, known as cstrings.\nCstrings are used to hold string information (without any of the member functions, of course).\nString literals, as we've discussed previously, actually have a type of  const char[] .  Cstrings are terminated by a character with value 0.\nThe character literal of that is  \\0 .", 
             "title": "Arrays and cstrings"
         }, 
         {
-            "location": "/lab05/#strlen", 
+            "location": "/dis05_2/#strlen", 
             "text": "To explore the fact that cstrings are terminated with 0, write the  strlen  function.\nThe declaration is given below:  unsigned strlen(const char[]);", 
             "title": "strlen"
         }, 
         {
-            "location": "/lab05/#strcpy", 
+            "location": "/dis05_2/#strcpy", 
             "text": "Write a function that will copy one cstring to another.\nThe declaration is given below:  void strcpy(char[], const char[]);", 
             "title": "strcpy"
         }, 
         {
-            "location": "/lab05/#strcmp", 
+            "location": "/dis05_2/#strcat", 
+            "text": "Write a function that will append one cstring to the end of another.\nThe declaration is given below:  void strcat(char[], const char[]);", 
+            "title": "strcat"
+        }, 
+        {
+            "location": "/dis05_2/#strcmp", 
             "text": "Write a function that compares two strings lexicographically.\nThe function should behave similarly to  operator (string, string) .\nThe declaration is given below:  // accepts:\n//     two strings to compare\n// returns:\n//     -1: lhs    rhs\n//      0: lhs == rhs\n//      1: lhs    rhs\nint strcmp(const char[], const char[]);", 
             "title": "strcmp"
         }
