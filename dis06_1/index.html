@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Week 5 Dis 1: Midterm Reiew - CS 12 SI: Spring 2017</title>
+  <title>Week 6 Dis 1: Pointers and Dynamic Memory - CS 12 SI: Spring 2017</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Week 5 Dis 1: Midterm Reiew";
-    var mkdocs_page_input_path = "dis05_1.md";
-    var mkdocs_page_url = "/dis05_1/";
+    var mkdocs_page_name = "Week 6 Dis 1: Pointers and Dynamic Memory";
+    var mkdocs_page_input_path = "dis06_1.md";
+    var mkdocs_page_url = "/dis06_1/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -124,15 +124,8 @@
 <li>
           
             <li>
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Week 5 Dis 1: Midterm Reiew</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#midterm-review">Midterm Review</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis05_1/">Week 5 Dis 1: Midterm Reiew</a>
         
     </li>
 <li>
@@ -152,8 +145,33 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../dis06_1/">Week 6 Dis 1: Pointers and Dynamic Memory</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Week 6 Dis 1: Pointers and Dynamic Memory</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#pointers">Pointers</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#cstrings">cstrings</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#dynamic-memory-operators">Dynamic Memory Operators</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#dereference-and-access-operator">Dereference and Access Operator</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#heap-and-stack">Heap and Stack</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#memory-leak">Memory Leak</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#destructors">Destructors</a></li>
+                
+            
+            </ul>
         
     </li>
 <li>
@@ -180,7 +198,7 @@
     
       
     
-    <li>Week 5 Dis 1: Midterm Reiew</li>
+    <li>Week 6 Dis 1: Pointers and Dynamic Memory</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -190,28 +208,97 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="midterm-review">Midterm Review</h2>
-<p>Today, we will be reviewing everything for the midterm.</p>
-<p>We will start with requests.</p>
-<p>If we finish requests, we will cover the following topics:</p>
+                <h2 id="pointers">Pointers</h2>
 <ul>
-<li>File Streams</li>
-<li>String Streams</li>
-<li>Stream Error Checking</li>
-<li>Input Stream Function Usage</li>
-<li>Structs vs Classes</li>
-<li><code>public</code> vs <code>private</code></li>
-<li>Class Data Members</li>
-<li>Class Function Members</li>
-<li>Constructors</li>
-<li>Accessors vs Mutators</li>
-<li>Implicit Parameter Usage</li>
-<li>Classes as Data Members</li>
-<li>Operator Overloading</li>
-<li>Separate Files and Modular Compilation</li>
-<li><code>#define</code> Preprocessor Directive</li>
-<li><code>#include</code> Preprocessor Directive</li>
-<li>Makefiles</li>
+<li>
+<p>What is a pointer?</p>
+</li>
+<li>
+<p>What are things we can do with a pointer?</p>
+</li>
+</ul>
+<h2 id="cstrings">cstrings</h2>
+<ul>
+<li>
+<p>What is a cstring?</p>
+</li>
+<li>
+<p>What library do you need to include to use cstrings?</p>
+</li>
+<li>
+<p>How do cstrings work?
+(how do you determine the <strong>size</strong> of a cstring?)</p>
+</li>
+</ul>
+<p>What do each of these functions do:</p>
+<ul>
+<li>
+<p>strstr</p>
+</li>
+<li>
+<p>strchr</p>
+</li>
+<li>
+<p>strrchr</p>
+</li>
+<li>
+<p>strlen</p>
+</li>
+<li>
+<p>strcat</p>
+</li>
+<li>
+<p>strncat</p>
+</li>
+<li>
+<p>strcpy</p>
+</li>
+<li>
+<p>strncpy</p>
+</li>
+<li>
+<p>strcmp</p>
+</li>
+</ul>
+<h2 id="dynamic-memory-operators">Dynamic Memory Operators</h2>
+<ul>
+<li>
+<p>What do <code>new</code> and <code>new[]</code> do?
+What are some differences between them?</p>
+</li>
+<li>
+<p>What do <code>delete</code> and <code>delete[]</code> do?
+What are some differences between them?</p>
+</li>
+</ul>
+<h2 id="dereference-and-access-operator">Dereference and Access Operator</h2>
+<ul>
+<li>How do you use <code>-&gt;</code>?</li>
+</ul>
+<h2 id="heap-and-stack">Heap and Stack</h2>
+<ul>
+<li>
+<p>What is the heap?</p>
+</li>
+<li>
+<p>What is the stack?</p>
+</li>
+<li>
+<p>How does this relate to dynamic memory?</p>
+</li>
+</ul>
+<h2 id="memory-leak">Memory Leak</h2>
+<ul>
+<li>
+<p>What is a memory leak?</p>
+</li>
+<li>
+<p>WHat is a dangling pointer?</p>
+</li>
+</ul>
+<h2 id="destructors">Destructors</h2>
+<ul>
+<li>What is a destructor?</li>
 </ul>
               
             </div>
@@ -220,10 +307,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../lab05/" class="btn btn-neutral float-right" title="Lab Week 5: Midterm Review and Arrays">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../dis04_2/" class="btn btn-neutral" title="Week 4 Dis 2: Rectangle"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../dis05_2/" class="btn btn-neutral" title="Week 5 Dis 2: Cstrings"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -249,10 +334,8 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../dis04_2/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../dis05_2/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../lab05/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

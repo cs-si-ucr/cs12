@@ -259,6 +259,46 @@
             "location": "/dis05_2/#strcmp", 
             "text": "Write a function that compares two strings lexicographically.\nThe function should behave similarly to  operator (string, string) .\nThe declaration is given below:  // accepts:\n//     two strings to compare\n// returns:\n//     -1: lhs    rhs\n//      0: lhs == rhs\n//      1: lhs    rhs\nint strcmp(const char[], const char[]);", 
             "title": "strcmp"
+        }, 
+        {
+            "location": "/dis06_1/", 
+            "text": "Pointers\n\n\n\n\n\n\nWhat is a pointer?\n\n\n\n\n\n\nWhat are things we can do with a pointer?\n\n\n\n\n\n\ncstrings\n\n\n\n\n\n\nWhat is a cstring?\n\n\n\n\n\n\nWhat library do you need to include to use cstrings?\n\n\n\n\n\n\nHow do cstrings work?\n(how do you determine the \nsize\n of a cstring?)\n\n\n\n\n\n\nWhat do each of these functions do:\n\n\n\n\n\n\nstrstr\n\n\n\n\n\n\nstrchr\n\n\n\n\n\n\nstrrchr\n\n\n\n\n\n\nstrlen\n\n\n\n\n\n\nstrcat\n\n\n\n\n\n\nstrncat\n\n\n\n\n\n\nstrcpy\n\n\n\n\n\n\nstrncpy\n\n\n\n\n\n\nstrcmp\n\n\n\n\n\n\nDynamic Memory Operators\n\n\n\n\n\n\nWhat do \nnew\n and \nnew[]\n do?\nWhat are some differences between them?\n\n\n\n\n\n\nWhat do \ndelete\n and \ndelete[]\n do?\nWhat are some differences between them?\n\n\n\n\n\n\nDereference and Access Operator\n\n\n\n\nHow do you use \n-\n?\n\n\n\n\nHeap and Stack\n\n\n\n\n\n\nWhat is the heap?\n\n\n\n\n\n\nWhat is the stack?\n\n\n\n\n\n\nHow does this relate to dynamic memory?\n\n\n\n\n\n\nMemory Leak\n\n\n\n\n\n\nWhat is a memory leak?\n\n\n\n\n\n\nWHat is a dangling pointer?\n\n\n\n\n\n\nDestructors\n\n\n\n\nWhat is a destructor?", 
+            "title": "Week 6 Dis 1: Pointers and Dynamic Memory"
+        }, 
+        {
+            "location": "/dis06_1/#pointers", 
+            "text": "What is a pointer?    What are things we can do with a pointer?", 
+            "title": "Pointers"
+        }, 
+        {
+            "location": "/dis06_1/#cstrings", 
+            "text": "What is a cstring?    What library do you need to include to use cstrings?    How do cstrings work?\n(how do you determine the  size  of a cstring?)    What do each of these functions do:    strstr    strchr    strrchr    strlen    strcat    strncat    strcpy    strncpy    strcmp", 
+            "title": "cstrings"
+        }, 
+        {
+            "location": "/dis06_1/#dynamic-memory-operators", 
+            "text": "What do  new  and  new[]  do?\nWhat are some differences between them?    What do  delete  and  delete[]  do?\nWhat are some differences between them?", 
+            "title": "Dynamic Memory Operators"
+        }, 
+        {
+            "location": "/dis06_1/#dereference-and-access-operator", 
+            "text": "How do you use  - ?", 
+            "title": "Dereference and Access Operator"
+        }, 
+        {
+            "location": "/dis06_1/#heap-and-stack", 
+            "text": "What is the heap?    What is the stack?    How does this relate to dynamic memory?", 
+            "title": "Heap and Stack"
+        }, 
+        {
+            "location": "/dis06_1/#memory-leak", 
+            "text": "What is a memory leak?    WHat is a dangling pointer?", 
+            "title": "Memory Leak"
+        }, 
+        {
+            "location": "/dis06_1/#destructors", 
+            "text": "What is a destructor?", 
+            "title": "Destructors"
         }
     ]
 }
