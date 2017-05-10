@@ -146,18 +146,6 @@
                 <li class="toctree-l3"><a href="#arrays-and-cstrings">Arrays and cstrings</a></li>
                 
             
-                <li class="toctree-l3"><a href="#strlen">strlen</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#strcpy">strcpy</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#strcat">strcat</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#strcmp">strcmp</a></li>
-                
-            
             </ul>
         
     </li>
@@ -166,6 +154,13 @@
             <li>
     <li class="toctree-l1 ">
         <a class="" href="../dis06_1/">Week 6 Dis 1: Pointers and Dynamic Memory</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab06/">Lab Week 6: Valgrind, Dynamic Memory, and Pointers</a>
         
     </li>
 <li>
@@ -209,36 +204,18 @@ Cstrings are used to hold string information (without any of the member function
 String literals, as we've discussed previously, actually have a type of <code>const char[]</code>.</p>
 <p>Cstrings are terminated by a character with value 0.
 The character literal of that is <code>\0</code>.</p>
-<h2 id="strlen">strlen</h2>
-<p>To explore the fact that cstrings are terminated with 0, write the <code>strlen</code> function.
-The declaration is given below:</p>
-<pre><code class="c++">unsigned strlen(const char[]);
-</code></pre>
+<!-- Note to maintainer:
 
-<h2 id="strcpy">strcpy</h2>
-<p>Write a function that will copy one cstring to another.
-The declaration is given below:</p>
-<pre><code class="c++">void strcpy(char[], const char[]);
-</code></pre>
+This was midterm week, and a slow one at that.
+The original plan was to cover cstrings during lab and review the midterm, but hardly anyone showed up and we only went over the midterm.
+I pushed the exercises to the second discussion, but no one showed up to that session either.
+Finally, I moved the cstring exercises to week 6, and that is where you will now find them.
 
-<h2 id="strcat">strcat</h2>
-<p>Write a function that will append one cstring to the end of another.
-The declaration is given below:</p>
-<pre><code class="c++">void strcat(char[], const char[]);
-</code></pre>
+Cheers,
 
-<h2 id="strcmp">strcmp</h2>
-<p>Write a function that compares two strings lexicographically.
-The function should behave similarly to <code>operator&lt;(string, string)</code>.
-The declaration is given below:</p>
-<pre><code class="c++">// accepts:
-//     two strings to compare
-// returns:
-//     -1: lhs &lt;  rhs
-//      0: lhs == rhs
-//      1: lhs  &gt; rhs
-int strcmp(const char[], const char[]);
-</code></pre>
+-Michael Evans
+
+-->
               
             </div>
           </div>

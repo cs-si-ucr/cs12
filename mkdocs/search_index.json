@@ -232,33 +232,13 @@
         }, 
         {
             "location": "/dis05_2/", 
-            "text": "Arrays and cstrings\n\n\nIf you have any questions about arrays from your reading, now would be the time to ask them.\n\n\nToday, we will be working primarily with \nchar\n arrays, known as cstrings.\nCstrings are used to hold string information (without any of the member functions, of course).\nString literals, as we've discussed previously, actually have a type of \nconst char[]\n.\n\n\nCstrings are terminated by a character with value 0.\nThe character literal of that is \n\\0\n.\n\n\nstrlen\n\n\nTo explore the fact that cstrings are terminated with 0, write the \nstrlen\n function.\nThe declaration is given below:\n\n\nunsigned strlen(const char[]);\n\n\n\n\nstrcpy\n\n\nWrite a function that will copy one cstring to another.\nThe declaration is given below:\n\n\nvoid strcpy(char[], const char[]);\n\n\n\n\nstrcat\n\n\nWrite a function that will append one cstring to the end of another.\nThe declaration is given below:\n\n\nvoid strcat(char[], const char[]);\n\n\n\n\nstrcmp\n\n\nWrite a function that compares two strings lexicographically.\nThe function should behave similarly to \noperator\n(string, string)\n.\nThe declaration is given below:\n\n\n// accepts:\n//     two strings to compare\n// returns:\n//     -1: lhs \n  rhs\n//      0: lhs == rhs\n//      1: lhs  \n rhs\nint strcmp(const char[], const char[]);", 
+            "text": "Arrays and cstrings\n\n\nIf you have any questions about arrays from your reading, now would be the time to ask them.\n\n\nToday, we will be working primarily with \nchar\n arrays, known as cstrings.\nCstrings are used to hold string information (without any of the member functions, of course).\nString literals, as we've discussed previously, actually have a type of \nconst char[]\n.\n\n\nCstrings are terminated by a character with value 0.\nThe character literal of that is \n\\0\n.", 
             "title": "Week 5 Dis 2: Cstrings"
         }, 
         {
             "location": "/dis05_2/#arrays-and-cstrings", 
             "text": "If you have any questions about arrays from your reading, now would be the time to ask them.  Today, we will be working primarily with  char  arrays, known as cstrings.\nCstrings are used to hold string information (without any of the member functions, of course).\nString literals, as we've discussed previously, actually have a type of  const char[] .  Cstrings are terminated by a character with value 0.\nThe character literal of that is  \\0 .", 
             "title": "Arrays and cstrings"
-        }, 
-        {
-            "location": "/dis05_2/#strlen", 
-            "text": "To explore the fact that cstrings are terminated with 0, write the  strlen  function.\nThe declaration is given below:  unsigned strlen(const char[]);", 
-            "title": "strlen"
-        }, 
-        {
-            "location": "/dis05_2/#strcpy", 
-            "text": "Write a function that will copy one cstring to another.\nThe declaration is given below:  void strcpy(char[], const char[]);", 
-            "title": "strcpy"
-        }, 
-        {
-            "location": "/dis05_2/#strcat", 
-            "text": "Write a function that will append one cstring to the end of another.\nThe declaration is given below:  void strcat(char[], const char[]);", 
-            "title": "strcat"
-        }, 
-        {
-            "location": "/dis05_2/#strcmp", 
-            "text": "Write a function that compares two strings lexicographically.\nThe function should behave similarly to  operator (string, string) .\nThe declaration is given below:  // accepts:\n//     two strings to compare\n// returns:\n//     -1: lhs    rhs\n//      0: lhs == rhs\n//      1: lhs    rhs\nint strcmp(const char[], const char[]);", 
-            "title": "strcmp"
         }, 
         {
             "location": "/dis06_1/", 
@@ -299,6 +279,41 @@
             "location": "/dis06_1/#destructors", 
             "text": "What is a destructor?", 
             "title": "Destructors"
+        }, 
+        {
+            "location": "/lab06/", 
+            "text": "Valgrind\n\n\nWe will use \nvalgrind\n to find dynamic memory errors.\nWrite the following programs, then run them with \nvalgrind\n.\nObserve the output of \nvalgrind\n, and become comfortable reading the messages it gives you.\n\n\n\n\n\n\nWrite a program that creates a memory leak.\n\n\n\n\n\n\nWrite a program that accesses a dangling pointer.\n\n\n\n\n\n\nWrite a program that causes a segmentation fault (segfault).\n\n\n\n\n\n\nWhen using \nvalgrind\n, you will need to compile with debugging flags.\nThis is accomplished by passing the \n-g\n flag to \ng++\n.\n\n\nGet a cstring from the user\n\n\nAllocate \n80\n characters dynamically, twice.\nAsk the user for 2 sentences.\n\n\nStore the sentences in each dynamic array of characters.\n\n\nYou may use any version of the \nistream\n istream::get(/* params */)\n function you'd like.\n(Hint: \nlook it up\n)\n\n\nstrlen\n\n\nTo explore the fact that cstrings are terminated with \n\\0\n, write the \nstrlen\n function.\nThe declaration is given below:\n\n\nunsigned strlen(const char*);\n\n\n\n\nstrcpy\n\n\nWrite a function that will copy one cstring to another.\nThe declaration is given below:\n\n\nvoid strcpy(char*, const char*);\n\n\n\n\nstrncpy\n\n\nWrite a function that will copy \nn\n characters of one cstring to another.\nThe declaration is given below:\n\n\nvoid strncpy(char*, const char*, int);\n\n\n\n\nstrcmp\n\n\nWrite a function that compares two strings lexicographically.\nThe function should behave similarly to \noperator\n(string, string)\n.\nThe declaration is given below:\n\n\n// accepts:\n//     two strings to compare\n// returns:\n//     -1: lhs \n  rhs\n//      0: lhs == rhs\n//      1: lhs  \n rhs\nint strcmp(const char*, const char*);", 
+            "title": "Lab Week 6: Valgrind, Dynamic Memory, and Pointers"
+        }, 
+        {
+            "location": "/lab06/#valgrind", 
+            "text": "We will use  valgrind  to find dynamic memory errors.\nWrite the following programs, then run them with  valgrind .\nObserve the output of  valgrind , and become comfortable reading the messages it gives you.    Write a program that creates a memory leak.    Write a program that accesses a dangling pointer.    Write a program that causes a segmentation fault (segfault).    When using  valgrind , you will need to compile with debugging flags.\nThis is accomplished by passing the  -g  flag to  g++ .", 
+            "title": "Valgrind"
+        }, 
+        {
+            "location": "/lab06/#get-a-cstring-from-the-user", 
+            "text": "Allocate  80  characters dynamically, twice.\nAsk the user for 2 sentences.  Store the sentences in each dynamic array of characters.  You may use any version of the  istream  istream::get(/* params */)  function you'd like.\n(Hint:  look it up )", 
+            "title": "Get a cstring from the user"
+        }, 
+        {
+            "location": "/lab06/#strlen", 
+            "text": "To explore the fact that cstrings are terminated with  \\0 , write the  strlen  function.\nThe declaration is given below:  unsigned strlen(const char*);", 
+            "title": "strlen"
+        }, 
+        {
+            "location": "/lab06/#strcpy", 
+            "text": "Write a function that will copy one cstring to another.\nThe declaration is given below:  void strcpy(char*, const char*);", 
+            "title": "strcpy"
+        }, 
+        {
+            "location": "/lab06/#strncpy", 
+            "text": "Write a function that will copy  n  characters of one cstring to another.\nThe declaration is given below:  void strncpy(char*, const char*, int);", 
+            "title": "strncpy"
+        }, 
+        {
+            "location": "/lab06/#strcmp", 
+            "text": "Write a function that compares two strings lexicographically.\nThe function should behave similarly to  operator (string, string) .\nThe declaration is given below:  // accepts:\n//     two strings to compare\n// returns:\n//     -1: lhs    rhs\n//      0: lhs == rhs\n//      1: lhs    rhs\nint strcmp(const char*, const char*);", 
+            "title": "strcmp"
         }
     ]
 }
