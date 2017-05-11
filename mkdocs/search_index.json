@@ -314,6 +314,26 @@
             "location": "/lab06/#strcmp", 
             "text": "Write a function that compares two strings lexicographically.\nThe function should behave similarly to  operator (string, string) .\nThe declaration is given below:  // accepts:\n//     two strings to compare\n// returns:\n//     -1: lhs    rhs\n//      0: lhs == rhs\n//      1: lhs    rhs\nint strcmp(const char*, const char*);", 
             "title": "strcmp"
+        }, 
+        {
+            "location": "/dis06_2/", 
+            "text": "cin\n array of integers\n\n\nWrite the following function:\n\n\nistream\n operator\n(istream\n, int*);\n\n\n\n\nYou may assume that the stream only contains valid integers.\nYou may also assume that the first integer will indicate how many integers will follow until the end of the stream.\n\n\nAfter the integers in the stream, there will be nothing else.\n\n\nPoint class with dynamic memory\n\n\nWrite the \nPoint\n class with the following \nprivate\n data:\n\n\nclass Point {\n    private:\n        double* data;\n};\n\n\n\n\nIn-place array merge\n\n\nWrite a function that will merge two parts of an array in-place.\n\n\nvoid merge(int* arr, int middle, int size);\n\n\n\n\n\n\narr\n is the start of the whole array\n\n\nmiddle\n is the offset to the right portion of the array\n\n\nsize\n is the number of elements in the array", 
+            "title": "Week 6 Dis 2: Choose Your Own Exercise"
+        }, 
+        {
+            "location": "/dis06_2/#cin-array-of-integers", 
+            "text": "Write the following function:  istream  operator (istream , int*);  You may assume that the stream only contains valid integers.\nYou may also assume that the first integer will indicate how many integers will follow until the end of the stream.  After the integers in the stream, there will be nothing else.", 
+            "title": "cin array of integers"
+        }, 
+        {
+            "location": "/dis06_2/#point-class-with-dynamic-memory", 
+            "text": "Write the  Point  class with the following  private  data:  class Point {\n    private:\n        double* data;\n};", 
+            "title": "Point class with dynamic memory"
+        }, 
+        {
+            "location": "/dis06_2/#in-place-array-merge", 
+            "text": "Write a function that will merge two parts of an array in-place.  void merge(int* arr, int middle, int size);   arr  is the start of the whole array  middle  is the offset to the right portion of the array  size  is the number of elements in the array", 
+            "title": "In-place array merge"
         }
     ]
 }
