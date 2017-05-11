@@ -15,5 +15,7 @@ pages:
     - [lab05.md, "Lab Week 5: Midterm Review and Arrays"]
     - [dis05_2.md, "Week 5 Dis 2: Cstrings"]
     - [dis06_1.md, "Week 6 Dis 1: Pointers and Dynamic Memory"]
+    - [lab06.md, "Lab Week 6: Valgrind, Dynamic Memory, and Pointers"]
+    - [dis06_2.md, "Week 6 Dis 2: Choose Your Own Exercise"]
 theme: readthedocs
 
