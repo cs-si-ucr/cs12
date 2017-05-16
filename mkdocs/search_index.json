@@ -334,6 +334,21 @@
             "location": "/dis06_2/#in-place-array-merge", 
             "text": "Write a function that will merge two parts of an array in-place.  void merge(int* arr, int middle, int size);   arr  is the start of the whole array  middle  is the offset to the right portion of the array  size  is the number of elements in the array", 
             "title": "In-place array merge"
+        }, 
+        {
+            "location": "/dis07_1/", 
+            "text": "Class Basics\n\n\nWhat are the Big 3?\n\n\nWhat is a Copy Constructor?\nWhy is it necessary?\n\n\nWhat is an Overloaded Assignment Operator?\nWhy is it necessary?\n\n\nWhat is a Destructor?\nWhy is it necessary?\nIs it necessary for classes without dynamic memory? (in general)\n\n\nPointer Basics\n\n\nWhat is a pointer?\n\n\nWhat is a \nNode\n?\n\n\nHow do we point to a \nNode\n?\n\n\nDo our nodes exist in the stack or the heap?", 
+            "title": "Week 7 Dis 1: Linked List Toolset Discussion"
+        }, 
+        {
+            "location": "/dis07_1/#class-basics", 
+            "text": "What are the Big 3?  What is a Copy Constructor?\nWhy is it necessary?  What is an Overloaded Assignment Operator?\nWhy is it necessary?  What is a Destructor?\nWhy is it necessary?\nIs it necessary for classes without dynamic memory? (in general)", 
+            "title": "Class Basics"
+        }, 
+        {
+            "location": "/dis07_1/#pointer-basics", 
+            "text": "What is a pointer?  What is a  Node ?  How do we point to a  Node ?  Do our nodes exist in the stack or the heap?", 
+            "title": "Pointer Basics"
         }
     ]
 }
