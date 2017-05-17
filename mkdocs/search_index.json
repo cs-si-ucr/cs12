@@ -338,7 +338,7 @@
         {
             "location": "/dis07_1/", 
             "text": "Classes and the Big Three\n\n\nWhat are the Big 3?\n\n\nWhat is a Copy Constructor?\nWhy is it necessary?\n\n\nWhat is an Overloaded Assignment Operator?\nWhy is it necessary?\n\n\nWhat is a Destructor?\nWhy is it necessary?\nIs it necessary for classes without dynamic memory? (in general)\n\n\nPointers and Nodes\n\n\nWhat is a pointer?\n\n\nWhat is a \nNode\n?\n\n\nHow do we point to a \nNode\n?\n\n\nDo our nodes exist in the stack or the heap?", 
-            "title": "Week 7 Dis 1: Linked List Toolset Discussion"
+            "title": "Week 7 Dis 1: Linked List Basics"
         }, 
         {
             "location": "/dis07_1/#classes-and-the-big-three", 
@@ -349,6 +349,21 @@
             "location": "/dis07_1/#pointers-and-nodes", 
             "text": "What is a pointer?  What is a  Node ?  How do we point to a  Node ?  Do our nodes exist in the stack or the heap?", 
             "title": "Pointers and Nodes"
+        }, 
+        {
+            "location": "/lab07/", 
+            "text": "We are going to make a \nTrain\n today.\n\n\nCar\n\n\nMake a \nCar\n object.\n\n\nEach \nCar\n object should \npoint\n to the \nCar\n before it and the \nCar\n after it.\n\n\nEach \nCar\n will hold no more than 2000 lbs of freight, and no more than 20 boxes.\nThe class below represents a freight box.\n\n\nclass Box {\n  private:\n    string label;\n    double weight;\n  public:\n    Box(double weight = 0.0, string name = \n) :\n      label(name),\n      weight(weight)\n    {\n    }\n    string getLabel() const {\n      return label;\n    }\n    double getWeight() const {\n      return weight;\n    }\n    void add(double lbs) {\n      weight += lbs;\n    }\n    void remove(double lbs) {\n      weight -= lbs;\n    }\n    void rename(string name) {\n      label = name;\n    }\n\n\n\n\nTrain\n\n\nMake a \nTrain\n class that will keep track of the \nCar\ns.\n\n\nDiscuss in your group what methods the \nTrain\n should have, then implement them.", 
+            "title": "Lab Week 7: Trains, Cars, and Dynamic Memory"
+        }, 
+        {
+            "location": "/lab07/#car", 
+            "text": "Make a  Car  object.  Each  Car  object should  point  to the  Car  before it and the  Car  after it.  Each  Car  will hold no more than 2000 lbs of freight, and no more than 20 boxes.\nThe class below represents a freight box.  class Box {\n  private:\n    string label;\n    double weight;\n  public:\n    Box(double weight = 0.0, string name =  ) :\n      label(name),\n      weight(weight)\n    {\n    }\n    string getLabel() const {\n      return label;\n    }\n    double getWeight() const {\n      return weight;\n    }\n    void add(double lbs) {\n      weight += lbs;\n    }\n    void remove(double lbs) {\n      weight -= lbs;\n    }\n    void rename(string name) {\n      label = name;\n    }", 
+            "title": "Car"
+        }, 
+        {
+            "location": "/lab07/#train", 
+            "text": "Make a  Train  class that will keep track of the  Car s.  Discuss in your group what methods the  Train  should have, then implement them.", 
+            "title": "Train"
         }
     ]
 }
