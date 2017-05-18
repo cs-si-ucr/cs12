@@ -364,6 +364,11 @@
             "location": "/lab07/#now-the-train", 
             "text": "Make a  Train  class that will keep track of the  Car s.  Discuss in your group what methods the  Train  should have, then implement them.", 
             "title": "Now, the Train"
+        }, 
+        {
+            "location": "/dis07_2/", 
+            "text": "Today's discussion is a continuation of yesterday's lab.", 
+            "title": "Week 7 Dis 2: Trains, Cars, and Dynamic Memory"
         }
     ]
 }
