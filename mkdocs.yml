@@ -17,6 +17,9 @@ pages:
     - [dis06_1.md, "Week 6 Dis 1: Pointers and Dynamic Memory"]
     - [lab06.md, "Lab Week 6: Valgrind, Dynamic Memory, and Pointers"]
     - [dis06_2.md, "Week 6 Dis 2: Choose Your Own Exercise"]
-    - [dis07_1.md, "Week 7 Dis 1: Linked List Toolset Discussion"]
+    - [dis07_1.md, "Week 7 Dis 1: Linked List Basics"]
+    - [lab07.md, "Lab Week 7: Trains, Cars, and Dynamic Memory"]
+    - [dis07_2.md, "Week 7 Dis 2: Trains, Cars, and Dynamic Memory"]
+    - [dis08_1.md, "Week 8 Dis 1: Midterm Review and Recursion"]
 theme: readthedocs
 
