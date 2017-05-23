@@ -369,6 +369,21 @@
             "location": "/dis07_2/", 
             "text": "Today's discussion is a continuation of yesterday's lab.", 
             "title": "Week 7 Dis 2: Trains, Cars, and Dynamic Memory"
+        }, 
+        {
+            "location": "/dis08_1/", 
+            "text": "Midterm Review\n\n\nI have a copy of midterm 2.\nIf you have any questions, we will go over them.\n\n\nRecursion\n\n\nCopy the code below and play with it to get a feel for recursion:\n\n\nvoid recursiveFunction(int parameter) {\n    cout \n \ncalled with (\n \n parameter \n ')' \n endl;\n    if (parameter \n= 0) {\n        cout \n \nBase case reached!\n \n endl;\n        return;\n    }\n    recursiveFunction(parameter-1);\n    cout \n \nreturned from calling with (\n \n parameter-1 \n ')' \n endl;\n}", 
+            "title": "Week 8 Dis 1: Midterm Review and Recursion"
+        }, 
+        {
+            "location": "/dis08_1/#midterm-review", 
+            "text": "I have a copy of midterm 2.\nIf you have any questions, we will go over them.", 
+            "title": "Midterm Review"
+        }, 
+        {
+            "location": "/dis08_1/#recursion", 
+            "text": "Copy the code below and play with it to get a feel for recursion:  void recursiveFunction(int parameter) {\n    cout    called with (    parameter   ')'   endl;\n    if (parameter  = 0) {\n        cout    Base case reached!    endl;\n        return;\n    }\n    recursiveFunction(parameter-1);\n    cout    returned from calling with (    parameter-1   ')'   endl;\n}", 
+            "title": "Recursion"
         }
     ]
 }
