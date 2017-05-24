@@ -387,12 +387,12 @@
         }, 
         {
             "location": "/lab08/", 
-            "text": "Factorial\n\n\nWrite a function that accepts and integer, and returns the factorial of that integer.\nThe function should be written recursively (no loops!).\n\n\nThe factorial function is defined mathematically as \nn! = n*(n-1)!\n\n\nAlso, \n0! = 1\n and \n1! = 1\n.\n\n\nReturn \n-1\n for all negative inputs\n\n\nstrlen\n\n\nWrite the \nstrlen\n function recursively.\n\n\nstrlen\n accepts a cstring to return the size of.\n\n\nstrcpy\n\n\nWrrithe the \nstrcpy\n function recursively.\n\n\nstrcpy\n accepts two strings, and stores the contents of one to the other.\n\n\nstrcmp\n\n\nWrite the \nstrcmp\n function recursively.\n\n\nstrcmp\n compares two strings.\n\n-1\n is returned if the left is less than the right.\n\n0\n is returned if the two strings are equal.\n\n1\n is returned if the right is greater than the left.\n\n\n\"greater than\" and \"less than\" above indicate lexicographical comparison.", 
+            "text": "Factorial\n\n\nWrite a function that accepts and integer, and returns the factorial of that integer.\nThe function should be written recursively (no loops!).\n\n\nThe factorial function is defined mathematically as \nn! = n*(n-1)!\n\n\nAlso, \n0! = 1\n and \n1! = 1\n\n\nReturn \n-1\n for all negative inputs.\n\n\nstrlen\n\n\nWrite the \nstrlen\n function recursively.\n\n\nstrlen\n accepts a cstring to return the size of.\n\n\nstrcpy\n\n\nWrrithe the \nstrcpy\n function recursively.\n\n\nstrcpy\n accepts two strings, and stores the contents of one to the other.\n\n\nstrcmp\n\n\nWrite the \nstrcmp\n function recursively.\n\n\nstrcmp\n compares two strings.\n\n-1\n is returned if the left is less than the right.\n\n0\n is returned if the two strings are equal.\n\n1\n is returned if the right is greater than the left.\n\n\n\"greater than\" and \"less than\" above indicate lexicographical comparison.", 
             "title": "Lab Week 8: Recursion"
         }, 
         {
             "location": "/lab08/#factorial", 
-            "text": "Write a function that accepts and integer, and returns the factorial of that integer.\nThe function should be written recursively (no loops!).  The factorial function is defined mathematically as  n! = n*(n-1)!  Also,  0! = 1  and  1! = 1 .  Return  -1  for all negative inputs", 
+            "text": "Write a function that accepts and integer, and returns the factorial of that integer.\nThe function should be written recursively (no loops!).  The factorial function is defined mathematically as  n! = n*(n-1)!  Also,  0! = 1  and  1! = 1  Return  -1  for all negative inputs.", 
             "title": "Factorial"
         }, 
         {
