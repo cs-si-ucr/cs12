@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Week 8 Dis 1: Midterm Review and Recursion - CS 12 SI: Spring 2017</title>
+  <title>Lab Week 8: Recursion - CS 12 SI: Spring 2017</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Week 8 Dis 1: Midterm Review and Recursion";
-    var mkdocs_page_input_path = "dis08_1.md";
-    var mkdocs_page_url = "/dis08_1/";
+    var mkdocs_page_name = "Lab Week 8: Recursion";
+    var mkdocs_page_input_path = "lab08.md";
+    var mkdocs_page_url = "/lab08/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -187,25 +187,31 @@
 <li>
           
             <li>
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Week 8 Dis 1: Midterm Review and Recursion</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#midterm-review">Midterm Review</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#recursion">Recursion</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis08_1/">Week 8 Dis 1: Midterm Review and Recursion</a>
         
     </li>
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../lab08/">Lab Week 8: Recursion</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Lab Week 8: Recursion</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#factorial">Factorial</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#strlen">strlen</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#strcpy">strcpy</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#strcmp">strcmp</a></li>
+                
+            
+            </ul>
         
     </li>
 <li>
@@ -232,7 +238,7 @@
     
       
     
-    <li>Week 8 Dis 1: Midterm Review and Recursion</li>
+    <li>Lab Week 8: Recursion</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -242,21 +248,25 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="midterm-review">Midterm Review</h2>
-<p>I have a copy of midterm 2.
-If you have any questions, we will go over them.</p>
-<h2 id="recursion">Recursion</h2>
-<p>Copy the code below and play with it to get a feel for recursion:</p>
-<pre><code class="c++">void recursiveFunction(int parameter) {
-    cout &lt;&lt; &quot;called with (&quot; &lt;&lt; parameter &lt;&lt; ')' &lt;&lt; endl;
-    if (parameter &lt;= 0) {
-        cout &lt;&lt; &quot;Base case reached!&quot; &lt;&lt; endl;
-        return;
-    }
-    recursiveFunction(parameter-1);
-    cout &lt;&lt; &quot;returned from calling with (&quot; &lt;&lt; parameter-1 &lt;&lt; ')' &lt;&lt; endl;
-}
-</code></pre>
+                <h2 id="factorial">Factorial</h2>
+<p>Write a function that accepts and integer, and returns the factorial of that integer.
+The function should be written recursively (no loops!).</p>
+<p>The factorial function is defined mathematically as <code>n! = n*(n-1)!</code></p>
+<p>Also, <code>0! = 1</code> and <code>1! = 1</code>.</p>
+<p>Return <code>-1</code> for all negative inputs</p>
+<h2 id="strlen">strlen</h2>
+<p>Write the <code>strlen</code> function recursively.</p>
+<p><code>strlen</code> accepts a cstring to return the size of.</p>
+<h2 id="strcpy">strcpy</h2>
+<p>Wrrithe the <code>strcpy</code> function recursively.</p>
+<p><code>strcpy</code> accepts two strings, and stores the contents of one to the other.</p>
+<h2 id="strcmp">strcmp</h2>
+<p>Write the <code>strcmp</code> function recursively.</p>
+<p><code>strcmp</code> compares two strings.
+<code>-1</code> is returned if the left is less than the right.
+<code>0</code> is returned if the two strings are equal.
+<code>1</code> is returned if the right is greater than the left.</p>
+<p>"greater than" and "less than" above indicate lexicographical comparison.</p>
               
             </div>
           </div>
@@ -264,10 +274,8 @@ If you have any questions, we will go over them.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../lab08/" class="btn btn-neutral float-right" title="Lab Week 8: Recursion">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../dis07_2/" class="btn btn-neutral" title="Week 7 Dis 2: Trains, Cars, and Dynamic Memory"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../dis08_1/" class="btn btn-neutral" title="Week 8 Dis 1: Midterm Review and Recursion"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -293,10 +301,8 @@ If you have any questions, we will go over them.</p>
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../dis07_2/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../dis08_1/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../lab08/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
