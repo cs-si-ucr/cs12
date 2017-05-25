@@ -387,7 +387,7 @@
         }, 
         {
             "location": "/lab08/", 
-            "text": "Factorial\n\n\nWrite a function that accepts and integer, and returns the factorial of that integer.\nThe function should be written recursively (no loops!).\n\n\nThe factorial function is defined mathematically as \nn! = n*(n-1)!\n\n\nAlso, \n0! = 1\n and \n1! = 1\n\n\nReturn \n-1\n for all negative inputs.\n\n\nstrlen\n\n\nWrite the \nstrlen\n function recursively.\n\n\nstrlen\n accepts a cstring to return the size of.\n\n\nstrcpy\n\n\nWrrithe the \nstrcpy\n function recursively.\n\n\nstrcpy\n accepts two strings, and stores the contents of one to the other.\n\n\nstrcmp\n\n\nWrite the \nstrcmp\n function recursively.\n\n\nstrcmp\n compares two strings.\n\n-1\n is returned if the left is less than the right.\n\n0\n is returned if the two strings are equal.\n\n1\n is returned if the right is greater than the left.\n\n\n\"greater than\" and \"less than\" above indicate lexicographical comparison.", 
+            "text": "Factorial\n\n\nWrite a function that accepts and integer, and returns the factorial of that integer.\nThe function should be written recursively (no loops!).\n\n\nThe factorial function is defined mathematically as \nn! = n*(n-1)!\n\n\nAlso, \n0! = 1\n and \n1! = 1\n\n\nReturn \n-1\n for all negative inputs.\n\n\nstrlen\n\n\nWrite the \nstrlen\n function recursively.\n\n\nstrlen\n accepts a cstring to return the size of.\n\n\nstrcpy\n\n\nWrrithe the \nstrcpy\n function recursively.\n\n\nstrcpy\n accepts two strings, and stores the contents of one to the other.", 
             "title": "Lab Week 8: Recursion"
         }, 
         {
@@ -406,9 +406,24 @@
             "title": "strcpy"
         }, 
         {
-            "location": "/lab08/#strcmp", 
-            "text": "Write the  strcmp  function recursively.  strcmp  compares two strings. -1  is returned if the left is less than the right. 0  is returned if the two strings are equal. 1  is returned if the right is greater than the left.  \"greater than\" and \"less than\" above indicate lexicographical comparison.", 
+            "location": "/dis08_2/", 
+            "text": "strcpy solution\n\n\n// assume that the pointers will not be null\n// if we can't assume that, a simple\n//     if (dest == NULL || src == NULL) {\n//         return;\n//     }\n// will fix that.\n\nvoid strcpy(char* dest, const char* src) {\n    // simplest case is when the source cstring is empty.\n    if (*src == '\\0') {\n        // reached the end of the characters!\n        // copy it, and return\n        *dest = *src;\n        return;\n    }\n\n    // this code applies to everything that's NOT the base case\n    // (the base case can't get to this point!)\n\n    // I need to copy the whole string, but I don't know how.\n    // how about I copy this current character, and recurse on the rest of the string?\n    // I trust that the strcpy function works as specified for the simpler string.\n\n    // copy just this character\n    *dest = *src;\n\n    // call the function on the rest of the characters\n    strcpy(dest + 1, src + 1);\n}\n\n\n\n\nstrcmp\n\n\nWrite the \nstrcmp\n function recursively.\n\n\nstrcmp\n compares two strings.\n\n-1\n is returned if the left is less than the right.\n\n0\n is returned if the two strings are equal.\n\n1\n is returned if the right is greater than the left.\n\n\n\"greater than\" and \"less than\" above indicate lexicographical comparison.\n\n\nIf you do not wish to work on this function, you may instead complete....\n\n\nMerge Sort\n\n\nMerge Sort is an efficient algorithm to sort things.\n\n\nFirst, you split a collection of numbers into two halves.\nThen, you sort the left half and the right half (this is done recursively using Merge Sort).\nAfter the left and the right are sorted, you combine the two halves.", 
+            "title": "Week 8 Dis 2: strcpy and strcmp or Merge Sort"
+        }, 
+        {
+            "location": "/dis08_2/#strcpy-solution", 
+            "text": "// assume that the pointers will not be null\n// if we can't assume that, a simple\n//     if (dest == NULL || src == NULL) {\n//         return;\n//     }\n// will fix that.\n\nvoid strcpy(char* dest, const char* src) {\n    // simplest case is when the source cstring is empty.\n    if (*src == '\\0') {\n        // reached the end of the characters!\n        // copy it, and return\n        *dest = *src;\n        return;\n    }\n\n    // this code applies to everything that's NOT the base case\n    // (the base case can't get to this point!)\n\n    // I need to copy the whole string, but I don't know how.\n    // how about I copy this current character, and recurse on the rest of the string?\n    // I trust that the strcpy function works as specified for the simpler string.\n\n    // copy just this character\n    *dest = *src;\n\n    // call the function on the rest of the characters\n    strcpy(dest + 1, src + 1);\n}", 
+            "title": "strcpy solution"
+        }, 
+        {
+            "location": "/dis08_2/#strcmp", 
+            "text": "Write the  strcmp  function recursively.  strcmp  compares two strings. -1  is returned if the left is less than the right. 0  is returned if the two strings are equal. 1  is returned if the right is greater than the left.  \"greater than\" and \"less than\" above indicate lexicographical comparison.  If you do not wish to work on this function, you may instead complete....", 
             "title": "strcmp"
+        }, 
+        {
+            "location": "/dis08_2/#merge-sort", 
+            "text": "Merge Sort is an efficient algorithm to sort things.  First, you split a collection of numbers into two halves.\nThen, you sort the left half and the right half (this is done recursively using Merge Sort).\nAfter the left and the right are sorted, you combine the two halves.", 
+            "title": "Merge Sort"
         }
     ]
 }
