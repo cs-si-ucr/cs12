@@ -21,5 +21,7 @@ pages:
     - [lab07.md, "Lab Week 7: Trains, Cars, and Dynamic Memory"]
     - [dis07_2.md, "Week 7 Dis 2: Trains, Cars, and Dynamic Memory"]
     - [dis08_1.md, "Week 8 Dis 1: Midterm Review and Recursion"]
+    - [lab08.md, "Lab Week 8: Recursion"]
+    - [dis08_2.md, "Week 8 Dis 2: strcpy and strcmp or Merge Sort"]
 theme: readthedocs
 
