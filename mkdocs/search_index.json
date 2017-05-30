@@ -424,6 +424,26 @@
             "location": "/dis08_2/#merge-sort", 
             "text": "Merge Sort is an efficient algorithm to sort things.  First, you split a collection of numbers into two halves.\nThen, you sort the left half and the right half (this is done recursively using Merge Sort).\nAfter the left and the right are sorted, you combine the two halves.  (you may use as much extra memory as you'd like)", 
             "title": "Merge Sort"
+        }, 
+        {
+            "location": "/dis09_1/", 
+            "text": "Introduction\n\n\nToday we will go over class inheritance.\n\n\nInheritance is a powerful tool that can be used to make less work for you!\nIt also allows us to create classes with interesting relationships to each other.\n\n\nIs A vs Has A\n\n\nUp until now, to do something similar to recursion you'd have to copy all the code of one class to another.\n\n\nThis makes it harder to maintain the code, because any future changes would need to be duplicated;\nmiss one and you introduce bugs!\n\n\nIn the case of the \nBasket\n class from a few weeks ago, we explored a Has-A relationship between the \nFruit\n class and \nBasket\n class.\n(\nBasket\n \nHas A\n \nFruit\n)\n\n\nWith inheritance, we will explore an \nIs A\n relationship.\n\n\nFor instance, we could have a base \nFruit\n class, and specialize it to an \nApple\n or \nOrange\n class\n\n\nPractice\n\n\nWhat is the relationship between the following classes?\n(Is A, Has A, or None)\n\n\n\n\n\n\nIron\n and \nAtom\n\n\n\n\n\n\nVehicle\n and \nCar\n\n\n\n\n\n\nCar\n and \nMotorcycle\n\n\n\n\n\n\nBuilding\n and \nChair\n\n\n\n\n\n\nDuck\n and \nAnimal\n\n\n\n\n\n\nSchool\n and \nUCR", 
+            "title": "Week 9 Dis 1: Inheritance"
+        }, 
+        {
+            "location": "/dis09_1/#introduction", 
+            "text": "Today we will go over class inheritance.  Inheritance is a powerful tool that can be used to make less work for you!\nIt also allows us to create classes with interesting relationships to each other.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/dis09_1/#is-a-vs-has-a", 
+            "text": "Up until now, to do something similar to recursion you'd have to copy all the code of one class to another.  This makes it harder to maintain the code, because any future changes would need to be duplicated;\nmiss one and you introduce bugs!  In the case of the  Basket  class from a few weeks ago, we explored a Has-A relationship between the  Fruit  class and  Basket  class.\n( Basket   Has A   Fruit )  With inheritance, we will explore an  Is A  relationship.  For instance, we could have a base  Fruit  class, and specialize it to an  Apple  or  Orange  class", 
+            "title": "Is A vs Has A"
+        }, 
+        {
+            "location": "/dis09_1/#practice", 
+            "text": "What is the relationship between the following classes?\n(Is A, Has A, or None)    Iron  and  Atom    Vehicle  and  Car    Car  and  Motorcycle    Building  and  Chair    Duck  and  Animal    School  and  UCR", 
+            "title": "Practice"
         }
     ]
 }
