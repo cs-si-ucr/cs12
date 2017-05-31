@@ -444,6 +444,26 @@
             "location": "/dis09_1/#practice", 
             "text": "What is the relationship between the following classes?\n(Is A, Has A, or None)    Iron  and  Atom    Vehicle  and  Car    Car  and  Motorcycle    Building  and  Chair    Duck  and  Animal    School  and  UCR", 
             "title": "Practice"
+        }, 
+        {
+            "location": "/lab09/", 
+            "text": "Terminology\n\n\n\n\nPure Virtual\n\n\nVirtual\n\n\nPolymorphism\n\n\nBase class\n\n\nDerived class\n\n\n\n\nQuestions\n\n\n\n\n\n\nDo we implement pure virtual methods?\n\n\n\n\n\n\nCan we implement virtual methods?\n\n\n\n\n\n\nDo we ever need to implement methods in a pure virtual class?\n\n\n\n\n\n\nGame\n\n\nToday, we will make a game.\n\n\nThe starter code is on my cloud9 workspace.", 
+            "title": "Lab Week 9: Polymorphism"
+        }, 
+        {
+            "location": "/lab09/#terminology", 
+            "text": "Pure Virtual  Virtual  Polymorphism  Base class  Derived class", 
+            "title": "Terminology"
+        }, 
+        {
+            "location": "/lab09/#questions", 
+            "text": "Do we implement pure virtual methods?    Can we implement virtual methods?    Do we ever need to implement methods in a pure virtual class?", 
+            "title": "Questions"
+        }, 
+        {
+            "location": "/lab09/#game", 
+            "text": "Today, we will make a game.  The starter code is on my cloud9 workspace.", 
+            "title": "Game"
         }
     ]
 }
