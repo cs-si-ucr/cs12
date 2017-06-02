@@ -464,6 +464,11 @@
             "location": "/lab09/#game", 
             "text": "Today, we will make a game.  The starter code is on my cloud9 workspace.", 
             "title": "Game"
+        }, 
+        {
+            "location": "/dis09_2/", 
+            "text": "Discussion today is a continuation of lab from yesterday.", 
+            "title": "Week 9 Dis 2: Lab9, part 2"
         }
     ]
 }
