@@ -24,5 +24,7 @@ pages:
     - [lab08.md, "Lab Week 8: Recursion"]
     - [dis08_2.md, "Week 8 Dis 2: strcpy and strcmp or Merge Sort"]
     - [dis09_1.md, "Week 9 Dis 1: Inheritance"]
+    - [lab09.md, "Lab Week 9: Polymorphism"]
+    - [dis09_2.md, "Week 9 Dis 2: Lab9, part 2"]
 theme: readthedocs
 
