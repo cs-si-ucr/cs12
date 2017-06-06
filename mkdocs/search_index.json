@@ -469,6 +469,36 @@
             "location": "/dis09_2/", 
             "text": "Discussion today is a continuation of lab from yesterday.", 
             "title": "Week 9 Dis 2: Lab9, part 2"
+        }, 
+        {
+            "location": "/dis10_1/", 
+            "text": "Topics\n\n\n\n\n\n\nBinary Search\n\n\n\n\n\n\nSelection Sort\n\n\n\n\n\n\nMerge Sort\n\n\n\n\n\n\nBig-O Notation\n\n\n\n\n\n\nBinary Search\n\n\n\n\n\n\nWhen can we perform binary search on a vector?\n\n\n\n\n\n\nCan we perform binary search on an \nIntList\n?\n\n\n\n\n\n\nRoughly how many iterations does it take binary search to find a value in a vector of size 100 in the worst case?\nHow about for size 1000?\n\n\n\n\n\n\nSelection Sort\n\n\n\n\nReview Week1 Dis2\n\n\n\n\nMerge Sort\n\n\n\n\nReview the last section of Week8 Dis2\n\n\n\n\nBig O\n\n\nDetermine the Big O (worst case) runtime of the following sections of code.\n\n\nBe sure to define what your basic unit of work is for each section.\n\n\n// snippet 1\nint n = 20;\nfor (unsigned i = 0; i \n n; ++i) {\n    cout \n n - i \n endl;\n}\n\n\n\n\n// snippet 2\nint n = 100;\nvector\nint\n v(n);\n\n\n\n\n// snippet 3\nint n = 30;\nfor (int i = 0; i \n n; ++i) {\n    for (int j = 0; j \n n; ++i) {\n        cout \n '.';\n    }\n}\n\n\n\n\n// snippet 4\nint n = 30;\nint m = 100;\nfor (int i = 0; i \n n; ++i) {\n    for (int j = 0; j \n m; ++i) {\n        cout \n '.';\n    }\n}\n\n\n\n\n// snippet 5\nint n = 4096;\nfor (int i = 1; i \n n; i *= 2) {\n    cout \n '.' \n endl;\n}", 
+            "title": "Week 10 Dis 1: "
+        }, 
+        {
+            "location": "/dis10_1/#topics", 
+            "text": "Binary Search    Selection Sort    Merge Sort    Big-O Notation", 
+            "title": "Topics"
+        }, 
+        {
+            "location": "/dis10_1/#binary-search", 
+            "text": "When can we perform binary search on a vector?    Can we perform binary search on an  IntList ?    Roughly how many iterations does it take binary search to find a value in a vector of size 100 in the worst case?\nHow about for size 1000?", 
+            "title": "Binary Search"
+        }, 
+        {
+            "location": "/dis10_1/#selection-sort", 
+            "text": "Review Week1 Dis2", 
+            "title": "Selection Sort"
+        }, 
+        {
+            "location": "/dis10_1/#merge-sort", 
+            "text": "Review the last section of Week8 Dis2", 
+            "title": "Merge Sort"
+        }, 
+        {
+            "location": "/dis10_1/#big-o", 
+            "text": "Determine the Big O (worst case) runtime of the following sections of code.  Be sure to define what your basic unit of work is for each section.  // snippet 1\nint n = 20;\nfor (unsigned i = 0; i   n; ++i) {\n    cout   n - i   endl;\n}  // snippet 2\nint n = 100;\nvector int  v(n);  // snippet 3\nint n = 30;\nfor (int i = 0; i   n; ++i) {\n    for (int j = 0; j   n; ++i) {\n        cout   '.';\n    }\n}  // snippet 4\nint n = 30;\nint m = 100;\nfor (int i = 0; i   n; ++i) {\n    for (int j = 0; j   m; ++i) {\n        cout   '.';\n    }\n}  // snippet 5\nint n = 4096;\nfor (int i = 1; i   n; i *= 2) {\n    cout   '.'   endl;\n}", 
+            "title": "Big O"
         }
     ]
 }
