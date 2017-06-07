@@ -472,8 +472,8 @@
         }, 
         {
             "location": "/dis10_1/", 
-            "text": "Topics\n\n\n\n\n\n\nBinary Search\n\n\n\n\n\n\nSelection Sort\n\n\n\n\n\n\nMerge Sort\n\n\n\n\n\n\nBig-O Notation\n\n\n\n\n\n\nBinary Search\n\n\n\n\n\n\nWhen can we perform binary search on a vector?\n\n\n\n\n\n\nCan we perform binary search on an \nIntList\n?\n\n\n\n\n\n\nRoughly how many iterations does it take binary search to find a value in a vector of size 100 in the worst case?\nHow about for size 1000?\n\n\n\n\n\n\nSelection Sort\n\n\n\n\nReview Week1 Dis2\n\n\n\n\nMerge Sort\n\n\n\n\nReview the last section of Week8 Dis2\n\n\n\n\nBig O\n\n\nDetermine the Big O (worst case) runtime of the following sections of code.\n\n\nBe sure to define what your basic unit of work is for each section.\n\n\n// snippet 1\nint n = 20;\nfor (unsigned i = 0; i \n n; ++i) {\n    cout \n n - i \n endl;\n}\n\n\n\n\n// snippet 2\nint n = 100;\nvector\nint\n v(n);\n\n\n\n\n// snippet 3\nint n = 30;\nfor (int i = 0; i \n n; ++i) {\n    for (int j = 0; j \n n; ++i) {\n        cout \n '.';\n    }\n}\n\n\n\n\n// snippet 4\nint n = 30;\nint m = 100;\nfor (int i = 0; i \n n; ++i) {\n    for (int j = 0; j \n m; ++i) {\n        cout \n '.';\n    }\n}\n\n\n\n\n// snippet 5\nint n = 4096;\nfor (int i = 1; i \n n; i *= 2) {\n    cout \n '.' \n endl;\n}", 
-            "title": "Week 10 Dis 1: Searching, Sorting, and Big-O"
+            "text": "Topics\n\n\n\n\n\n\nBinary Search\n\n\n\n\n\n\nSelection Sort\n\n\n\n\n\n\nMerge Sort\n\n\n\n\n\n\nBig-O Notation\n\n\n\n\n\n\nBinary Search\n\n\n\n\n\n\nWhen can we perform binary search on a vector?\n\n\n\n\n\n\nCan we perform binary search on an \nIntList\n?\n\n\n\n\n\n\nRoughly how many iterations does it take binary search to find a value in a vector of size 100 in the worst case?\nHow about for size 1000?\n\n\n\n\n\n\nSelection Sort\n\n\n\n\nReview Week1 Dis2\n\n\n\n\nMerge Sort\n\n\n\n\nReview the last section of Week8 Dis2", 
+            "title": "Week 10 Dis 1: Searching, Sorting, and Runtime"
         }, 
         {
             "location": "/dis10_1/#topics", 
@@ -496,9 +496,19 @@
             "title": "Merge Sort"
         }, 
         {
-            "location": "/dis10_1/#big-o", 
+            "location": "/lab10/", 
+            "text": "Big O\n\n\nDetermine the Big O (worst case) runtime of the following sections of code.\n\n\nBe sure to define what your basic unit of work is for each section.\n\n\n// snippet 1\nint n = 20;\nfor (unsigned i = 0; i \n n; ++i) {\n    cout \n n - i \n endl;\n}\n\n\n\n\n// snippet 2\nint n = 100;\nvector\nint\n v(n);\n\n\n\n\n// snippet 3\nint n = 30;\nfor (int i = 0; i \n n; ++i) {\n    for (int j = 0; j \n n; ++i) {\n        cout \n '.';\n    }\n}\n\n\n\n\n// snippet 4\nint n = 30;\nint m = 100;\nfor (int i = 0; i \n n; ++i) {\n    for (int j = 0; j \n m; ++i) {\n        cout \n '.';\n    }\n}\n\n\n\n\n// snippet 5\nint n = 4096;\nfor (int i = 1; i \n n; i *= 2) {\n    cout \n '.' \n endl;\n}\n\n\n\n\nReview\n\n\nOpen zybooks.\nI'll ask questions about each topic.\nIf there is anything we need to cover in particular, we will cover it.", 
+            "title": "Lab Week 10: Big-O, and Review"
+        }, 
+        {
+            "location": "/lab10/#big-o", 
             "text": "Determine the Big O (worst case) runtime of the following sections of code.  Be sure to define what your basic unit of work is for each section.  // snippet 1\nint n = 20;\nfor (unsigned i = 0; i   n; ++i) {\n    cout   n - i   endl;\n}  // snippet 2\nint n = 100;\nvector int  v(n);  // snippet 3\nint n = 30;\nfor (int i = 0; i   n; ++i) {\n    for (int j = 0; j   n; ++i) {\n        cout   '.';\n    }\n}  // snippet 4\nint n = 30;\nint m = 100;\nfor (int i = 0; i   n; ++i) {\n    for (int j = 0; j   m; ++i) {\n        cout   '.';\n    }\n}  // snippet 5\nint n = 4096;\nfor (int i = 1; i   n; i *= 2) {\n    cout   '.'   endl;\n}", 
             "title": "Big O"
+        }, 
+        {
+            "location": "/lab10/#review", 
+            "text": "Open zybooks.\nI'll ask questions about each topic.\nIf there is anything we need to cover in particular, we will cover it.", 
+            "title": "Review"
         }
     ]
 }

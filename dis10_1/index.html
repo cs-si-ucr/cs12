@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Week 10 Dis 1: Searching, Sorting, and Big-O - CS 12 SI: Spring 2017</title>
+  <title>Week 10 Dis 1: Searching, Sorting, and Runtime - CS 12 SI: Spring 2017</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,7 +17,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Week 10 Dis 1: Searching, Sorting, and Big-O";
+    var mkdocs_page_name = "Week 10 Dis 1: Searching, Sorting, and Runtime";
     var mkdocs_page_input_path = "dis10_1.md";
     var mkdocs_page_url = "/dis10_1/";
   </script>
@@ -230,7 +230,7 @@
           
             <li>
     <li class="toctree-l1 current">
-        <a class="current" href="./">Week 10 Dis 1: Searching, Sorting, and Big-O</a>
+        <a class="current" href="./">Week 10 Dis 1: Searching, Sorting, and Runtime</a>
         
             <ul>
             
@@ -246,10 +246,14 @@
                 <li class="toctree-l3"><a href="#merge-sort">Merge Sort</a></li>
                 
             
-                <li class="toctree-l3"><a href="#big-o">Big O</a></li>
-                
-            
             </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab10/">Lab Week 10: Big-O, and Review</a>
         
     </li>
 <li>
@@ -276,7 +280,7 @@
     
       
     
-    <li>Week 10 Dis 1: Searching, Sorting, and Big-O</li>
+    <li>Week 10 Dis 1: Searching, Sorting, and Runtime</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -322,52 +326,14 @@ How about for size 1000?</p>
 <ul>
 <li>Review the last section of Week8 Dis2</li>
 </ul>
-<h2 id="big-o">Big O</h2>
-<p>Determine the Big O (worst case) runtime of the following sections of code.</p>
-<p>Be sure to define what your basic unit of work is for each section.</p>
-<pre><code class="c++">// snippet 1
-int n = 20;
-for (unsigned i = 0; i &lt; n; ++i) {
-    cout &lt;&lt; n - i &lt;&lt; endl;
-}
-</code></pre>
-
-<pre><code class="c++">// snippet 2
-int n = 100;
-vector&lt;int&gt; v(n);
-</code></pre>
-
-<pre><code class="c++">// snippet 3
-int n = 30;
-for (int i = 0; i &lt; n; ++i) {
-    for (int j = 0; j &lt; n; ++i) {
-        cout &lt;&lt; '.';
-    }
-}
-</code></pre>
-
-<pre><code class="c++">// snippet 4
-int n = 30;
-int m = 100;
-for (int i = 0; i &lt; n; ++i) {
-    for (int j = 0; j &lt; m; ++i) {
-        cout &lt;&lt; '.';
-    }
-}
-</code></pre>
-
-<pre><code class="c++">// snippet 5
-int n = 4096;
-for (int i = 1; i &lt; n; i *= 2) {
-    cout &lt;&lt; '.' &lt;&lt; endl;
-}
-</code></pre>
               
             </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../lab10/" class="btn btn-neutral float-right" title="Lab Week 10: Big-O, and Review">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../dis09_2/" class="btn btn-neutral" title="Week 9 Dis 2: Lab9, part 2"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -398,6 +364,8 @@ for (int i = 1; i &lt; n; i *= 2) {
       
         <span><a href="../dis09_2/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../lab10/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
