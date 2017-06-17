@@ -26,6 +26,7 @@ pages:
     - [dis09_1.md, "Week 9 Dis 1: Inheritance"]
     - [lab09.md, "Lab Week 9: Polymorphism"]
     - [dis09_2.md, "Week 9 Dis 2: Lab9, part 2"]
-    - [dis10_1.md, "Week 10 Dis 1: Searching, Sorting, and Big-O"]
+    - [dis10_1.md, "Week 10 Dis 1: Searching, Sorting, and Runtime"]
+    - [lab10.md, "Lab Week 10: Big-O, and Review"]
 theme: readthedocs
 
