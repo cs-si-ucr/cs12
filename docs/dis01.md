@@ -17,3 +17,12 @@ CS 10 Review
    Output 'True' to the terminal if more than half the strings in the vector have a length greater than 6.<br>
    Output 'False' to the terminal otherwise.<br>
 
+Brain Teasers
+---
+
+Since its right after winter break and your brains are dead and frankly so is your SI Leaders,
+heres some fun brain teasers to wake you up and get your brain gears working!
+
+1) What belongs to you, but others use it more? [comment]: <> (Your name)
+
+2) What dissapears the moment you say its name?
