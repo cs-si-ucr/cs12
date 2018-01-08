@@ -1,514 +1,74 @@
 {
     "docs": [
         {
-            "location": "/", 
-            "text": "Welcome to CS12 SI!\n\n\nThis is where all of the labs will be posted.\n\n\nWhat is SI?\n\n\nSupplemental Instruction is a series of weekly review sessions for students taking historically difficult courses.\nIt offers students the chance to collaborate, discuss challenging concepts, and study for exams.\n\n\nWhat isn\u2019t SI?\n\n\nSupplemental Instruction is not a lecture.\nSI Leaders are not there to teach you new material but to lead you in reviewing the material covered in lecture and to help guide you in understanding the subject.\n\n\nWho should go?\n\n\nIf you are in a Learning Community, attendance is mandatory.\n\n\nGuidelines:\n\n\n\n\nBe respectful. This includes silencing your cell phones and not using them during sessions.\n\n\nParticipate! You won\u2019t get very much out of SI if you don\u2019t.\n\n\nNo food or drink besides water. This is a rule placed by the administration. I will enforce it.\n\n\nLate entry and early exit should be quiet.\n\n\nSign in, even if you are late.", 
+            "location": "/",
+            "text": "Welcome to CS12 SI!\n\n\nThis is where all of the labs will be posted.\n\n\nWhat is SI?\n\n\nSupplemental Instruction is a series of weekly review sessions for students taking historically difficult courses.\nIt offers students the chance to collaborate, discuss challenging concepts, and study for exams.\n\n\nWhat isn\u2019t SI?\n\n\nSupplemental Instruction is not a lecture.\nSI Leaders are not there to teach you new material but to lead you in reviewing the material covered in lecture and to help guide you in understanding the subject.\n\n\nWho should go?\n\n\nIf you are in a Learning Community, attendance is mandatory.\n\n\nGuidelines:\n\n\n\n\nBe respectful. This includes silencing your cell phones and not using them during sessions.\n\n\nParticipate! You won\u2019t get very much out of SI if you don\u2019t.\n\n\nNo food or drink besides water. This is a rule placed by the administration. I will enforce it.\n\n\nLate entry and early exit should be quiet.\n\n\nSign in, even if you are late.",
             "title": "Home"
-        }, 
+        },
         {
-            "location": "/#welcome-to-cs12-si", 
-            "text": "This is where all of the labs will be posted.", 
+            "location": "/#welcome-to-cs12-si",
+            "text": "This is where all of the labs will be posted.",
             "title": "Welcome to CS12 SI!"
-        }, 
+        },
         {
-            "location": "/#what-is-si", 
-            "text": "Supplemental Instruction is a series of weekly review sessions for students taking historically difficult courses.\nIt offers students the chance to collaborate, discuss challenging concepts, and study for exams.", 
+            "location": "/#what-is-si",
+            "text": "Supplemental Instruction is a series of weekly review sessions for students taking historically difficult courses.\nIt offers students the chance to collaborate, discuss challenging concepts, and study for exams.",
             "title": "What is SI?"
-        }, 
+        },
         {
-            "location": "/#what-isnt-si", 
-            "text": "Supplemental Instruction is not a lecture.\nSI Leaders are not there to teach you new material but to lead you in reviewing the material covered in lecture and to help guide you in understanding the subject.", 
+            "location": "/#what-isnt-si",
+            "text": "Supplemental Instruction is not a lecture.\nSI Leaders are not there to teach you new material but to lead you in reviewing the material covered in lecture and to help guide you in understanding the subject.",
             "title": "What isn\u2019t SI?"
-        }, 
+        },
         {
-            "location": "/#who-should-go", 
-            "text": "If you are in a Learning Community, attendance is mandatory.", 
+            "location": "/#who-should-go",
+            "text": "If you are in a Learning Community, attendance is mandatory.",
             "title": "Who should go?"
-        }, 
+        },
         {
-            "location": "/#guidelines", 
-            "text": "Be respectful. This includes silencing your cell phones and not using them during sessions.  Participate! You won\u2019t get very much out of SI if you don\u2019t.  No food or drink besides water. This is a rule placed by the administration. I will enforce it.  Late entry and early exit should be quiet.  Sign in, even if you are late.", 
+            "location": "/#guidelines",
+            "text": "Be respectful. This includes silencing your cell phones and not using them during sessions.  Participate! You won\u2019t get very much out of SI if you don\u2019t.  No food or drink besides water. This is a rule placed by the administration. I will enforce it.  Late entry and early exit should be quiet.  Sign in, even if you are late.",
             "title": "Guidelines:"
-        }, 
+        },
         {
-            "location": "/lab01/", 
-            "text": "Exercise 1\n\n\nUnit test a hidden function.\n\n\nDownload the file located \nhere\n to your cloud9 workspace.\n\n\nwget\n\n\n\n\nWrite some code to test the function code you just downloaded.\n\n\nThe function is hidden from you, so you will need to figure out what is wrong with it using only inputs and outputs (called black-box testing).\nThe function in question has the following signature:\n\n\nvoid replace(string\n, string, string);\n\n\n\n\nThe function accepts a string to modify (first parameter), a term to replace (second parameter), and what to replace each term with (third parameter).\n\n\nThe function may or may not be in working order.\nYour job is to tell me whether the function is correct (passes all your test cases), or incorrect (fails at least one of your test cases).\nFeel free to ask me to clarify the function spec for you at any time.\n\n\nYou will not be able to compile your unit test code without providing a declaration for the replace function inside your test code.\n\n\nThe command you should use to compile your code is the following:\n\n\ng++ reverse.o myTests.cpp\n\n\n\n\nmyTests.cpp\n in this case is your unit test program.\n(you will learn what \ng++\n is doing here in more detail later)\n\n\nExercise 2\n\n\nCount the frequency of positive numbers from \nstdin\n.\n\n\nInput\n:\nThe first number represents the largest value provided.\nIt is followed by an unknown number of integers.\n\n\nReport the frequency of each value.\n\n\nRun this script to generate your own custom data file:\n\n\ndata; for i in `seq 100`; do bc \n$RANDOM % 20\n \n data; done\n\n\n\n\nYou are not required to use c++ file input techniques.\nInstead, use input redirection.\n\n\n# compile:\ng++ main.cpp\n# input redirection:\n./a.out \n data\n\n\n\n\nExercise 3\n\n\nWrite counting sort (see SI Leader for explanation).\n\n\nExercise 4\n\n\nTranspose a square matrix.\nThe matrix can be any size, but is guaranteed to be square (width and height are the same).\n\n\nHere is an example of a 3x3 matrix:\n\n\ninput:\n\n0 1 2\n3 4 5\n6 7 8\n\ntransposed:\n\n0 3 6\n1 4 7\n2 5 8\n\n\n\n\nYou represent matrices in c++ with a vector of vectors, \nvector\nvector\nint\n \n.\n\n\nHere is a function you can paste at the beginning of your program (after \nusing namespace std;\n) that will allow you to print vectors using cout:\n\n\ntemplate \ntypename T\n\nostream\n operator\n(ostream\n o, const vector\nT\n v) {\n    cout \n '{';\n    if (v.size() \n 0) {\n        for (unsigned i = 0; i \n v.size() - 1; ++i) {\n            o \n v.at(i) \n \n, \n;\n        }\n        o \n v.at(v.size() - 1);\n    }\n    o \n '}';\n    return o;\n}\n\n\n\n\nHint\n:\nYou do not need to transpose this matrix in-place.", 
-            "title": "Week 1 Lab: CS 10 Review"
-        }, 
+            "location": "/lab01/",
+            "text": "Exercise 1\n\n\nUnit test a hidden function.\n\n\nDownload the file located \nhere\n to your cloud9 workspace.\n\n\nwget\n\n\n\n\nWrite some code to test the function code you just downloaded.\n\n\nThe function is hidden from you, so you will need to figure out what is wrong with it using only inputs and outputs (called black-box testing).\nThe function in question has the following signature:\n\n\nvoid replace(string&, string, string);\n\n\n\n\nThe function accepts a string to modify (first parameter), a term to replace (second parameter), and what to replace each term with (third parameter).\n\n\nThe function may or may not be in working order.\nYour job is to tell me whether the function is correct (passes all your test cases), or incorrect (fails at least one of your test cases).\nFeel free to ask me to clarify the function spec for you at any time.\n\n\nYou will not be able to compile your unit test code without providing a declaration for the replace function inside your test code.\n\n\nThe command you should use to compile your code is the following:\n\n\ng++ reverse.o myTests.cpp\n\n\n\n\nmyTests.cpp\n in this case is your unit test program.\n(you will learn what \ng++\n is doing here in more detail later)\n\n\nExercise 2\n\n\nCount the frequency of positive numbers from \nstdin\n.\n\n\nInput\n:\nThe first number represents the largest value provided.\nIt is followed by an unknown number of integers.\n\n\nReport the frequency of each value.\n\n\nRun this script to generate your own custom data file:\n\n\n>data; for i in `seq 100`; do bc <<<\"$RANDOM % 20\" >> data; done\n\n\n\n\nYou are not required to use c++ file input techniques.\nInstead, use input redirection.\n\n\n# compile:\ng++ main.cpp\n# input redirection:\n./a.out < data\n\n\n\n\nExercise 3\n\n\nWrite counting sort (see SI Leader for explanation).\n\n\nExercise 4\n\n\nTranspose a square matrix.\nThe matrix can be any size, but is guaranteed to be square (width and height are the same).\n\n\nHere is an example of a 3x3 matrix:\n\n\ninput:\n\n0 1 2\n3 4 5\n6 7 8\n\ntransposed:\n\n0 3 6\n1 4 7\n2 5 8\n\n\n\n\nYou represent matrices in c++ with a vector of vectors, \nvector<vector<int> >\n.\n\n\nHere is a function you can paste at the beginning of your program (after \nusing namespace std;\n) that will allow you to print vectors using cout:\n\n\ntemplate <typename T>\nostream& operator<<(ostream& o, const vector<T>& v) {\n    cout << '{';\n    if (v.size() > 0) {\n        for (unsigned i = 0; i < v.size() - 1; ++i) {\n            o << v.at(i) << \", \";\n        }\n        o << v.at(v.size() - 1);\n    }\n    o << '}';\n    return o;\n}\n\n\n\n\nHint\n:\nYou do not need to transpose this matrix in-place.",
+            "title": "Lab 1: CS 10 Review"
+        },
         {
-            "location": "/lab01/#exercise-1", 
-            "text": "Unit test a hidden function.  Download the file located  here  to your cloud9 workspace.  wget  Write some code to test the function code you just downloaded.  The function is hidden from you, so you will need to figure out what is wrong with it using only inputs and outputs (called black-box testing).\nThe function in question has the following signature:  void replace(string , string, string);  The function accepts a string to modify (first parameter), a term to replace (second parameter), and what to replace each term with (third parameter).  The function may or may not be in working order.\nYour job is to tell me whether the function is correct (passes all your test cases), or incorrect (fails at least one of your test cases).\nFeel free to ask me to clarify the function spec for you at any time.  You will not be able to compile your unit test code without providing a declaration for the replace function inside your test code.  The command you should use to compile your code is the following:  g++ reverse.o myTests.cpp  myTests.cpp  in this case is your unit test program.\n(you will learn what  g++  is doing here in more detail later)", 
+            "location": "/lab01/#exercise-1",
+            "text": "Unit test a hidden function.  Download the file located  here  to your cloud9 workspace.  wget  Write some code to test the function code you just downloaded.  The function is hidden from you, so you will need to figure out what is wrong with it using only inputs and outputs (called black-box testing).\nThe function in question has the following signature:  void replace(string&, string, string);  The function accepts a string to modify (first parameter), a term to replace (second parameter), and what to replace each term with (third parameter).  The function may or may not be in working order.\nYour job is to tell me whether the function is correct (passes all your test cases), or incorrect (fails at least one of your test cases).\nFeel free to ask me to clarify the function spec for you at any time.  You will not be able to compile your unit test code without providing a declaration for the replace function inside your test code.  The command you should use to compile your code is the following:  g++ reverse.o myTests.cpp  myTests.cpp  in this case is your unit test program.\n(you will learn what  g++  is doing here in more detail later)",
             "title": "Exercise 1"
-        }, 
+        },
         {
-            "location": "/lab01/#exercise-2", 
-            "text": "Count the frequency of positive numbers from  stdin .  Input :\nThe first number represents the largest value provided.\nIt is followed by an unknown number of integers.  Report the frequency of each value.  Run this script to generate your own custom data file:  data; for i in `seq 100`; do bc  $RANDOM % 20    data; done  You are not required to use c++ file input techniques.\nInstead, use input redirection.  # compile:\ng++ main.cpp\n# input redirection:\n./a.out   data", 
+            "location": "/lab01/#exercise-2",
+            "text": "Count the frequency of positive numbers from  stdin .  Input :\nThe first number represents the largest value provided.\nIt is followed by an unknown number of integers.  Report the frequency of each value.  Run this script to generate your own custom data file:  >data; for i in `seq 100`; do bc <<<\"$RANDOM % 20\" >> data; done  You are not required to use c++ file input techniques.\nInstead, use input redirection.  # compile:\ng++ main.cpp\n# input redirection:\n./a.out < data",
             "title": "Exercise 2"
-        }, 
+        },
         {
-            "location": "/lab01/#exercise-3", 
-            "text": "Write counting sort (see SI Leader for explanation).", 
+            "location": "/lab01/#exercise-3",
+            "text": "Write counting sort (see SI Leader for explanation).",
             "title": "Exercise 3"
-        }, 
+        },
         {
-            "location": "/lab01/#exercise-4", 
-            "text": "Transpose a square matrix.\nThe matrix can be any size, but is guaranteed to be square (width and height are the same).  Here is an example of a 3x3 matrix:  input:\n\n0 1 2\n3 4 5\n6 7 8\n\ntransposed:\n\n0 3 6\n1 4 7\n2 5 8  You represent matrices in c++ with a vector of vectors,  vector vector int   .  Here is a function you can paste at the beginning of your program (after  using namespace std; ) that will allow you to print vectors using cout:  template  typename T \nostream  operator (ostream  o, const vector T  v) {\n    cout   '{';\n    if (v.size()   0) {\n        for (unsigned i = 0; i   v.size() - 1; ++i) {\n            o   v.at(i)    ,  ;\n        }\n        o   v.at(v.size() - 1);\n    }\n    o   '}';\n    return o;\n}  Hint :\nYou do not need to transpose this matrix in-place.", 
+            "location": "/lab01/#exercise-4",
+            "text": "Transpose a square matrix.\nThe matrix can be any size, but is guaranteed to be square (width and height are the same).  Here is an example of a 3x3 matrix:  input:\n\n0 1 2\n3 4 5\n6 7 8\n\ntransposed:\n\n0 3 6\n1 4 7\n2 5 8  You represent matrices in c++ with a vector of vectors,  vector<vector<int> > .  Here is a function you can paste at the beginning of your program (after  using namespace std; ) that will allow you to print vectors using cout:  template <typename T>\nostream& operator<<(ostream& o, const vector<T>& v) {\n    cout << '{';\n    if (v.size() > 0) {\n        for (unsigned i = 0; i < v.size() - 1; ++i) {\n            o << v.at(i) << \", \";\n        }\n        o << v.at(v.size() - 1);\n    }\n    o << '}';\n    return o;\n}  Hint :\nYou do not need to transpose this matrix in-place.",
             "title": "Exercise 4"
-        }, 
+        },
         {
-            "location": "/dis01_2/", 
-            "text": "Introduction\n\n\nSelection sort is a naive sorting algorithm.\n\n\nGiven an unsorted vector of integers, find the position of the smallest element.\n\nSwap that element to index 0 of the vector.\n\nThen, find the smallest element in the index range \n[1, v.size()-1]\n.\n\nSwap that element to index 1 of the vector.\n\nThen, find the smallest element in the index range \n[2, v.size()-1]\n.\n\nSwap that element to index 2 of the vector.\n\nRepeat finding the smallest element and swapping into place until there are no more elements to sort.\n\n\nThis process guarantees a sorted vector at the end.\nIn the case described above, the vector will be in ascending order.\n\n\nStarter Code\n\n\nTake a look at the starter code below.\n\n\nWe will complete either \nfillVec\n or \nprintVec\n together.\n\n\n#include \niostream\n\n#include \nvector\n\n#include \ncstdlib\n\n#include \nctime\n\n\n// This is a program that will run an INSERTION SORT on a vector\n\nusing namespace std;\n\nint min(const vector\nint\n v, int);\nvoid selectionSort(vector\nint\n v);\nvoid fillVec(vector\nint\n v);\nvoid printVec(const vector\nint\n v);\n\nint main() {\n    srand(time(0));\n\n    vector\nint\n test(10);\n\n    fillVec(test);\n    printVec(test);\n    selectionSort(test);\n    printVec(test);\n\n    return 0;\n}\n\n/* This function gets the position of the smallest element in the vector\n *\n * Accepts:\n *     const vector\nint\n v - the vector to search\n *     int start            - the position to start looking for the smallest value\n * Returns:\n *     int - the position of the smallest element (-1 if there is no value)\n */\nint min(const vector\nint\n v, int start) {\n    return -1;\n}\n\n/* Performs selection sort on the vector\n *\n * Accepts:\n *     vector\nint\n v - the vector to sort\n * Returns:\n *     void\n */\nvoid selectionSort(vector\nint\n v) {\n}\n\n/* Fills a vector with random values in [0, v.size()]\n * Accepts:\n *     vector\nint\n v - the vector to fill with random data\n * Returns:\n *     void\n */\nvoid fillVec(vector\nint\n v) {\n}\n\n/* Prints a vector to stdout\n *\n * Accepts:\n *     vector\nint\n v - the vector to print\n * Returns:\n *     void\n */\nvoid printVec(const vector\nint\n v) {\n}", 
+            "location": "/dis01_2/",
+            "text": "Introduction\n\n\nSelection sort is a naive sorting algorithm.\n\n\nGiven an unsorted vector of integers, find the position of the smallest element.\n\nSwap that element to index 0 of the vector.\n\nThen, find the smallest element in the index range \n[1, v.size()-1]\n.\n\nSwap that element to index 1 of the vector.\n\nThen, find the smallest element in the index range \n[2, v.size()-1]\n.\n\nSwap that element to index 2 of the vector.\n\nRepeat finding the smallest element and swapping into place until there are no more elements to sort.\n\n\nThis process guarantees a sorted vector at the end.\nIn the case described above, the vector will be in ascending order.\n\n\nStarter Code\n\n\nTake a look at the starter code below.\n\n\nWe will complete either \nfillVec\n or \nprintVec\n together.\n\n\n#include <iostream>\n#include <vector>\n#include <cstdlib>\n#include <ctime>\n\n// This is a program that will run an INSERTION SORT on a vector\n\nusing namespace std;\n\nint min(const vector<int>& v, int);\nvoid selectionSort(vector<int>& v);\nvoid fillVec(vector<int>& v);\nvoid printVec(const vector<int>& v);\n\nint main() {\n    srand(time(0));\n\n    vector<int> test(10);\n\n    fillVec(test);\n    printVec(test);\n    selectionSort(test);\n    printVec(test);\n\n    return 0;\n}\n\n/* This function gets the position of the smallest element in the vector\n *\n * Accepts:\n *     const vector<int>& v - the vector to search\n *     int start            - the position to start looking for the smallest value\n * Returns:\n *     int - the position of the smallest element (-1 if there is no value)\n */\nint min(const vector<int>& v, int start) {\n    return -1;\n}\n\n/* Performs selection sort on the vector\n *\n * Accepts:\n *     vector<int>& v - the vector to sort\n * Returns:\n *     void\n */\nvoid selectionSort(vector<int>& v) {\n}\n\n/* Fills a vector with random values in [0, v.size()]\n * Accepts:\n *     vector<int>& v - the vector to fill with random data\n * Returns:\n *     void\n */\nvoid fillVec(vector<int>& v) {\n}\n\n/* Prints a vector to stdout\n *\n * Accepts:\n *     vector<int>& v - the vector to print\n * Returns:\n *     void\n */\nvoid printVec(const vector<int>& v) {\n}",
             "title": "Week 1 Dis 2: Selection Sort Case Study"
-        }, 
+        },
         {
-            "location": "/dis01_2/#introduction", 
-            "text": "Selection sort is a naive sorting algorithm.  Given an unsorted vector of integers, find the position of the smallest element. \nSwap that element to index 0 of the vector. \nThen, find the smallest element in the index range  [1, v.size()-1] . \nSwap that element to index 1 of the vector. \nThen, find the smallest element in the index range  [2, v.size()-1] . \nSwap that element to index 2 of the vector. \nRepeat finding the smallest element and swapping into place until there are no more elements to sort.  This process guarantees a sorted vector at the end.\nIn the case described above, the vector will be in ascending order.", 
+            "location": "/dis01_2/#introduction",
+            "text": "Selection sort is a naive sorting algorithm.  Given an unsorted vector of integers, find the position of the smallest element. \nSwap that element to index 0 of the vector. \nThen, find the smallest element in the index range  [1, v.size()-1] . \nSwap that element to index 1 of the vector. \nThen, find the smallest element in the index range  [2, v.size()-1] . \nSwap that element to index 2 of the vector. \nRepeat finding the smallest element and swapping into place until there are no more elements to sort.  This process guarantees a sorted vector at the end.\nIn the case described above, the vector will be in ascending order.",
             "title": "Introduction"
-        }, 
+        },
         {
-            "location": "/dis01_2/#starter-code", 
-            "text": "Take a look at the starter code below.  We will complete either  fillVec  or  printVec  together.  #include  iostream \n#include  vector \n#include  cstdlib \n#include  ctime \n\n// This is a program that will run an INSERTION SORT on a vector\n\nusing namespace std;\n\nint min(const vector int  v, int);\nvoid selectionSort(vector int  v);\nvoid fillVec(vector int  v);\nvoid printVec(const vector int  v);\n\nint main() {\n    srand(time(0));\n\n    vector int  test(10);\n\n    fillVec(test);\n    printVec(test);\n    selectionSort(test);\n    printVec(test);\n\n    return 0;\n}\n\n/* This function gets the position of the smallest element in the vector\n *\n * Accepts:\n *     const vector int  v - the vector to search\n *     int start            - the position to start looking for the smallest value\n * Returns:\n *     int - the position of the smallest element (-1 if there is no value)\n */\nint min(const vector int  v, int start) {\n    return -1;\n}\n\n/* Performs selection sort on the vector\n *\n * Accepts:\n *     vector int  v - the vector to sort\n * Returns:\n *     void\n */\nvoid selectionSort(vector int  v) {\n}\n\n/* Fills a vector with random values in [0, v.size()]\n * Accepts:\n *     vector int  v - the vector to fill with random data\n * Returns:\n *     void\n */\nvoid fillVec(vector int  v) {\n}\n\n/* Prints a vector to stdout\n *\n * Accepts:\n *     vector int  v - the vector to print\n * Returns:\n *     void\n */\nvoid printVec(const vector int  v) {\n}", 
+            "location": "/dis01_2/#starter-code",
+            "text": "Take a look at the starter code below.  We will complete either  fillVec  or  printVec  together.  #include <iostream>\n#include <vector>\n#include <cstdlib>\n#include <ctime>\n\n// This is a program that will run an INSERTION SORT on a vector\n\nusing namespace std;\n\nint min(const vector<int>& v, int);\nvoid selectionSort(vector<int>& v);\nvoid fillVec(vector<int>& v);\nvoid printVec(const vector<int>& v);\n\nint main() {\n    srand(time(0));\n\n    vector<int> test(10);\n\n    fillVec(test);\n    printVec(test);\n    selectionSort(test);\n    printVec(test);\n\n    return 0;\n}\n\n/* This function gets the position of the smallest element in the vector\n *\n * Accepts:\n *     const vector<int>& v - the vector to search\n *     int start            - the position to start looking for the smallest value\n * Returns:\n *     int - the position of the smallest element (-1 if there is no value)\n */\nint min(const vector<int>& v, int start) {\n    return -1;\n}\n\n/* Performs selection sort on the vector\n *\n * Accepts:\n *     vector<int>& v - the vector to sort\n * Returns:\n *     void\n */\nvoid selectionSort(vector<int>& v) {\n}\n\n/* Fills a vector with random values in [0, v.size()]\n * Accepts:\n *     vector<int>& v - the vector to fill with random data\n * Returns:\n *     void\n */\nvoid fillVec(vector<int>& v) {\n}\n\n/* Prints a vector to stdout\n *\n * Accepts:\n *     vector<int>& v - the vector to print\n * Returns:\n *     void\n */\nvoid printVec(const vector<int>& v) {\n}",
             "title": "Starter Code"
-        }, 
-        {
-            "location": "/lab02/", 
-            "text": "Exercise 1\n\n\nWrite a program that lists all of its arguments.\n\n\nExample:\n\n\n$ ./a.out hi there 2 3 4 20\nhi there 2 3 4 20\n$\n\n\n\n\nExercise 2\n\n\nWrite a program that takes each integer in a file and puts it on a separate line.\nYou should ask for the name of the input and output files from the user.\n\n\nDo \nnot\n allow the input and output filenames to be the same!\n\n\nBonus 1\n:\nIf the file contains non-integer terms, do not put them in the resulting file.\n\n\nBonus 2\n:\nAllow the user to pass in filenames via command line arguments.\nThe first argument should be the input file name.\nThe second should be the output file name.\n\n\nIf only one argument is passed in, assume it is the input file name and ask for the output file name.\n\n\nIf no arguments are passed in, ask for both the input and output file names.\n\n\n\n\n\nExercise 3\n\n\nWrite a program that prints the sum of all the numbers in a file.\nThe file will only contain integers.\nThe file name will be provided by the user at runtime.\n\n\nPrint the sum of the integers on each line, followed by the sum of all the integers.\n\n\nBonus\n:\nIf the file contains non-integer terms, ignore them.", 
-            "title": "Lab Week 2: Streams"
-        }, 
-        {
-            "location": "/lab02/#exercise-1", 
-            "text": "Write a program that lists all of its arguments.  Example:  $ ./a.out hi there 2 3 4 20\nhi there 2 3 4 20\n$", 
-            "title": "Exercise 1"
-        }, 
-        {
-            "location": "/lab02/#exercise-2", 
-            "text": "Write a program that takes each integer in a file and puts it on a separate line.\nYou should ask for the name of the input and output files from the user.  Do  not  allow the input and output filenames to be the same!  Bonus 1 :\nIf the file contains non-integer terms, do not put them in the resulting file.  Bonus 2 :\nAllow the user to pass in filenames via command line arguments.\nThe first argument should be the input file name.\nThe second should be the output file name.  If only one argument is passed in, assume it is the input file name and ask for the output file name.  If no arguments are passed in, ask for both the input and output file names.", 
-            "title": "Exercise 2"
-        }, 
-        {
-            "location": "/lab02/#exercise-3", 
-            "text": "Write a program that prints the sum of all the numbers in a file.\nThe file will only contain integers.\nThe file name will be provided by the user at runtime.  Print the sum of the integers on each line, followed by the sum of all the integers.  Bonus :\nIf the file contains non-integer terms, ignore them.", 
-            "title": "Exercise 3"
-        }, 
-        {
-            "location": "/dis02_2/", 
-            "text": "Merge\n\n\nSometimes, we want to join two sorted collections of numbers.\n\n\n[Algorithm on board]\n\n\nWrite a function that performs this operation.", 
-            "title": "Week 2 Dis 2: Merge Case Study"
-        }, 
-        {
-            "location": "/dis02_2/#merge", 
-            "text": "Sometimes, we want to join two sorted collections of numbers.  [Algorithm on board]  Write a function that performs this operation.", 
-            "title": "Merge"
-        }, 
-        {
-            "location": "/dis03_1/", 
-            "text": "Introduction\n\n\nThis week you learned about structs and classes.\n\n\nWe will focus on classes because structs are basically the same thing (in \nc++\n).\n\n\nFor this discussion and for lab tomorrow, we will explore how classes work by making our own.\n\n\nClasses (and the objects that are made from them) are often used to model real-world situations.\nThe particular case we will be exploring is that of a small fruit stand at a market.\n\n\nTo keep track of inventory, we model each item as a particular fruit.\nFruits have a name, a weight, and a price.\nThe class we will be making will store the name, weight in pounds, price in dollars, and price per pound.\nAn example of this class's private data members is given below:\n\n\nclass Fruit {\n    private:\n        string name;\n        double weight;\n        double price;\n        double pricePerPound;\n};\n\n\n\n\nExercise 1\n\n\nWhat constructors should we make for this class?\nDiscuss within your group(s) for a few minutes, and share with other groups afterward.\n\n\nImplement these constructors after discussion.\n\n\n[The rest of the exercises will be completed during lab]", 
-            "title": "Week 3 Dis 1: Classes"
-        }, 
-        {
-            "location": "/dis03_1/#introduction", 
-            "text": "This week you learned about structs and classes.  We will focus on classes because structs are basically the same thing (in  c++ ).  For this discussion and for lab tomorrow, we will explore how classes work by making our own.  Classes (and the objects that are made from them) are often used to model real-world situations.\nThe particular case we will be exploring is that of a small fruit stand at a market.  To keep track of inventory, we model each item as a particular fruit.\nFruits have a name, a weight, and a price.\nThe class we will be making will store the name, weight in pounds, price in dollars, and price per pound.\nAn example of this class's private data members is given below:  class Fruit {\n    private:\n        string name;\n        double weight;\n        double price;\n        double pricePerPound;\n};", 
-            "title": "Introduction"
-        }, 
-        {
-            "location": "/dis03_1/#exercise-1", 
-            "text": "What constructors should we make for this class?\nDiscuss within your group(s) for a few minutes, and share with other groups afterward.  Implement these constructors after discussion.  [The rest of the exercises will be completed during lab]", 
-            "title": "Exercise 1"
-        }, 
-        {
-            "location": "/lab03/", 
-            "text": "Introduction\n\n\nWe will be continuing work on the \nFruit\n class from yesterday's discussion.\nCheck out the problem description from yesterday in case you missed it (through the menu on the left).\n\n\nPrint Function\n\n\nWrite a print fucntion for the \nFruit\n class.\n\n\nAccessor Functions\n\n\nDiscuss with your group which accessors should exist for the \nFruit\n class.\nShare your results with other groups.\n\n\nMutator Functions\n\n\nDiscuss with your group which mutators should exist for the \nFruit\n class.\nShare your results with other groups.", 
-            "title": "Lab Week 3: Classes"
-        }, 
-        {
-            "location": "/lab03/#introduction", 
-            "text": "We will be continuing work on the  Fruit  class from yesterday's discussion.\nCheck out the problem description from yesterday in case you missed it (through the menu on the left).", 
-            "title": "Introduction"
-        }, 
-        {
-            "location": "/lab03/#print-function", 
-            "text": "Write a print fucntion for the  Fruit  class.", 
-            "title": "Print Function"
-        }, 
-        {
-            "location": "/lab03/#accessor-functions", 
-            "text": "Discuss with your group which accessors should exist for the  Fruit  class.\nShare your results with other groups.", 
-            "title": "Accessor Functions"
-        }, 
-        {
-            "location": "/lab03/#mutator-functions", 
-            "text": "Discuss with your group which mutators should exist for the  Fruit  class.\nShare your results with other groups.", 
-            "title": "Mutator Functions"
-        }, 
-        {
-            "location": "/dis03_2/", 
-            "text": "Binary Search\n\n\nBinary Search is an algorithm used to quickly determine the position of a particular value in a sorted collection of values.\n\n\nTake a \nvector\nint\n v\n as an example.\nFirst, we must assume that all of v's elements are in sorted order.\nIf we want to find the value \n15\n, we start in the middle.\nIf the value there is greater than \n15\n, we know that what we're looking for must be to the left!\n\n\nSo we repeat the process for the left half;\nLook at the middle value in the remaining range.\nIf the value there is less than \n15\n we know that the value must be to the right!\n\n\nOf course, if we find \n15\n at any point, we're done.\nIf we run out of elements to check, \n15\n doesn't exist in \nv\n.\n\n\nRuntime Analysis\n\n\nBy inspection, we see that each time we look for a value, we get rid of half of the remaining elements to search through.\nThe mathematical equivalent to this is: given size \nn\n, how many times does \n2\n divide \nn\n.\nThis can be answered with the \nlog\n function.\n\n\nIn the \nbest\n case, we will find the value we're looking for immediately.\n\n\nIn the \nworst\n case, it will take us \nlog(n)\n tries, where \nn\n is the number of elements.", 
-            "title": "Week 3 Dis 2: Binary Search Case Study"
-        }, 
-        {
-            "location": "/dis03_2/#binary-search", 
-            "text": "Binary Search is an algorithm used to quickly determine the position of a particular value in a sorted collection of values.  Take a  vector int  v  as an example.\nFirst, we must assume that all of v's elements are in sorted order.\nIf we want to find the value  15 , we start in the middle.\nIf the value there is greater than  15 , we know that what we're looking for must be to the left!  So we repeat the process for the left half;\nLook at the middle value in the remaining range.\nIf the value there is less than  15  we know that the value must be to the right!  Of course, if we find  15  at any point, we're done.\nIf we run out of elements to check,  15  doesn't exist in  v .", 
-            "title": "Binary Search"
-        }, 
-        {
-            "location": "/dis03_2/#runtime-analysis", 
-            "text": "By inspection, we see that each time we look for a value, we get rid of half of the remaining elements to search through.\nThe mathematical equivalent to this is: given size  n , how many times does  2  divide  n .\nThis can be answered with the  log  function.  In the  best  case, we will find the value we're looking for immediately.  In the  worst  case, it will take us  log(n)  tries, where  n  is the number of elements.", 
-            "title": "Runtime Analysis"
-        }, 
-        {
-            "location": "/dis04_1/", 
-            "text": "Topics this week\n\n\n\n\nOperator Overloading (global scope, and in classes)\n\n\nFriending Functions\n\n\nSeparate Files, \ninclude\n, and Modular Compilation\n\n\ndefine\n\n\n\n\nOperator Overloading\n\n\n\n\nWhy overload operators?\n\n\nHow do we overload operators in classes? (syntax)\n\n\nHow do we overload operators globally? (syntax)\n\n\nWhat is the difference between overloading globally and overloading from within a class?\n\n\n\n\nGiven a \nCart\n class, and a \nFruit\n class,\ndeclare a function that allows me to add a fruit to my class.\n\n\nWrite a function that allows me to add elements to my vector in the following way:\n\n\nvector\nint\n v;\n// v.size() == 0\nv + 24;\n// v.size() == 1\n// v.at(0) == 24\n\n\n\n\nFriending Functions\n\n\n\n\nWhat does friending do?\n\n\nFriending syntax\n\n\nWhy do we friend functions?\n\n\nIs it always necessary?\n\n\nWith encapsulation in mind, is friending a good idea?\n\n\n\n\nSeparate Files, \ninclude\n, and Modular Compilation\n\n\n\n\nIs it a syntactical requirement to separate code into multiple files?\n\n\nWhy do we separate code into multiple files?\n\n\nWhat is Modular Compilation?\n\n\nHow does \ninclude\n play a role in Modular Compilation?\n\n\nModular Compilation rules?\n\n\n\n\n// main.cpp\n\n#include \nClass.h\n\n\n/* rest of file */\n\n\n\n\n// Class.cpp\n\n#include \nClass.h\n\n\n/* Class definitions here */\n\n\n\n\n// Class.h\n#ifndef __CLASS_H__\n#define __CLASS_H__\n\n/* Class declaration here */\n\n#endif\n\n\n\n\n# compile Class:\ng++ -c Class.cpp\n# compile main:\ng++ -c main.cpp\n# link everything together:\ng++ *.o", 
-            "title": "Week 4 Dis 1: Classes, Part 2"
-        }, 
-        {
-            "location": "/dis04_1/#topics-this-week", 
-            "text": "Operator Overloading (global scope, and in classes)  Friending Functions  Separate Files,  include , and Modular Compilation  define", 
-            "title": "Topics this week"
-        }, 
-        {
-            "location": "/dis04_1/#operator-overloading", 
-            "text": "Why overload operators?  How do we overload operators in classes? (syntax)  How do we overload operators globally? (syntax)  What is the difference between overloading globally and overloading from within a class?   Given a  Cart  class, and a  Fruit  class,\ndeclare a function that allows me to add a fruit to my class.  Write a function that allows me to add elements to my vector in the following way:  vector int  v;\n// v.size() == 0\nv + 24;\n// v.size() == 1\n// v.at(0) == 24", 
-            "title": "Operator Overloading"
-        }, 
-        {
-            "location": "/dis04_1/#friending-functions", 
-            "text": "What does friending do?  Friending syntax  Why do we friend functions?  Is it always necessary?  With encapsulation in mind, is friending a good idea?", 
-            "title": "Friending Functions"
-        }, 
-        {
-            "location": "/dis04_1/#separate-files-include-and-modular-compilation", 
-            "text": "Is it a syntactical requirement to separate code into multiple files?  Why do we separate code into multiple files?  What is Modular Compilation?  How does  include  play a role in Modular Compilation?  Modular Compilation rules?   // main.cpp\n\n#include  Class.h \n\n/* rest of file */  // Class.cpp\n\n#include  Class.h \n\n/* Class definitions here */  // Class.h\n#ifndef __CLASS_H__\n#define __CLASS_H__\n\n/* Class declaration here */\n\n#endif  # compile Class:\ng++ -c Class.cpp\n# compile main:\ng++ -c main.cpp\n# link everything together:\ng++ *.o", 
-            "title": "Separate Files, include, and Modular Compilation"
-        }, 
-        {
-            "location": "/lab04/", 
-            "text": "Modular Compilation\n\n\nUsing the \nFruit\n class from last week, separate each part into one of \nFruit.h\n, \nFruit.cpp\n, and \nmain.cpp\n.\nCompile each .cpp file separately, and link to gether to generate an executable.\n\n\nFix any mistakes in the \nFruit\n class as necessary\n\n\nBasket Class\n\n\nCreate a \nBasket\n class.\nA \nBasket\n object should be able to hold any number of \nFruit\n objects.\n\n\nThe interface is as follows:\n\n\n\n\n\n\nAn \nadd\n function that accepts a \nFruit\n object to add to the \nBasket\n\nFruits of the same name should not be allowed to be added twice.\nBecause of this, the function should return \ntrue\n or \nfalse\n to indicate whether or not the \nFruit\n was added.\n\n\n\n\n\n\nA \nremove\n function that accepts the name (a \nstring\n) of the \nFruit\n to remove.\nThe function should return \ntrue\n or \nfalse\n to indicate whether or not a \nFruit\n with that name was added.\n\n\n\n\n\n\nA \nprint\n function.\n\n\n\n\n\n\nA \nclear\n function that gets rid of all the \nFruit\n in the \nBasket\n.\n\n\n\n\n\n\nA \ntotal\n function that returns the cost of everything in the \nBasket\n.", 
-            "title": "Lab Week 4: Classes, Part 2"
-        }, 
-        {
-            "location": "/lab04/#modular-compilation", 
-            "text": "Using the  Fruit  class from last week, separate each part into one of  Fruit.h ,  Fruit.cpp , and  main.cpp .\nCompile each .cpp file separately, and link to gether to generate an executable.  Fix any mistakes in the  Fruit  class as necessary", 
-            "title": "Modular Compilation"
-        }, 
-        {
-            "location": "/lab04/#basket-class", 
-            "text": "Create a  Basket  class.\nA  Basket  object should be able to hold any number of  Fruit  objects.  The interface is as follows:    An  add  function that accepts a  Fruit  object to add to the  Basket \nFruits of the same name should not be allowed to be added twice.\nBecause of this, the function should return  true  or  false  to indicate whether or not the  Fruit  was added.    A  remove  function that accepts the name (a  string ) of the  Fruit  to remove.\nThe function should return  true  or  false  to indicate whether or not a  Fruit  with that name was added.    A  print  function.    A  clear  function that gets rid of all the  Fruit  in the  Basket .    A  total  function that returns the cost of everything in the  Basket .", 
-            "title": "Basket Class"
-        }, 
-        {
-            "location": "/dis04_2/", 
-            "text": "Point\n\n\nThe \nPoint\n class can be found \nhere\n.\n\n\nPoints here, semantically, are different from the \nPoint\n covered in lecture.\nInstead of simply storing the coordinates, these Points behave like mathematical vectors.\nAs such, their interface is different.\n\n\nBefore continuing,\n1. Look over the \nPoint\n interface to understand how to use this class.\n2. Separate the \nPoint\n definition from its declaration.\n\n\nRectangle\n\n\nGo to piazza and copy Kris's \nRectangle\n interface as covered in lecture.\n\n\nImplement each function using this new \nPoint\n class.", 
-            "title": "Week 4 Dis 2: Rectangle"
-        }, 
-        {
-            "location": "/dis04_2/#point", 
-            "text": "The  Point  class can be found  here .  Points here, semantically, are different from the  Point  covered in lecture.\nInstead of simply storing the coordinates, these Points behave like mathematical vectors.\nAs such, their interface is different.  Before continuing,\n1. Look over the  Point  interface to understand how to use this class.\n2. Separate the  Point  definition from its declaration.", 
-            "title": "Point"
-        }, 
-        {
-            "location": "/dis04_2/#rectangle", 
-            "text": "Go to piazza and copy Kris's  Rectangle  interface as covered in lecture.  Implement each function using this new  Point  class.", 
-            "title": "Rectangle"
-        }, 
-        {
-            "location": "/dis05_1/", 
-            "text": "Midterm Review\n\n\nToday, we will be reviewing everything for the midterm.\n\n\nWe will start with requests.\n\n\nIf we finish requests, we will cover the following topics:\n\n\n\n\nFile Streams\n\n\nString Streams\n\n\nStream Error Checking\n\n\nInput Stream Function Usage\n\n\nStructs vs Classes\n\n\npublic\n vs \nprivate\n\n\nClass Data Members\n\n\nClass Function Members\n\n\nConstructors\n\n\nAccessors vs Mutators\n\n\nImplicit Parameter Usage\n\n\nClasses as Data Members\n\n\nOperator Overloading\n\n\nSeparate Files and Modular Compilation\n\n\n#define\n Preprocessor Directive\n\n\n#include\n Preprocessor Directive\n\n\nMakefiles", 
-            "title": "Week 5 Dis 1: Midterm Reiew"
-        }, 
-        {
-            "location": "/dis05_1/#midterm-review", 
-            "text": "Today, we will be reviewing everything for the midterm.  We will start with requests.  If we finish requests, we will cover the following topics:   File Streams  String Streams  Stream Error Checking  Input Stream Function Usage  Structs vs Classes  public  vs  private  Class Data Members  Class Function Members  Constructors  Accessors vs Mutators  Implicit Parameter Usage  Classes as Data Members  Operator Overloading  Separate Files and Modular Compilation  #define  Preprocessor Directive  #include  Preprocessor Directive  Makefiles", 
-            "title": "Midterm Review"
-        }, 
-        {
-            "location": "/lab05/", 
-            "text": "Midterm Review\n\n\nI have a copy of the midterm.\nWe will be going over quistions from it.", 
-            "title": "Lab Week 5: Midterm Review and Arrays"
-        }, 
-        {
-            "location": "/lab05/#midterm-review", 
-            "text": "I have a copy of the midterm.\nWe will be going over quistions from it.", 
-            "title": "Midterm Review"
-        }, 
-        {
-            "location": "/dis05_2/", 
-            "text": "Arrays and cstrings\n\n\nIf you have any questions about arrays from your reading, now would be the time to ask them.\n\n\nToday, we will be working primarily with \nchar\n arrays, known as cstrings.\nCstrings are used to hold string information (without any of the member functions, of course).\nString literals, as we've discussed previously, actually have a type of \nconst char[]\n.\n\n\nCstrings are terminated by a character with value 0.\nThe character literal of that is \n\\0\n.", 
-            "title": "Week 5 Dis 2: Cstrings"
-        }, 
-        {
-            "location": "/dis05_2/#arrays-and-cstrings", 
-            "text": "If you have any questions about arrays from your reading, now would be the time to ask them.  Today, we will be working primarily with  char  arrays, known as cstrings.\nCstrings are used to hold string information (without any of the member functions, of course).\nString literals, as we've discussed previously, actually have a type of  const char[] .  Cstrings are terminated by a character with value 0.\nThe character literal of that is  \\0 .", 
-            "title": "Arrays and cstrings"
-        }, 
-        {
-            "location": "/dis06_1/", 
-            "text": "Pointers\n\n\n\n\n\n\nWhat is a pointer?\n\n\n\n\n\n\nWhat are things we can do with a pointer?\n\n\n\n\n\n\ncstrings\n\n\n\n\n\n\nWhat is a cstring?\n\n\n\n\n\n\nWhat library do you need to include to use cstrings?\n\n\n\n\n\n\nHow do cstrings work?\n(how do you determine the \nsize\n of a cstring?)\n\n\n\n\n\n\nWhat do each of these functions do:\n\n\n\n\n\n\nstrstr\n\n\n\n\n\n\nstrchr\n\n\n\n\n\n\nstrrchr\n\n\n\n\n\n\nstrlen\n\n\n\n\n\n\nstrcat\n\n\n\n\n\n\nstrncat\n\n\n\n\n\n\nstrcpy\n\n\n\n\n\n\nstrncpy\n\n\n\n\n\n\nstrcmp\n\n\n\n\n\n\nDynamic Memory Operators\n\n\n\n\n\n\nWhat do \nnew\n and \nnew[]\n do?\nWhat are some differences between them?\n\n\n\n\n\n\nWhat do \ndelete\n and \ndelete[]\n do?\nWhat are some differences between them?\n\n\n\n\n\n\nDereference and Access Operator\n\n\n\n\nHow do you use \n-\n?\n\n\n\n\nHeap and Stack\n\n\n\n\n\n\nWhat is the heap?\n\n\n\n\n\n\nWhat is the stack?\n\n\n\n\n\n\nHow does this relate to dynamic memory?\n\n\n\n\n\n\nMemory Leak\n\n\n\n\n\n\nWhat is a memory leak?\n\n\n\n\n\n\nWHat is a dangling pointer?\n\n\n\n\n\n\nDestructors\n\n\n\n\nWhat is a destructor?", 
-            "title": "Week 6 Dis 1: Pointers and Dynamic Memory"
-        }, 
-        {
-            "location": "/dis06_1/#pointers", 
-            "text": "What is a pointer?    What are things we can do with a pointer?", 
-            "title": "Pointers"
-        }, 
-        {
-            "location": "/dis06_1/#cstrings", 
-            "text": "What is a cstring?    What library do you need to include to use cstrings?    How do cstrings work?\n(how do you determine the  size  of a cstring?)    What do each of these functions do:    strstr    strchr    strrchr    strlen    strcat    strncat    strcpy    strncpy    strcmp", 
-            "title": "cstrings"
-        }, 
-        {
-            "location": "/dis06_1/#dynamic-memory-operators", 
-            "text": "What do  new  and  new[]  do?\nWhat are some differences between them?    What do  delete  and  delete[]  do?\nWhat are some differences between them?", 
-            "title": "Dynamic Memory Operators"
-        }, 
-        {
-            "location": "/dis06_1/#dereference-and-access-operator", 
-            "text": "How do you use  - ?", 
-            "title": "Dereference and Access Operator"
-        }, 
-        {
-            "location": "/dis06_1/#heap-and-stack", 
-            "text": "What is the heap?    What is the stack?    How does this relate to dynamic memory?", 
-            "title": "Heap and Stack"
-        }, 
-        {
-            "location": "/dis06_1/#memory-leak", 
-            "text": "What is a memory leak?    WHat is a dangling pointer?", 
-            "title": "Memory Leak"
-        }, 
-        {
-            "location": "/dis06_1/#destructors", 
-            "text": "What is a destructor?", 
-            "title": "Destructors"
-        }, 
-        {
-            "location": "/lab06/", 
-            "text": "Valgrind\n\n\nWe will use \nvalgrind\n to find dynamic memory errors.\nWrite the following programs, then run them with \nvalgrind\n.\nObserve the output of \nvalgrind\n, and become comfortable reading the messages it gives you.\n\n\n\n\n\n\nWrite a program that creates a memory leak.\n\n\n\n\n\n\nWrite a program that accesses a dangling pointer.\n\n\n\n\n\n\nWrite a program that causes a segmentation fault (segfault).\n\n\n\n\n\n\nWhen using \nvalgrind\n, you will need to compile with debugging flags.\nThis is accomplished by passing the \n-g\n flag to \ng++\n.\n\n\nGet a cstring from the user\n\n\nAllocate \n80\n characters dynamically, twice.\nAsk the user for 2 sentences.\n\n\nStore the sentences in each dynamic array of characters.\n\n\nYou may use any version of the \nistream\n istream::get(/* params */)\n function you'd like.\n(Hint: \nlook it up\n)\n\n\nstrlen\n\n\nTo explore the fact that cstrings are terminated with \n\\0\n, write the \nstrlen\n function.\nThe declaration is given below:\n\n\nunsigned strlen(const char*);\n\n\n\n\nstrcpy\n\n\nWrite a function that will copy one cstring to another.\nThe declaration is given below:\n\n\nvoid strcpy(char*, const char*);\n\n\n\n\nstrncpy\n\n\nWrite a function that will copy \nn\n characters of one cstring to another.\nThe declaration is given below:\n\n\nvoid strncpy(char*, const char*, int);\n\n\n\n\nstrcmp\n\n\nWrite a function that compares two strings lexicographically.\nThe function should behave similarly to \noperator\n(string, string)\n.\nThe declaration is given below:\n\n\n// accepts:\n//     two strings to compare\n// returns:\n//     -1: lhs \n  rhs\n//      0: lhs == rhs\n//      1: lhs  \n rhs\nint strcmp(const char*, const char*);", 
-            "title": "Lab Week 6: Valgrind, Dynamic Memory, and Pointers"
-        }, 
-        {
-            "location": "/lab06/#valgrind", 
-            "text": "We will use  valgrind  to find dynamic memory errors.\nWrite the following programs, then run them with  valgrind .\nObserve the output of  valgrind , and become comfortable reading the messages it gives you.    Write a program that creates a memory leak.    Write a program that accesses a dangling pointer.    Write a program that causes a segmentation fault (segfault).    When using  valgrind , you will need to compile with debugging flags.\nThis is accomplished by passing the  -g  flag to  g++ .", 
-            "title": "Valgrind"
-        }, 
-        {
-            "location": "/lab06/#get-a-cstring-from-the-user", 
-            "text": "Allocate  80  characters dynamically, twice.\nAsk the user for 2 sentences.  Store the sentences in each dynamic array of characters.  You may use any version of the  istream  istream::get(/* params */)  function you'd like.\n(Hint:  look it up )", 
-            "title": "Get a cstring from the user"
-        }, 
-        {
-            "location": "/lab06/#strlen", 
-            "text": "To explore the fact that cstrings are terminated with  \\0 , write the  strlen  function.\nThe declaration is given below:  unsigned strlen(const char*);", 
-            "title": "strlen"
-        }, 
-        {
-            "location": "/lab06/#strcpy", 
-            "text": "Write a function that will copy one cstring to another.\nThe declaration is given below:  void strcpy(char*, const char*);", 
-            "title": "strcpy"
-        }, 
-        {
-            "location": "/lab06/#strncpy", 
-            "text": "Write a function that will copy  n  characters of one cstring to another.\nThe declaration is given below:  void strncpy(char*, const char*, int);", 
-            "title": "strncpy"
-        }, 
-        {
-            "location": "/lab06/#strcmp", 
-            "text": "Write a function that compares two strings lexicographically.\nThe function should behave similarly to  operator (string, string) .\nThe declaration is given below:  // accepts:\n//     two strings to compare\n// returns:\n//     -1: lhs    rhs\n//      0: lhs == rhs\n//      1: lhs    rhs\nint strcmp(const char*, const char*);", 
-            "title": "strcmp"
-        }, 
-        {
-            "location": "/dis06_2/", 
-            "text": "cin\n array of integers\n\n\nWrite the following function:\n\n\nistream\n operator\n(istream\n, int**);\n\n\n\n\nYou may assume that the stream only contains valid integers.\nYou may also assume that the first integer will indicate how many integers will follow until the end of the stream.\n\n\nAfter the integers in the stream, there will be nothing else.\n\n\nPoint class with dynamic memory\n\n\nWrite the \nPoint\n class with the following \nprivate\n data:\n\n\nclass Point {\n    private:\n        double* data;\n};\n\n\n\n\nIn-place array merge\n\n\nWrite a function that will merge two parts of an array in-place.\n\n\nvoid merge(int* arr, int middle, int size);\n\n\n\n\n\n\narr\n is the start of the whole array\n\n\nmiddle\n is the offset to the right portion of the array\n\n\nsize\n is the number of elements in the array", 
-            "title": "Week 6 Dis 2: Choose Your Own Exercise"
-        }, 
-        {
-            "location": "/dis06_2/#cin-array-of-integers", 
-            "text": "Write the following function:  istream  operator (istream , int**);  You may assume that the stream only contains valid integers.\nYou may also assume that the first integer will indicate how many integers will follow until the end of the stream.  After the integers in the stream, there will be nothing else.", 
-            "title": "cin array of integers"
-        }, 
-        {
-            "location": "/dis06_2/#point-class-with-dynamic-memory", 
-            "text": "Write the  Point  class with the following  private  data:  class Point {\n    private:\n        double* data;\n};", 
-            "title": "Point class with dynamic memory"
-        }, 
-        {
-            "location": "/dis06_2/#in-place-array-merge", 
-            "text": "Write a function that will merge two parts of an array in-place.  void merge(int* arr, int middle, int size);   arr  is the start of the whole array  middle  is the offset to the right portion of the array  size  is the number of elements in the array", 
-            "title": "In-place array merge"
-        }, 
-        {
-            "location": "/dis07_1/", 
-            "text": "Classes and the Big Three\n\n\nWhat are the Big 3?\n\n\nWhat is a Copy Constructor?\nWhy is it necessary?\n\n\nWhat is an Overloaded Assignment Operator?\nWhy is it necessary?\n\n\nWhat is a Destructor?\nWhy is it necessary?\nIs it necessary for classes without dynamic memory? (in general)\n\n\nPointers and Nodes\n\n\nWhat is a pointer?\n\n\nWhat is a \nNode\n?\n\n\nHow do we point to a \nNode\n?\n\n\nDo our nodes exist in the stack or the heap?", 
-            "title": "Week 7 Dis 1: Linked List Basics"
-        }, 
-        {
-            "location": "/dis07_1/#classes-and-the-big-three", 
-            "text": "What are the Big 3?  What is a Copy Constructor?\nWhy is it necessary?  What is an Overloaded Assignment Operator?\nWhy is it necessary?  What is a Destructor?\nWhy is it necessary?\nIs it necessary for classes without dynamic memory? (in general)", 
-            "title": "Classes and the Big Three"
-        }, 
-        {
-            "location": "/dis07_1/#pointers-and-nodes", 
-            "text": "What is a pointer?  What is a  Node ?  How do we point to a  Node ?  Do our nodes exist in the stack or the heap?", 
-            "title": "Pointers and Nodes"
-        }, 
-        {
-            "location": "/lab07/", 
-            "text": "We are going to make a \nTrain\n today.\n\n\nFirst, a Car\n\n\nMake a \nCar\n object.\n\n\nEach \nCar\n object should \npoint\n to the \nCar\n before it and the \nCar\n after it.\n\n\nEach \nCar\n can hold just over 2000 lbs of freight, and no more than 20 boxes.\nThe class below represents a freight box.\n\n\nclass Box {\n  private:\n    string label;\n    double weight;\n  public:\n    Box(double weight = 0.0, string name = \n) :\n      label(name),\n      weight(weight)\n    {\n    }\n    string getLabel() const {\n      return label;\n    }\n    double getWeight() const {\n      return weight;\n    }\n    void add(double lbs) {\n      weight += lbs;\n    }\n    void remove(double lbs) {\n      weight -= lbs;\n    }\n    void rename(string name) {\n      label = name;\n    }\n};\n\n\n\n\nNow, the Train\n\n\nMake a \nTrain\n class that will keep track of the \nCar\ns.\n\n\nDiscuss in your group what methods the \nTrain\n should have, then implement them.", 
-            "title": "Lab Week 7: Trains, Cars, and Dynamic Memory"
-        }, 
-        {
-            "location": "/lab07/#first-a-car", 
-            "text": "Make a  Car  object.  Each  Car  object should  point  to the  Car  before it and the  Car  after it.  Each  Car  can hold just over 2000 lbs of freight, and no more than 20 boxes.\nThe class below represents a freight box.  class Box {\n  private:\n    string label;\n    double weight;\n  public:\n    Box(double weight = 0.0, string name =  ) :\n      label(name),\n      weight(weight)\n    {\n    }\n    string getLabel() const {\n      return label;\n    }\n    double getWeight() const {\n      return weight;\n    }\n    void add(double lbs) {\n      weight += lbs;\n    }\n    void remove(double lbs) {\n      weight -= lbs;\n    }\n    void rename(string name) {\n      label = name;\n    }\n};", 
-            "title": "First, a Car"
-        }, 
-        {
-            "location": "/lab07/#now-the-train", 
-            "text": "Make a  Train  class that will keep track of the  Car s.  Discuss in your group what methods the  Train  should have, then implement them.", 
-            "title": "Now, the Train"
-        }, 
-        {
-            "location": "/dis07_2/", 
-            "text": "Today's discussion is a continuation of yesterday's lab.", 
-            "title": "Week 7 Dis 2: Trains, Cars, and Dynamic Memory"
-        }, 
-        {
-            "location": "/dis08_1/", 
-            "text": "Midterm Review\n\n\nI have a copy of midterm 2.\nIf you have any questions, we will go over them.\n\n\nRecursion\n\n\nCopy the code below and play with it to get a feel for recursion:\n\n\nvoid recursiveFunction(int parameter) {\n    cout \n \ncalled with (\n \n parameter \n ')' \n endl;\n    if (parameter \n= 0) {\n        cout \n \nBase case reached!\n \n endl;\n        return;\n    }\n    recursiveFunction(parameter-1);\n    cout \n \nreturned from calling with (\n \n parameter-1 \n ')' \n endl;\n}", 
-            "title": "Week 8 Dis 1: Midterm Review and Recursion"
-        }, 
-        {
-            "location": "/dis08_1/#midterm-review", 
-            "text": "I have a copy of midterm 2.\nIf you have any questions, we will go over them.", 
-            "title": "Midterm Review"
-        }, 
-        {
-            "location": "/dis08_1/#recursion", 
-            "text": "Copy the code below and play with it to get a feel for recursion:  void recursiveFunction(int parameter) {\n    cout    called with (    parameter   ')'   endl;\n    if (parameter  = 0) {\n        cout    Base case reached!    endl;\n        return;\n    }\n    recursiveFunction(parameter-1);\n    cout    returned from calling with (    parameter-1   ')'   endl;\n}", 
-            "title": "Recursion"
-        }, 
-        {
-            "location": "/lab08/", 
-            "text": "Factorial\n\n\nWrite a function that accepts and integer, and returns the factorial of that integer.\nThe function should be written recursively (no loops!).\n\n\nThe factorial function is defined mathematically as \nn! = n*(n-1)!\n\n\nAlso, \n0! = 1\n and \n1! = 1\n\n\nReturn \n-1\n for all negative inputs.\n\n\nstrlen\n\n\nWrite the \nstrlen\n function recursively.\n\n\nstrlen\n accepts a cstring to return the size of.\n\n\nstrcpy\n\n\nWrrithe the \nstrcpy\n function recursively.\n\n\nstrcpy\n accepts two strings, and stores the contents of one to the other.", 
-            "title": "Lab Week 8: Recursion"
-        }, 
-        {
-            "location": "/lab08/#factorial", 
-            "text": "Write a function that accepts and integer, and returns the factorial of that integer.\nThe function should be written recursively (no loops!).  The factorial function is defined mathematically as  n! = n*(n-1)!  Also,  0! = 1  and  1! = 1  Return  -1  for all negative inputs.", 
-            "title": "Factorial"
-        }, 
-        {
-            "location": "/lab08/#strlen", 
-            "text": "Write the  strlen  function recursively.  strlen  accepts a cstring to return the size of.", 
-            "title": "strlen"
-        }, 
-        {
-            "location": "/lab08/#strcpy", 
-            "text": "Wrrithe the  strcpy  function recursively.  strcpy  accepts two strings, and stores the contents of one to the other.", 
-            "title": "strcpy"
-        }, 
-        {
-            "location": "/dis08_2/", 
-            "text": "strcpy solution\n\n\n// assume that the pointers will not be null\n// if we can't assume that, a simple\n//     if (dest == NULL || src == NULL) {\n//         return;\n//     }\n// will fix that.\n\nvoid strcpy(char* dest, const char* src) {\n    // simplest case is when the source cstring is empty.\n    if (*src == '\\0') {\n        // reached the end of the characters!\n        // copy it, and return\n        *dest = *src;\n        return;\n    }\n\n    // this code applies to everything that's NOT the base case\n    // (the base case can't get to this point!)\n\n    // I need to copy the whole string, but I don't know how.\n    // how about I copy this current character, and recurse on the rest of the string?\n    // I trust that the strcpy function works as specified for the simpler string.\n\n    // copy just this character\n    *dest = *src;\n\n    // call the function on the rest of the characters\n    strcpy(dest + 1, src + 1);\n}\n\n\n\n\nstrcmp\n\n\nWrite the \nstrcmp\n function recursively.\n\n\nstrcmp\n compares two cstrings.\n\n\n-1\n is returned if the left is less than the right.\n\n\n0\n is returned if the two strings are equal.\n\n\n1\n is returned if the left is greater than the right.\n\n\n\"greater than\" and \"less than\" above indicate lexicographical comparison.\n\n\nIf you do not wish to work on this function, you may instead complete....\n\n\nMerge Sort\n\n\nMerge Sort is an efficient algorithm to sort things.\n\n\nFirst, you split a collection of numbers into two halves.\nThen, you sort the left half and the right half (this is done recursively using Merge Sort).\nAfter the left and the right are sorted, you combine the two halves.\n\n\n(you may use as much extra memory as you'd like)", 
-            "title": "Week 8 Dis 2: strcpy and strcmp or Merge Sort"
-        }, 
-        {
-            "location": "/dis08_2/#strcpy-solution", 
-            "text": "// assume that the pointers will not be null\n// if we can't assume that, a simple\n//     if (dest == NULL || src == NULL) {\n//         return;\n//     }\n// will fix that.\n\nvoid strcpy(char* dest, const char* src) {\n    // simplest case is when the source cstring is empty.\n    if (*src == '\\0') {\n        // reached the end of the characters!\n        // copy it, and return\n        *dest = *src;\n        return;\n    }\n\n    // this code applies to everything that's NOT the base case\n    // (the base case can't get to this point!)\n\n    // I need to copy the whole string, but I don't know how.\n    // how about I copy this current character, and recurse on the rest of the string?\n    // I trust that the strcpy function works as specified for the simpler string.\n\n    // copy just this character\n    *dest = *src;\n\n    // call the function on the rest of the characters\n    strcpy(dest + 1, src + 1);\n}", 
-            "title": "strcpy solution"
-        }, 
-        {
-            "location": "/dis08_2/#strcmp", 
-            "text": "Write the  strcmp  function recursively.  strcmp  compares two cstrings.  -1  is returned if the left is less than the right.  0  is returned if the two strings are equal.  1  is returned if the left is greater than the right.  \"greater than\" and \"less than\" above indicate lexicographical comparison.  If you do not wish to work on this function, you may instead complete....", 
-            "title": "strcmp"
-        }, 
-        {
-            "location": "/dis08_2/#merge-sort", 
-            "text": "Merge Sort is an efficient algorithm to sort things.  First, you split a collection of numbers into two halves.\nThen, you sort the left half and the right half (this is done recursively using Merge Sort).\nAfter the left and the right are sorted, you combine the two halves.  (you may use as much extra memory as you'd like)", 
-            "title": "Merge Sort"
-        }, 
-        {
-            "location": "/dis09_1/", 
-            "text": "Introduction\n\n\nToday we will go over class inheritance.\n\n\nInheritance is a powerful tool that can be used to make less work for you!\nIt also allows us to create classes with interesting relationships to each other.\n\n\nIs A vs Has A\n\n\nUp until now, to do something similar to recursion you'd have to copy all the code of one class to another.\n\n\nThis makes it harder to maintain the code, because any future changes would need to be duplicated;\nmiss one and you introduce bugs!\n\n\nIn the case of the \nBasket\n class from a few weeks ago, we explored a Has-A relationship between the \nFruit\n class and \nBasket\n class.\n(\nBasket\n \nHas A\n \nFruit\n)\n\n\nWith inheritance, we will explore an \nIs A\n relationship.\n\n\nFor instance, we could have a base \nFruit\n class, and specialize it to an \nApple\n or \nOrange\n class\n\n\nPractice\n\n\nWhat is the relationship between the following classes?\n(Is A, Has A, or None)\n\n\n\n\n\n\nIron\n and \nAtom\n\n\n\n\n\n\nVehicle\n and \nCar\n\n\n\n\n\n\nCar\n and \nMotorcycle\n\n\n\n\n\n\nBuilding\n and \nChair\n\n\n\n\n\n\nDuck\n and \nAnimal\n\n\n\n\n\n\nSchool\n and \nUCR", 
-            "title": "Week 9 Dis 1: Inheritance"
-        }, 
-        {
-            "location": "/dis09_1/#introduction", 
-            "text": "Today we will go over class inheritance.  Inheritance is a powerful tool that can be used to make less work for you!\nIt also allows us to create classes with interesting relationships to each other.", 
-            "title": "Introduction"
-        }, 
-        {
-            "location": "/dis09_1/#is-a-vs-has-a", 
-            "text": "Up until now, to do something similar to recursion you'd have to copy all the code of one class to another.  This makes it harder to maintain the code, because any future changes would need to be duplicated;\nmiss one and you introduce bugs!  In the case of the  Basket  class from a few weeks ago, we explored a Has-A relationship between the  Fruit  class and  Basket  class.\n( Basket   Has A   Fruit )  With inheritance, we will explore an  Is A  relationship.  For instance, we could have a base  Fruit  class, and specialize it to an  Apple  or  Orange  class", 
-            "title": "Is A vs Has A"
-        }, 
-        {
-            "location": "/dis09_1/#practice", 
-            "text": "What is the relationship between the following classes?\n(Is A, Has A, or None)    Iron  and  Atom    Vehicle  and  Car    Car  and  Motorcycle    Building  and  Chair    Duck  and  Animal    School  and  UCR", 
-            "title": "Practice"
-        }, 
-        {
-            "location": "/lab09/", 
-            "text": "Terminology\n\n\n\n\nPure Virtual\n\n\nVirtual\n\n\nPolymorphism\n\n\nBase class\n\n\nDerived class\n\n\n\n\nQuestions\n\n\n\n\n\n\nDo we implement pure virtual methods?\n\n\n\n\n\n\nCan we implement virtual methods?\n\n\n\n\n\n\nDo we ever need to implement methods in a pure virtual class?\n\n\n\n\n\n\nGame\n\n\nToday, we will make a game.\n\n\nThe starter code is on my cloud9 workspace.", 
-            "title": "Lab Week 9: Polymorphism"
-        }, 
-        {
-            "location": "/lab09/#terminology", 
-            "text": "Pure Virtual  Virtual  Polymorphism  Base class  Derived class", 
-            "title": "Terminology"
-        }, 
-        {
-            "location": "/lab09/#questions", 
-            "text": "Do we implement pure virtual methods?    Can we implement virtual methods?    Do we ever need to implement methods in a pure virtual class?", 
-            "title": "Questions"
-        }, 
-        {
-            "location": "/lab09/#game", 
-            "text": "Today, we will make a game.  The starter code is on my cloud9 workspace.", 
-            "title": "Game"
-        }, 
-        {
-            "location": "/dis09_2/", 
-            "text": "Discussion today is a continuation of lab from yesterday.", 
-            "title": "Week 9 Dis 2: Lab9, part 2"
-        }, 
-        {
-            "location": "/dis10_1/", 
-            "text": "Topics\n\n\n\n\n\n\nBinary Search\n\n\n\n\n\n\nSelection Sort\n\n\n\n\n\n\nMerge Sort\n\n\n\n\n\n\nBig-O Notation\n\n\n\n\n\n\nBinary Search\n\n\n\n\n\n\nWhen can we perform binary search on a vector?\n\n\n\n\n\n\nCan we perform binary search on an \nIntList\n?\n\n\n\n\n\n\nRoughly how many iterations does it take binary search to find a value in a vector of size 100 in the worst case?\nHow about for size 1000?\n\n\n\n\n\n\nSelection Sort\n\n\n\n\nReview Week1 Dis2\n\n\n\n\nMerge Sort\n\n\n\n\nReview the last section of Week8 Dis2", 
-            "title": "Week 10 Dis 1: Searching, Sorting, and Runtime"
-        }, 
-        {
-            "location": "/dis10_1/#topics", 
-            "text": "Binary Search    Selection Sort    Merge Sort    Big-O Notation", 
-            "title": "Topics"
-        }, 
-        {
-            "location": "/dis10_1/#binary-search", 
-            "text": "When can we perform binary search on a vector?    Can we perform binary search on an  IntList ?    Roughly how many iterations does it take binary search to find a value in a vector of size 100 in the worst case?\nHow about for size 1000?", 
-            "title": "Binary Search"
-        }, 
-        {
-            "location": "/dis10_1/#selection-sort", 
-            "text": "Review Week1 Dis2", 
-            "title": "Selection Sort"
-        }, 
-        {
-            "location": "/dis10_1/#merge-sort", 
-            "text": "Review the last section of Week8 Dis2", 
-            "title": "Merge Sort"
-        }, 
-        {
-            "location": "/lab10/", 
-            "text": "Big O\n\n\nDetermine the Big O (worst case) runtime of the following sections of code.\n\n\nBe sure to define what your basic unit of work is for each section.\n\n\n// snippet 1\nint n = 20;\nfor (unsigned i = 0; i \n n; ++i) {\n    cout \n n - i \n endl;\n}\n\n\n\n\n// snippet 2\nint n = 100;\nvector\nint\n v(n);\n\n\n\n\n// snippet 3\nint n = 30;\nfor (int i = 0; i \n n; ++i) {\n    for (int j = 0; j \n n; ++i) {\n        cout \n '.';\n    }\n}\n\n\n\n\n// snippet 4\nint n = 30;\nint m = 100;\nfor (int i = 0; i \n n; ++i) {\n    for (int j = 0; j \n m; ++i) {\n        cout \n '.';\n    }\n}\n\n\n\n\n// snippet 5\nint n = 4096;\nfor (int i = 1; i \n n; i *= 2) {\n    cout \n '.' \n endl;\n}\n\n\n\n\nReview\n\n\nOpen zybooks.\nI'll ask questions about each topic.\nIf there is anything we need to cover in particular, we will cover it.", 
-            "title": "Lab Week 10: Big-O, and Review"
-        }, 
-        {
-            "location": "/lab10/#big-o", 
-            "text": "Determine the Big O (worst case) runtime of the following sections of code.  Be sure to define what your basic unit of work is for each section.  // snippet 1\nint n = 20;\nfor (unsigned i = 0; i   n; ++i) {\n    cout   n - i   endl;\n}  // snippet 2\nint n = 100;\nvector int  v(n);  // snippet 3\nint n = 30;\nfor (int i = 0; i   n; ++i) {\n    for (int j = 0; j   n; ++i) {\n        cout   '.';\n    }\n}  // snippet 4\nint n = 30;\nint m = 100;\nfor (int i = 0; i   n; ++i) {\n    for (int j = 0; j   m; ++i) {\n        cout   '.';\n    }\n}  // snippet 5\nint n = 4096;\nfor (int i = 1; i   n; i *= 2) {\n    cout   '.'   endl;\n}", 
-            "title": "Big O"
-        }, 
-        {
-            "location": "/lab10/#review", 
-            "text": "Open zybooks.\nI'll ask questions about each topic.\nIf there is anything we need to cover in particular, we will cover it.", 
-            "title": "Review"
         }
     ]
 }
