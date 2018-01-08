@@ -23,6 +23,6 @@ Brain Teasers
 Since its right after winter break and your brains are dead and frankly so is your SI Leaders,
 heres some fun brain teasers to wake you up and get your brain gears working!
 
-1) What belongs to you, but others use it more? !<-- Your name -->
+1) What belongs to you, but others use it more? !<--- Your name --->
 
 2) What dissapears the moment you say its name?
