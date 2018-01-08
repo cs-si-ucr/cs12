@@ -13,7 +13,7 @@ CS 10 Review
 
 6) Write a function that reverses all the strings in a vector of strings.
 
-7) Write a function that takes as input a vector of strings and does the following:
-   Output 'True' to the terminal if more than half the strings in the vector have a length greater than 6.
-   Output 'False' to the terminal otherwise.
+7) Write a function that takes as input a vector of strings and does the following: <br>
+   Output 'True' to the terminal if more than half the strings in the vector have a length greater than 6.<br>
+   Output 'False' to the terminal otherwise.<br>
 
