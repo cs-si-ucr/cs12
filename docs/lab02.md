@@ -14,7 +14,7 @@ $
 Exercise 2
 ---
 
-Write a program that takes each integer in a file and puts it on a separate line.
+Write a program that takes each integer in a file and outputs it on new file on separate lines.
 You should ask for the name of the input and output files from the user.
 
 Do _**not**_ allow the input and output filenames to be the same!
@@ -37,12 +37,18 @@ If no arguments are passed in, ask for both the input and output file names.
      comment this exercise out. -->
 Exercise 3
 ---
+Given a file containing a list of pairs of integers in the following format:
+`0 1
+ 3 1
+ 9 10
+ 16 93
+ 20 90
+ 3 9`
 
-Write a program that prints the sum of all the numbers in a file.
-The file will only contain integers.
-The file name will be provided by the user at runtime.
-
-Print the sum of the integers on each line, followed by the sum of all the integers.
+write a program that outputs the sum of each pair of numbers on a newline in another file.
+The file will only contain integers and will always be in the above format (hint, you can use
+that to your advantage...)
+Write your own sample file.
 
 **Bonus**:
 If the file contains non-integer terms, ignore them.
