@@ -50,7 +50,7 @@ Write a program that outputs the sum of each pair of numbers on a newline in ano
 The file will only contain integers and will always be in the above format (hint, you can use
 that to your advantage...)
 
-Write your own sample file.
+Write your own sample file. The file names for both input and output are specified on the command line.
 
 **Bonus**:
 If the file contains non-integer terms, ignore them.
@@ -59,7 +59,11 @@ If the file contains non-integer terms, ignore them.
 Exercise 4
 ---
 
-Write a program that reads a pair of integers as **strings** and outputs thier sum.
+Write a program that prompts the user to enter a pair of integers.
+Read those integers as **strings** (either as one large string or two sepearte ones)
+and outputs thier sum to the terminal. 
+
+This program continuously prompts the user until they enter 'q'.
 
 Hint: You will be needing string streams to do this.
 
