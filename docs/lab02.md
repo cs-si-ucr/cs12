@@ -38,6 +38,7 @@ If no arguments are passed in, ask for both the input and output file names.
 Exercise 3
 ---
 Given a file containing a list of pairs of integers in the following format:
+
 `0 1
  3 1
  9 10
