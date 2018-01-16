@@ -56,4 +56,14 @@ Write your own sample file.
 If the file contains non-integer terms, ignore them.
 
 
+Exercise 4
+---
 
+Write a program that reads a pair of integers as **strings** and outputs thier sum.
+
+Hint: You will be needing string streams to do this.
+
+Extra Help
+---
+
+* [C++.com Tutorial for File I/O](http://www.cplusplus.com/doc/tutorial/files/)
