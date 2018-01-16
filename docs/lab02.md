@@ -38,12 +38,12 @@ If no arguments are passed in, ask for both the input and output file names.
 Exercise 3
 ---
 Given a file containing a list of pairs of integers in the following format: <br>
-`0 1
- 3 1
- 9 10
- 16 93
- 20 90
- 3 9`
+> 0 1 <br>
+> 3 1 <br>
+> 9 10 <br>
+> 16 93 <br>
+> 20 90 <br>
+> 3 9 <br>
 
 write a program that outputs the sum of each pair of numbers on a newline in another file.
 The file will only contain integers and will always be in the above format (hint, you can use
