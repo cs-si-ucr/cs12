@@ -45,9 +45,11 @@ Given a file containing a list of pairs of integers in the following format:
 > 20 90 <br>
 > 3 9 <br>
 
-write a program that outputs the sum of each pair of numbers on a newline in another file.
+Write a program that outputs the sum of each pair of numbers on a newline in another file.
+
 The file will only contain integers and will always be in the above format (hint, you can use
 that to your advantage...)
+
 Write your own sample file.
 
 **Bonus**:
