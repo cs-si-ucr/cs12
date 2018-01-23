@@ -73,7 +73,7 @@ int main(){
     return 0;
 }
 ```
-Expand on Exercise 1 by adding a sort function that sorts the above vector **in place**.
-If you do not know what is meant by "in place", then ask :).
+Expand on Exercise 1 by adding a sort function that sorts the above vector **in place**. </br>
+If you do not know what is meant by "in place", then ask :). </br>
 Lastly, print out the vector with each Avenger being printed out as `name, age`.
 
