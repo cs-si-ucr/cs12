@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Discussion 1: CS 10 Review - CS 12 SI: Spring 2017</title>
+  <title>Lab 3: Classes - CS 12 SI: Spring 2017</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Discussion 1: CS 10 Review";
-    var mkdocs_page_input_path = "dis01.md";
-    var mkdocs_page_url = "/dis01/";
+    var mkdocs_page_name = "Lab 3: Classes";
+    var mkdocs_page_input_path = "lab03.md";
+    var mkdocs_page_url = "/lab03/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -52,18 +52,9 @@
     <a class="" href="..">Home</a>
 	    </li>
           
-            <li class="toctree-l1 current">
+            <li class="toctree-l1">
 		
-    <a class="current" href="./">Discussion 1: CS 10 Review</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l2"><a href="#cs-10-review">CS 10 Review</a></li>
-    
-
-    <li class="toctree-l2"><a href="#brain-teasers">Brain Teasers</a></li>
-    
-
-    </ul>
+    <a class="" href="../dis01/">Discussion 1: CS 10 Review</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -81,9 +72,18 @@
     <a class="" href="../dis03/">Discussion 3: Classes</a>
 	    </li>
           
-            <li class="toctree-l1">
+            <li class="toctree-l1 current">
 		
-    <a class="" href="../lab03/">Lab 3: Classes</a>
+    <a class="current" href="./">Lab 3: Classes</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#introduction">Introduction</a></li>
+    
+
+    <li class="toctree-l2"><a href="#exercise-1">Exercise 1</a></li>
+    
+
+    </ul>
 	    </li>
           
         </ul>
@@ -108,7 +108,7 @@
     
       
     
-    <li>Discussion 1: CS 10 Review</li>
+    <li>Lab 3: Classes</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -118,22 +118,47 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="cs-10-review">CS 10 Review</h2>
-<p>1) Draw a conceptual model of a variable. Label the address, name, and contents of your variable at a minimum.</p>
-<p>2) Use your model from part 1 to draw a conceptual model of a vector.</p>
-<p>3) Descrive the difference between passing a variable by value and passing a variable by reference.</p>
-<p>4) List some types that should almost always be passed by reference. Why is this the case?</p>
-<p>5) Write a function that swaps the contents of two variables of type char.</p>
-<p>6) Write a function that reverses all the strings in a vector of strings.</p>
-<p>7) Write a function that takes as input a vector of strings and does the following: <br>
-   Output 'True' to the terminal if more than half the strings in the vector have a length greater than 6.<br>
-   Output 'False' to the terminal otherwise.<br></p>
-<h2 id="brain-teasers">Brain Teasers</h2>
-<p>Since its right after winter break and your brains are dead and frankly so is your SI Leaders,
-heres some fun brain teasers to wake you up and get your brain gears working!</p>
-<p>1) What belongs to you, but others use it more?</p>
-<p>2) What dissapears the moment you say its name?</p>
-<p>3) </p>
+                <h2 id="introduction">Introduction</h2>
+<p>We will be continuing work on the <code>Fruit</code> class from yesterday's discussion.
+Check out the problem description from yesterday in case you missed it (through the menu on the left).</p>
+<h2 id="exercise-1">Exercise 1</h2>
+<p>Given the following struct and its instances:</p>
+<pre><code class="c++">struct Weapon{
+    int damage;
+    int durabilty;
+};
+
+//weapon list
+Weapon Hulk_Buster = {9000,50};
+Weapon Mjolnir = {5000,200}
+Weapon Pistol = {10,100};
+Weapon Lightsaber = {50,5};
+Weapon Arrow = {20,10};
+Weapon Taser = {60,10};
+Weapon Shield = {100,INT_MAX};
+Weapon SlingRing = {1000,5};
+Weapon Ants = {100,10};
+
+//stones
+Weapon Mind_Stone = {10000,INT_MAX};
+Weapon Time_Stone = {10000,INT_MAX};
+Weapon Space_Stone = {10000,INT_MAX};
+Weapon Reality_Stone = {10000,INT_MAX};
+Weapon Time_Stone = {10000,INT_MAX};
+Weapon Soul_Stone = {10000,INT_MAX};
+</code></pre>
+
+<p>Create a class 'Avenger' which has the following attributes:
+<em> name
+</em> age
+* arsenal (a list of all usable weapons)</p>
+<p>And can perform the following operations:
+<em> set name
+</em> set health
+<em> add weapon to arsenal
+</em> remove weapon from arsenal
+* display arsenal</p>
+<p>And of course don't forget the default constructor and a constructor that accepts name and age.</p>
               
             </div>
           </div>
@@ -141,10 +166,8 @@ heres some fun brain teasers to wake you up and get your brain gears working!</p
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../lab01/" class="btn btn-neutral float-right" title="Lab 1: Selection Sort Case Study">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../dis03/" class="btn btn-neutral" title="Discussion 3: Classes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -170,10 +193,8 @@ heres some fun brain teasers to wake you up and get your brain gears working!</p
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../dis03/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../lab01/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
