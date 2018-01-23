@@ -77,10 +77,10 @@
     <a class="current" href="./">Lab 3: Classes</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#introduction">Introduction</a></li>
+    <li class="toctree-l2"><a href="#exercise-1">Exercise 1</a></li>
     
 
-    <li class="toctree-l2"><a href="#exercise-1">Exercise 1</a></li>
+    <li class="toctree-l2"><a href="#exercise-2">Exercise 2</a></li>
     
 
     </ul>
@@ -118,10 +118,7 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="introduction">Introduction</h2>
-<p>We will be continuing work on the <code>Fruit</code> class from yesterday's discussion.
-Check out the problem description from yesterday in case you missed it (through the menu on the left).</p>
-<h2 id="exercise-1">Exercise 1</h2>
+                <h2 id="exercise-1">Exercise 1</h2>
 <p>Given the following struct and its instances:</p>
 <pre><code class="c++">struct Weapon{
     int damage;
@@ -157,13 +154,44 @@ Weapon Soul_Stone    = {10000,INT_MAX,&quot;Soul Stone&quot;};
 </ul>
 <p>And can perform the following operations:</p>
 <ul>
-<li>set name</li>
-<li>set health</li>
+<li>set name and corresponding getter</li>
+<li>set health and corresponding getter</li>
 <li>add weapon to arsenal</li>
 <li>remove weapon from arsenal</li>
 <li>display arsenal</li>
 </ul>
 <p>And of course don't forget the default constructor and a constructor that accepts name and age.</p>
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Given the following code:</p>
+<pre><code class="c++">int main(){
+    vector&lt;Avenger&gt; avengers;
+    Avenger Cap(&quot;Steve Rogers&quot;, 100);
+    Avenger iMan(&quot;Anthony/Tony Stark&quot;, 52);
+    Avenger bWidow(&quot;Nat&quot;, 33);
+    Avenger Hulk(&quot;Bruce Banner&quot;, 50 );
+    Avenger Thor(&quot;Thor Odinson&quot;, 34);
+    Avenger Hawkeye(&quot;Clint Barton&quot;, 47);
+    Avenger Vision(&quot;J.A.R.V.I.S&quot;,2 );
+    Avenger sWitch(&quot;Wanda Maximoff&quot;, 28 );
+    Avenger bPanther(&quot;T'Challa&quot;, 42 );
+    Avenger antMan(&quot;Scott Lang&quot;, 48 );
+    Avenger spiderMan(&quot;Peter Parker&quot;, 21); //The actor is one month older exactly than Andre!
+    Avenger starLord(&quot;Peter Quill&quot;, 38 );
+    Avenger omarvelous(&quot;Omar &quot;, 20); 
+    Avenger andreKhastro(&quot;Andre &quot;, 21);   
+
+    // push back the values to vector avengers.
+
+    sort(avengers); //sorts in place
+    print(avengers);
+
+    return 0;
+}
+</code></pre>
+
+<p>Expand on Exercise 1 by adding a sort function that sorts the above vector <strong>in place</strong>.
+If you do not know what is meant by "in place", then ask :).
+Lastly, print out the vector with each Avenger being printed out as <code>name, age</code>.</p>
               
             </div>
           </div>
