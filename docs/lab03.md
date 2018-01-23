@@ -34,11 +34,13 @@ Weapon Time_Stone = {10000,INT_MAX};
 Weapon Soul_Stone = {10000,INT_MAX};
 ```
 Create a class 'Avenger' which has the following attributes:
+
  * name
  * age
  * arsenal (a list of all usable weapons)
 
 And can perform the following operations:
+
  * set name
  * set health
  * add weapon to arsenal
