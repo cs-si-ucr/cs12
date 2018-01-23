@@ -126,26 +126,27 @@ Check out the problem description from yesterday in case you missed it (through 
 <pre><code class="c++">struct Weapon{
     int damage;
     int durabilty;
+    string name;   
 };
 
 //weapon list
-Weapon Hulk_Buster = {9000,50};
-Weapon Mjolnir = {5000,200}
-Weapon Pistol = {10,100};
-Weapon Lightsaber = {50,5};
-Weapon Arrow = {20,10};
-Weapon Taser = {60,10};
-Weapon Shield = {100,INT_MAX};
-Weapon SlingRing = {1000,5};
-Weapon Ants = {100,10};
+Weapon Hulk_Buster = {9000,50, &quot;Hulk Buster&quot;};
+Weapon Mjolnir     = {5000,200,&quot;Mjolnir&quot;};
+Weapon Pistol      = {10,  100,&quot;Pistol&quot;};
+Weapon Lightsaber  = {50,  5,  &quot;Lightsaber&quot;};
+Weapon Arrow       = {20,  10, &quot;Arrow&quot;};
+Weapon Taser       = {60,  10, &quot;Taser&quot;};
+Weapon Shield      = {100, INT_MAX,&quot;Shield&quot;};
+Weapon Sling_Ring  = {1000,5,  &quot;Sling Ring&quot;};
+Weapon Ants        = {100, 10, &quot;Ants&quot;};
 
 //stones
-Weapon Mind_Stone = {10000,INT_MAX};
-Weapon Time_Stone = {10000,INT_MAX};
-Weapon Space_Stone = {10000,INT_MAX};
-Weapon Reality_Stone = {10000,INT_MAX};
-Weapon Time_Stone = {10000,INT_MAX};
-Weapon Soul_Stone = {10000,INT_MAX};
+Weapon Mind_Stone    = {10000,INT_MAX,&quot;Mind Stone&quot;};
+Weapon Time_Stone    = {10000,INT_MAX,&quot;Time Stone&quot;};
+Weapon Space_Stone   = {10000,INT_MAX,&quot;Space Stone&quot;};
+Weapon Reality_Stone = {10000,INT_MAX,&quot;Reality Stone&quot;};
+Weapon Power_Stone   = {10000,INT_MAX,&quot;Power Stone&quot;};
+Weapon Soul_Stone    = {10000,INT_MAX,&quot;Soul Stone&quot;};
 </code></pre>
 
 <p>Create a class 'Avenger' which has the following attributes:</p>
