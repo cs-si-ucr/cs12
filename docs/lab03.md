@@ -37,7 +37,7 @@ Create a class 'Avenger' which has the following attributes:
 And can perform the following operations:
 
  * set name and corresponding getter
- * set health and corresponding getter
+ * set age and corresponding getter
  * add weapon to arsenal
  * remove weapon from arsenal
  * display arsenal
