@@ -119,31 +119,6 @@
             "location": "/lab03/#exercise-2",
             "text": "Given the following code:  int main(){\n    vector<Avenger> avengers;\n    Avenger Cap(\"Steve Rogers\", 100);\n    Avenger iMan(\"Anthony/Tony Stark\", 52);\n    Avenger bWidow(\"Nat\", 33);\n    Avenger Hulk(\"Bruce Banner\", 50 );\n    Avenger Thor(\"Thor Odinson\", 34);\n    Avenger Hawkeye(\"Clint Barton\", 47);\n    Avenger Vision(\"J.A.R.V.I.S\",2 );\n    Avenger sWitch(\"Wanda Maximoff\", 28 );\n    Avenger bPanther(\"T'Challa\", 42 );\n    Avenger antMan(\"Scott Lang\", 48 );\n    Avenger spiderMan(\"Peter Parker\", 21); //The actor is one month older exactly than Andre!\n    Avenger starLord(\"Peter Quill\", 38 );\n    Avenger omarvelous(\"Omar \", 20); \n    Avenger andreKhastro(\"Andre \", 21);   \n\n    // push back the values to vector avengers.\n\n    sort(avengers); //sorts in place\n    print(avengers);\n\n    return 0;\n}  Expand on Exercise 1 by adding a sort function that sorts the above vector  in place .  \nIf you do not know what is meant by \"in place\", then ask :).  \nLastly, print out the vector with each Avenger being printed out as  name, age .",
             "title": "Exercise 2"
-        },
-        {
-            "location": "/dis04/",
-            "text": "Topics this week\n\n\n\n\nOperator Overloading (global scope, and in classes)\n\n\nFriending Functions\n\n\nSeparate Files, \ninclude\n, and Modular Compilation\n\n\ndefine\n\n\n\n\nOperator Overloading\n\n\n\n\nWhy overload operators?\n\n\nHow do we overload operators in classes? (syntax)\n\n\nHow do we overload operators globally? (syntax)\n\n\nWhat is the difference between overloading globally and overloading from within a class?\n\n\n\n\nGiven a \nCart\n class, and a \nFruit\n class,\ndeclare a function that allows me to add a fruit to my class.\n\n\nWrite a function that allows me to add elements to my vector in the following way:\n\n\nvector<int> v;\n// v.size() == 0\nv + 24;\n// v.size() == 1\n// v.at(0) == 24\n\n\n\n\nFriending Functions\n\n\n\n\nWhat does friending do?\n\n\nFriending syntax\n\n\nWhy do we friend functions?\n\n\nIs it always necessary?\n\n\nWith encapsulation in mind, is friending a good idea?\n\n\n\n\nSeparate Files, \ninclude\n, and Modular Compilation\n\n\n\n\nIs it a syntactical requirement to separate code into multiple files?\n\n\nWhy do we separate code into multiple files?\n\n\nWhat is Modular Compilation?\n\n\nHow does \ninclude\n play a role in Modular Compilation?\n\n\nModular Compilation rules?\n\n\n\n\n// main.cpp\n\n#include \"Class.h\"\n\n/* rest of file */\n\n\n\n\n// Class.cpp\n\n#include \"Class.h\"\n\n/* Class definitions here */\n\n\n\n\n// Class.h\n#ifndef __CLASS_H__\n#define __CLASS_H__\n\n/* Class declaration here */\n\n#endif\n\n\n\n\n# compile Class:\ng++ -c Class.cpp\n# compile main:\ng++ -c main.cpp\n# link everything together:\ng++ *.o",
-            "title": "Discussion 4: Classes, Part 2"
-        },
-        {
-            "location": "/dis04/#topics-this-week",
-            "text": "Operator Overloading (global scope, and in classes)  Friending Functions  Separate Files,  include , and Modular Compilation  define",
-            "title": "Topics this week"
-        },
-        {
-            "location": "/dis04/#operator-overloading",
-            "text": "Why overload operators?  How do we overload operators in classes? (syntax)  How do we overload operators globally? (syntax)  What is the difference between overloading globally and overloading from within a class?   Given a  Cart  class, and a  Fruit  class,\ndeclare a function that allows me to add a fruit to my class.  Write a function that allows me to add elements to my vector in the following way:  vector<int> v;\n// v.size() == 0\nv + 24;\n// v.size() == 1\n// v.at(0) == 24",
-            "title": "Operator Overloading"
-        },
-        {
-            "location": "/dis04/#friending-functions",
-            "text": "What does friending do?  Friending syntax  Why do we friend functions?  Is it always necessary?  With encapsulation in mind, is friending a good idea?",
-            "title": "Friending Functions"
-        },
-        {
-            "location": "/dis04/#separate-files-include-and-modular-compilation",
-            "text": "Is it a syntactical requirement to separate code into multiple files?  Why do we separate code into multiple files?  What is Modular Compilation?  How does  include  play a role in Modular Compilation?  Modular Compilation rules?   // main.cpp\n\n#include \"Class.h\"\n\n/* rest of file */  // Class.cpp\n\n#include \"Class.h\"\n\n/* Class definitions here */  // Class.h\n#ifndef __CLASS_H__\n#define __CLASS_H__\n\n/* Class declaration here */\n\n#endif  # compile Class:\ng++ -c Class.cpp\n# compile main:\ng++ -c main.cpp\n# link everything together:\ng++ *.o",
-            "title": "Separate Files, include, and Modular Compilation"
         }
     ]
 }
