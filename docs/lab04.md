@@ -42,8 +42,6 @@ To do this, simply include the following line of code under `public:` in the Foo
 ```c++
   friend class Meal;
 ```
-:wq
-
 
 **Bonus:** Make the operator+ overload return a `void` and work with the following code below:
 ```c++
