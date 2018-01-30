@@ -88,6 +88,9 @@
     <li class="toctree-l2"><a href="#exercise-1">Exercise 1</a></li>
     
 
+    <li class="toctree-l2"><a href="#exercise-2">Exercise 2</a></li>
+    
+
     </ul>
 	    </li>
           
@@ -164,6 +167,26 @@ This allows instances of the Meal classes to access the private data members of 
 To do this, simply include the following line of code under <code>public:</code> in the Food class:</p>
 <pre><code class="c++">  friend class Meal;
 </code></pre>
+
+<p>:wq</p>
+<p><strong>Bonus:</strong> Make the operator+ overload return a <code>void</code> and work with the following code below:</p>
+<pre><code class="c++">  Meal lunch;
+  Food sandwich;
+  Food apple;
+
+  lunch + sandwhich;
+</code></pre>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Overide the ostream operator <code>operator&lt;&lt;</code> for the Meal class. 
+Print out an instance of the meal class in the following manner:</p>
+<pre><code class="bash">name of meal: ____
+calories: _
+protein: _
+products: ___, ___, ____
+</code></pre>
+
+<p>To do this, it is also recommended you overload the <code>operator&lt;&lt;</code> for the Food class as well.</p>
               
             </div>
           </div>
