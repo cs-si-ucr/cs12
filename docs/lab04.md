@@ -42,3 +42,28 @@ To do this, simply include the following line of code under `public:` in the Foo
 ```c++
   friend class Meal;
 ```
+:wq
+
+
+**Bonus:** Make the operator+ overload return a `void` and work with the following code below:
+```c++
+  Meal lunch;
+  Food sandwich;
+  Food apple;
+
+  lunch + sandwhich;
+```
+
+Exercise 2
+---
+Overide the ostream operator `operator<<` for the Meal class. 
+Print out an instance of the meal class in the following manner:
+
+```bash
+name of meal: ____
+calories: _
+protein: _
+products: ___, ___, ____
+```
+
+To do this, it is also recommended you overload the `operator<<` for the Food class as well.
