@@ -1,35 +1,44 @@
 Modular Compilation
 ---
 
-Using the `Fruit` class from last week, separate each part into one of `Fruit.h`, `Fruit.cpp`, and `main.cpp`.
 Compile each .cpp file separately, and link to gether to generate an executable.
 
-Fix any mistakes in the `Fruit` class as necessary
-
-
-Basket Class
+Exercise 1
 ---
+Create a program with the following classes and attribrutes:
 
-Create a `Basket` class.
-A `Basket` object should be able to hold any number of `Fruit` objects.
+1. Food
+	* name of food
+	* calories
+	* protien
+	* carbs
 
-The interface is as follows:
+2. Meal
+	* vector of food
+	* name of meal
+	* total calories
+	* total protien
+	* total carbs
 
-* An `add` function that accepts a `Fruit` object to add to the `Basket`
-Fruits of the same name should not be allowed to be added twice.
-Because of this, the function should return `true` or `false` to indicate whether or not the `Fruit` was added.
+Each class should have its own `.cpp` and header files.
+Define the default constructor for each class and one other constructor with your choice of parameters.
 
-* A `remove` function that accepts the name (a `string`) of the `Fruit` to remove.
-The function should return `true` or `false` to indicate whether or not a `Fruit` with that name was added.
 
-* A `print` function.
+The meal class needs to overload the `+` operator and will be used like so:
 
-* A `clear` function that gets rid of all the `Fruit` in the `Basket`.
+```c++
+  Meal lunch;
+  Food sandwich;
+  Food apple;
 
-* A `total` function that returns the cost of everything in the `Basket`.
+  lunch = lunch + sandwhich;
+```
 
-<!-- note to maintainer:
+Where here the food item `sandwich` was added to the `lunch`'s food vector.
 
-Through experience, this is not enough material to last the whole lab.
-
--->
+*hint:* it would make things easier to made the meal class a `friend` of the Food class.
+This allows instances of the Meal classes to access the private data members of the Food class.
+To do this, simply include the following line of code under `public:` in the Food class:
+```c++
+  friend class Meal;
+```
