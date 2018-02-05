@@ -139,6 +139,16 @@
             "location": "/lab04/#exercise-2",
             "text": "Overide the ostream operator  operator<<  for the Meal class. \nPrint out an instance of the meal class in the following manner:  name of meal: ____\ncalories: _\nprotein: _\nproducts: ___, ___, ____  To do this, it is also recommended you overload the  operator<<  for the Food class as well.",
             "title": "Exercise 2"
+        },
+        {
+            "location": "/dis05/",
+            "text": "Arrays\n\n\nSimilar to \nvector\n an array is a list of objects of a certain type.\nArrays however are more primitive and are a basic type in c++.\nNothing has to be included to use them, (no \n#include\n necessary)\n\n\nAn array can be declared like so:\n\n\n//datatype name[number of elements]\nint arr[10]; // an array called 'arr' that holds 10 integers\nchar c_arr[20]; // an array called 'c_arr' that holds 20 char's\n\n\n\n\nHowever, arrays do not have convenient member functions like vectors do.\nArrays do not have \n.at()\n, \n.push_back()\n, \n.size()\n etc.\n\n\nArrays have a set size at creation specified in the square brackets as seen above.\nA size must be specified and specifying no size will result in a compile time error.\nThe size of the array also cannot change.\n\n\nInstead of using \n.at()\n arrays indicies can be accessed and set using the square brackets \n[]\n.",
+            "title": "Dis 5: Arrays"
+        },
+        {
+            "location": "/dis05/#arrays",
+            "text": "Similar to  vector  an array is a list of objects of a certain type.\nArrays however are more primitive and are a basic type in c++.\nNothing has to be included to use them, (no  #include  necessary)  An array can be declared like so:  //datatype name[number of elements]\nint arr[10]; // an array called 'arr' that holds 10 integers\nchar c_arr[20]; // an array called 'c_arr' that holds 20 char's  However, arrays do not have convenient member functions like vectors do.\nArrays do not have  .at() ,  .push_back() ,  .size()  etc.  Arrays have a set size at creation specified in the square brackets as seen above.\nA size must be specified and specifying no size will result in a compile time error.\nThe size of the array also cannot change.  Instead of using  .at()  arrays indicies can be accessed and set using the square brackets  [] .",
+            "title": "Arrays"
         }
     ]
 }
