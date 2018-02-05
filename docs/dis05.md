@@ -16,6 +16,24 @@ Arrays do not have `.at()`, `.push_back()`, `.size()` etc.
 
 Arrays have a set size at creation specified in the square brackets as seen above.
 A size must be specified and specifying no size will result in a compile time error.
-The size of the array also cannot change.
+The size of the array cannot change.
 
 Instead of using `.at()` arrays indicies can be accessed and set using the square brackets `[]`.
+For example:
+```c++
+int arr[3];
+arr[0] = 1;
+arr[1] = 2;
+arr[2] = 3;
+
+for(int i = 0; i < 3; i++){
+    cout << arr[i] << " ";
+}
+cout << endl;
+
+```
+will result in the following output:
+```bash
+1 2 3 
+
+```
