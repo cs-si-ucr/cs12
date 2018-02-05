@@ -37,3 +37,35 @@ will result in the following output:
 1 2 3 
 
 ```
+
+Code Tracing
+---
+What is the output of the following code?
+```c++
+
+#include <iostream>
+
+using namespace std;
+
+void setChar(char arr[], char c, int pos){
+    arr[pos] = c;
+    return;
+}
+
+int main(){
+    char c_arr[6];
+    setChar(c_arr, 'c', 0);
+    setChar(c_arr, 'a', 1);
+    setChar(c_arr, 'r', 2);
+    setChar(c_arr, 'e', 3);
+    setChar(c_arr, 'f', 4);
+    setChar(c_arr, 'u', 5);
+    setChar(c_arr, 'l', 6);
+		    
+    for(int i = 0; i < 7; i ++){
+ 	   cout << c_arr[i];
+    }
+							        
+    return 0;
+}
+```
