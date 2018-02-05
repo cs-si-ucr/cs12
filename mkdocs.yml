@@ -12,7 +12,7 @@ pages:
    # - [dis04.md, "Discussion 4: Classes, Part 2"]
     - [lab04.md, "Lab 4: Classes, Part 2"]
    # - [dis04_2.md, "Week 4 Dis 2: Rectangle"]
-   # - [dis05_1.md, "Week 5 Dis 1: Midterm Reiew"]
+    - [dis05.md, "Dis 5: Arrays"]
    # - [lab05.md, "Lab Week 5: Midterm Review and Arrays"]
    # - [dis05_2.md, "Week 5 Dis 2: Cstrings"]
    # - [dis06_1.md, "Week 6 Dis 1: Pointers and Dynamic Memory"]
