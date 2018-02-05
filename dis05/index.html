@@ -90,6 +90,9 @@
     <li class="toctree-l2"><a href="#arrays">Arrays</a></li>
     
 
+    <li class="toctree-l2"><a href="#code-tracing">Code Tracing</a></li>
+    
+
     </ul>
 	    </li>
           
@@ -157,6 +160,36 @@ cout &lt;&lt; endl;
 <p>will result in the following output:</p>
 <pre><code class="bash">1 2 3 
 
+</code></pre>
+
+<h2 id="code-tracing">Code Tracing</h2>
+<p>What is the output of the following code?</p>
+<pre><code class="c++">
+#include &lt;iostream&gt;
+
+using namespace std;
+
+void setChar(char arr[], char c, int pos){
+    arr[pos] = c;
+    return;
+}
+
+int main(){
+    char c_arr[6];
+    setChar(c_arr, 'c', 0);
+    setChar(c_arr, 'a', 1);
+    setChar(c_arr, 'r', 2);
+    setChar(c_arr, 'e', 3);
+    setChar(c_arr, 'f', 4);
+    setChar(c_arr, 'u', 5);
+    setChar(c_arr, 'l', 6);
+
+    for(int i = 0; i &lt; 7; i ++){
+       cout &lt;&lt; c_arr[i];
+    }
+
+    return 0;
+}
 </code></pre>
               
             </div>
