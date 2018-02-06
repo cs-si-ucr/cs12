@@ -154,6 +154,16 @@
             "location": "/dis05/#code-tracing",
             "text": "What is the output of the following code?  \n#include <iostream>\n\nusing namespace std;\n\nvoid setChar(char arr[], char c, int pos){\n    arr[pos] = c;\n    return;\n}\n\nint main(){\n    char c_arr[6];\n    setChar(c_arr, 'c', 0);\n    setChar(c_arr, 'a', 1);\n    setChar(c_arr, 'r', 2);\n    setChar(c_arr, 'e', 3);\n    setChar(c_arr, 'f', 4);\n    setChar(c_arr, 'u', 5);\n    setChar(c_arr, 'l', 6);\n\n    for(int i = 0; i < 7; i ++){\n       cout << c_arr[i];\n    }\n\n    return 0;\n}",
             "title": "Code Tracing"
+        },
+        {
+            "location": "/lab05/",
+            "text": "Mock Midterm\n\n\nClick on the link \n\nhere\n\nto be navigated to the SI mock midterm!\nMake sure you are logged in witht your student email to view the document!\nAnswer key will be posted later.\n\n\nASK QUESTIONS!\n\n\n-CS12 SI team :)",
+            "title": "Lab 5: Mock Midterm"
+        },
+        {
+            "location": "/lab05/#mock-midterm",
+            "text": "Click on the link  here \nto be navigated to the SI mock midterm!\nMake sure you are logged in witht your student email to view the document!\nAnswer key will be posted later.  ASK QUESTIONS!  -CS12 SI team :)",
+            "title": "Mock Midterm"
         }
     ]
 }
