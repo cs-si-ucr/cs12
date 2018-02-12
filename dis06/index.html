@@ -139,14 +139,45 @@
 <p>Where most variables store values, a pointer is a variable that stores a memory address.
 A pointer is denoted by appending a <code>*</code> character before the variable name.
 Either of the following syntaxes are accepted:</p>
-<p><code>int * n;</code> or <code>int * n;</code></p>
+<p><code>int* n;</code> or <code>int *n;</code></p>
 <p>To get the memory address of an already declared varaible (take <code>int n = 0;</code> for example),
 we use the address of operator <code>&amp;</code>.</p>
 <pre><code class="c++">int n = 0;
 int *ptr = &amp;n;
 </code></pre>
 
-<p>Try printing out variable ptr to see the value of the memory address.</p>
+<p>Try printing out variable ptr to see the value of the memory address.
+(The address of operator should look familiar, think reference paramaters..)</p>
+<p>The memory address of a pointer can be 'dereferenced' by using the dereference operator <code>*</code>.
+Dereferncing a pointer returns the value at that memory location. For example:</p>
+<pre><code class="c++">int a = 5;
+int *ptr = &amp;a;
+
+cout &lt;&lt; &quot;a's value: &quot; &lt;&lt; a &lt;&lt; endl;
+cout &lt;&lt; &quot;a's address: &quot; &lt;&lt; &amp;a &lt; endl;
+cout &lt;&lt; &quot;the adress ptr points to: &quot; &lt;&lt; ptr &lt;&lt; endl;
+cout &lt;&lt; &quot;value that ptr points to: &quot; &lt;&lt; *ptr &lt;&lt; endl;
+cout &lt;&lt; &quot;adress of ptr: &quot; &lt;&lt; &amp;ptr &lt;&lt; endl;
+</code></pre>
+
+<p>should print</p>
+<pre><code class="bash">5
+0x00c8b
+0x00c8b
+5
+0x00d3c
+</code></pre>
+
+<p>Dereferncing a pointer can also be used to set the value at that location:</p>
+<pre><code class="c++">int n = 5;
+int* ptr = &amp;n;
+*ptr = n + 1;
+cout &lt;&lt; *ptr
+</code></pre>
+
+<p>will print:</p>
+<pre><code class="bash">6
+</code></pre>
               
             </div>
           </div>
