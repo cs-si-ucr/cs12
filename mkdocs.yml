@@ -15,7 +15,7 @@ pages:
     - [dis05.md, "Dis 5: Arrays"]
     - [lab05.md, "Lab 5: Mock Midterm"]
    # - [dis05_2.md, "Week 5 Dis 2: Cstrings"]
-   # - [dis06_1.md, "Week 6 Dis 1: Pointers and Dynamic Memory"]
+    - [dis06.md, "Dis 6: Pointers and Dynamic Memory"]
    # - [lab06.md, "Lab Week 6: Valgrind, Dynamic Memory, and Pointers"]
    # - [dis06_2.md, "Week 6 Dis 2: Choose Your Own Exercise"]
    # - [dis07_1.md, "Week 7 Dis 1: Linked List Basics"]
