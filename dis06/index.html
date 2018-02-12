@@ -100,6 +100,12 @@
     <li class="toctree-l2"><a href="#pointers">Pointers</a></li>
     
 
+    <li class="toctree-l2"><a href="#dangling-pointers">Dangling Pointers</a></li>
+    
+
+    <li class="toctree-l2"><a href="#code-tracing">Code Tracing</a></li>
+    
+
     </ul>
 	    </li>
           
@@ -168,6 +174,7 @@ cout &lt;&lt; &quot;adress of ptr: &quot; &lt;&lt; &amp;ptr &lt;&lt; endl;
 0x00d3c
 </code></pre>
 
+<p>Note that the memory addresses will likely differ</p>
 <p>Dereferncing a pointer can also be used to set the value at that location:</p>
 <pre><code class="c++">int n = 5;
 int* ptr = &amp;n;
@@ -178,6 +185,14 @@ cout &lt;&lt; *ptr
 <p>will print:</p>
 <pre><code class="bash">6
 </code></pre>
+
+<h2 id="dangling-pointers">Dangling Pointers</h2>
+<p>Pointers if set to incorrect values can cause <code>segmentations faults</code> or shorter, seg faults. 
+If a seg fault is thrown, that means the code was trying to access a memory location it does not have access to.</p>
+<p>Just like an integer, if you write <code>int* ptr;</code> the value of the ptr will be garbage.
+To fix this problem, we set the ptr = 0;</p>
+<h2 id="code-tracing">Code Tracing</h2>
+<p>goo.gl/62Tb7i</p>
               
             </div>
           </div>
