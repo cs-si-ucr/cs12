@@ -39,6 +39,8 @@ should print
 5
 0x00d3c
 ```
+Note that the memory addresses will likely differ
+
 
 Dereferncing a pointer can also be used to set the value at that location:
 
@@ -53,4 +55,16 @@ will print:
 6
 ```
 
+Dangling Pointers
+---
+Pointers if set to incorrect values can cause `segmentations faults` or shorter, seg faults. 
+If a seg fault is thrown, that means the code was trying to access a memory location it does not have access to.
 
+Just like an integer, if you write `int* ptr;` the value of the ptr will be garbage.
+To fix this problem, we set the ptr = 0;
+
+
+Code Tracing
+---
+
+goo.gl/62Tb7i
