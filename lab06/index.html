@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Discussion 3: Classes - CS 12 SI: Spring 2017</title>
+  <title>Lab 6: Dynamic Memory, and Pointers - CS 12 SI: Spring 2017</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Discussion 3: Classes";
-    var mkdocs_page_input_path = "dis03.md";
-    var mkdocs_page_url = "/dis03/";
+    var mkdocs_page_name = "Lab 6: Dynamic Memory, and Pointers";
+    var mkdocs_page_input_path = "lab06.md";
+    var mkdocs_page_url = "/lab06/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -67,18 +67,9 @@
     <a class="" href="../lab02/">Lab 2: Streams</a>
 	    </li>
           
-            <li class="toctree-l1 current">
+            <li class="toctree-l1">
 		
-    <a class="current" href="./">Discussion 3: Classes</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l2"><a href="#stucts-and-classes">Stucts and Classes</a></li>
-    
-
-    <li class="toctree-l2"><a href="#example-1">Example 1</a></li>
-    
-
-    </ul>
+    <a class="" href="../dis03/">Discussion 3: Classes</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -106,9 +97,15 @@
     <a class="" href="../dis06/">Dis 6: Pointers and Dynamic Memory</a>
 	    </li>
           
-            <li class="toctree-l1">
+            <li class="toctree-l1 current">
 		
-    <a class="" href="../lab06/">Lab 6: Dynamic Memory, and Pointers</a>
+    <a class="current" href="./">Lab 6: Dynamic Memory, and Pointers</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#excercise-1">Excercise 1</a></li>
+    
+
+    </ul>
 	    </li>
           
         </ul>
@@ -133,7 +130,7 @@
     
       
     
-    <li>Discussion 3: Classes</li>
+    <li>Lab 6: Dynamic Memory, and Pointers</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -143,97 +140,53 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="stucts-and-classes">Stucts and Classes</h2>
-<ul>
-<li><a href="https://cs-si-ucr.github.io/cs12-reborn/docs/discussion3/">Read me first!</a></li>
-</ul>
-<h2 id="example-1">Example 1</h2>
-<p>Below is an example of classes and structs in C++. 
-If you don't understand all of this code that is <strong>perfectly ok</strong>.
-Do you best to trace the code and we will go through it together.</p>
+                <h2 id="excercise-1">Excercise 1</h2>
+<p>Implement the following functions listed below, this lab serves as an mini-intro to linked lists.</p>
 <pre><code class="c++">#include &lt;iostream&gt;
-#include &lt;vector&gt;
 
 using namespace std;
 
-struct Student{
-    int age;
-    string name;
-    string gender;
-};
-
-class Avenger{
+struct Block{
   public:
-    string name;
-    int age;
-    string gender;
-    /* ussually, a classes data members are declared private
-       and it is bad practice to have them publicly available.
-       For the sake of example, they will be public here.*/
-    Avenger(){
-        name = &quot;Stan lee&quot;;
-        age = 2018;
-        gender = &quot;Alien&quot;;
-    }
-
-    Avenger(int age1, string name1, string gender1){
-        age = age1;
-        name = name1;
-        gender = gender1;
-    }
+    int val;
+    Block * next;
+    Block(int val): val(val), next(0) {};
 };
 
-class phone{
-  private:
-    string model;
-    int megapixels;
-    int screensize;
+void addBlock(Block * start, int val){
 
-  public:
-    string getModel(){ return model; }
-    int getMegapixels(){ return megapixels; }
-    int getScreensize(){ return megapixels; }
+}
 
-    void setModel(string model){
-        this -&gt; model = model;
-    }
-    void setMegapixels(int megapixels){
-        this -&gt; megapixels = megapixels;   
-    }
-    void setScreensize(int screensize){
-        this -&gt; screensize = screensize;
-    }
-};
+void printBLockChain(Block * b){
+
+}
+
+//remove the first
+void removeFirstBlock(Block * b){
+
+}
+//remove last
+void removeLastBlock(Block * b){
+
+}
 
 int main(){
-    Student iMan = {2, &quot;Tony Stank&quot;, &quot;Male&quot;};
-    iMan.age = 52; // rdj is 52 irl :o
-    cout &lt;&lt; iMan.age &lt;&lt; &quot;, &quot; &lt;&lt; iMan.name &lt;&lt; &quot;, &quot; &lt;&lt; iMan.gender &lt;&lt; endl;
+    Block * genesis = new Block(3);
+    addBlock(genesis,5);
+    addBlock(genesis,8);
+    addBlock(genesis,10);
+    addBlock(genesis,3);
+    printBLockChain(genesis);
 
-    phone lame_phone;
-    lame_phone.setModel(&quot;IPhone&quot;);
-    cout &lt;&lt; iMan.name &lt;&lt; &quot; most likely owns an &quot; &lt;&lt; lame_phone.getModel() &lt;&lt; &quot; because he's rich AF.&quot; &lt;&lt; endl;
-    cout &lt;&lt; endl;
+    // do more testing here
 
-    Avenger tony;
-    Avenger wakanda(41, &quot;T'Challa&quot;, &quot;Male&quot;);
-    Avenger blackWidow(33, &quot;Nat&quot;, &quot;Female&quot;);
-    Avenger cap(36, &quot;Steve Rogers&quot;, &quot;Bucky&quot;);
-
-    vector&lt;Avenger&gt; avengers;
-    avengers.push_back(tony);
-    avengers.push_back(wakanda);
-    avengers.push_back(blackWidow);
-    avengers.push_back(cap);
-
-    for(int i = 0; i &lt; avengers.size(); i ++){
-        cout &lt;&lt; avengers.at(i).name &lt;&lt; &quot; is &quot; &lt;&lt; avengers.at(i).age &lt;&lt; &quot; years old. They are a &quot; &lt;&lt; avengers.at(i).gender &lt;&lt; endl;
-    }
-    return 0;   
+    return 0;
 }
-</code></pre>
 
-<p>There will almost certainly be something you don't understand in the code above, ask questions! We are here to help :)</p>
+
+//01001111 01101101 01100001 01110010 00100000 01101000 01100001 01110011 00100000 00110011 00110000 00110000 00100000 01100011 01101111 01101110 01100110 01101001 01110010 01101101 01100101 01100100
+//01110111 01100001 01101001 01100110 01110101 00001010 
+</code></pre>
               
             </div>
           </div>
@@ -241,10 +194,8 @@ int main(){
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../lab03/" class="btn btn-neutral float-right" title="Lab 3: Classes">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../lab02/" class="btn btn-neutral" title="Lab 2: Streams"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../dis06/" class="btn btn-neutral" title="Dis 6: Pointers and Dynamic Memory"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -270,10 +221,8 @@ int main(){
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../lab02/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../dis06/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../lab03/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
