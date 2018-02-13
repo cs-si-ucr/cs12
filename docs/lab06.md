@@ -23,7 +23,7 @@ void printBLockChain(Block * b){
 }
 
 //remove the first
-void removeFirstBlock(Block * b){
+void removeFirstBlock(Block *&b){
     
 }
 //remove last
