@@ -1,80 +1,50 @@
-Valgrind
+Excercise 1
 ---
-
-We will use `valgrind` to find dynamic memory errors.
-Write the following programs, then run them with `valgrind`.
-Observe the output of `valgrind`, and become comfortable reading the messages it gives you.
-
-1. Write a program that creates a memory leak.
-
-1. Write a program that accesses a dangling pointer.
-
-1. Write a program that causes a segmentation fault (segfault).
-
-When using `valgrind`, you will need to compile with debugging flags.
-This is accomplished by passing the `-g` flag to `g++`.
-
-
-Get a cstring from the user
----
-
-Allocate `80` characters dynamically, twice.
-Ask the user for 2 sentences.
-
-Store the sentences in each dynamic array of characters.
-
-You may use any version of the `istream& istream::get(/* params */)` function you'd like.
-(Hint: [look it up](http://www.cplusplus.com/reference/istream/istream/get/))
-
-
-strlen
----
-
-To explore the fact that cstrings are terminated with `\0`, write the `strlen` function.
-The declaration is given below:
+Implement the following functions listed below, this lab serves as an mini-intro to linked lists.
 
 ```c++
-unsigned strlen(const char*);
+#include <iostream>
+
+using namespace std;
+
+struct Block{
+  public:
+    int val;
+    Block * next;
+    Block(int val): val(val), next(0) {};
+};
+
+void addBlock(Block * start, int val){
+    
+}
+
+void printBLockChain(Block * b){
+    
+}
+
+//remove the first
+void removeFirstBlock(Block * b){
+    
+}
+//remove last
+void removeLastBlock(Block * b){
+    
+}
+
+int main(){
+    Block * genesis = new Block(3);
+    addBlock(genesis,5);
+    addBlock(genesis,8);
+    addBlock(genesis,10);
+    addBlock(genesis,3);
+    printBLockChain(genesis);
+    
+    // do more testing here
+    
+    return 0;
+}
+
+
+//01001111 01101101 01100001 01110010 00100000 01101000 01100001 01110011 00100000 00110011 00110000 00110000 00100000 01100011 01101111 01101110 01100110 01101001 01110010 01101101 01100101 01100100
+//01110111 01100001 01101001 01100110 01110101 00001010 
 ```
-
-
-strcpy
----
-
-Write a function that will copy one cstring to another.
-The declaration is given below:
-
-```c++
-void strcpy(char*, const char*);
-```
-
-
-strncpy
----
-
-Write a function that will copy `n` characters of one cstring to another.
-The declaration is given below:
-
-```c++
-void strncpy(char*, const char*, int);
-```
-
-
-
-strcmp
----
-
-Write a function that compares two strings lexicographically.
-The function should behave similarly to `operator<(string, string)`.
-The declaration is given below:
-
-```c++
-// accepts:
-//     two strings to compare
-// returns:
-//     -1: lhs <  rhs
-//      0: lhs == rhs
-//      1: lhs  > rhs
-int strcmp(const char*, const char*);
-```
-
