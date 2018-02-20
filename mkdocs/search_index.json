@@ -194,6 +194,21 @@
             "location": "/lab06/#excercise-1",
             "text": "Implement the following functions listed below, this lab serves as an mini-intro to linked lists.  #include <iostream>\n\nusing namespace std;\n\nstruct Block{\n  public:\n    int val;\n    Block * next;\n    Block(int val): val(val), next(0) {};\n};\n\nvoid addBlock(Block * start, int val){\n\n}\n\nvoid printBLockChain(Block * b){\n\n}\n\n//remove the first\nvoid removeFirstBlock(Block *&b){\n\n}\n//remove last\nvoid removeLastBlock(Block * b){\n\n}\n\nint main(){\n    Block * genesis = new Block(3);\n    addBlock(genesis,5);\n    addBlock(genesis,8);\n    addBlock(genesis,10);\n    addBlock(genesis,3);\n    printBLockChain(genesis);\n\n    // do more testing here\n\n    return 0;\n}\n\n\n//01001111 01101101 01100001 01110010 00100000 01101000 01100001 01110011 00100000 00110011 00110000 00110000 00100000 01100011 01101111 01101110 01100110 01101001 01110010 01101101 01100101 01100100\n//01110111 01100001 01101001 01100110 01110101 00001010",
             "title": "Excercise 1"
+        },
+        {
+            "location": "/lab07/",
+            "text": "We are going to make a \nTrain\n linked list today.\n\n\nCart Node\n\n\nBelow is the code for a Cart struct.\nEach \nCart\n object should \npoint\n to the \nCart\n before it and the \nCart\n after it.\nThis makes the Train a doubly linked list.\n\n\nstruct Cart{\n  int weight;\n  Cart * prev;\n  Cart * next;\n  Cart(int weight): weight(weight), prev(0), next(0){};\n};\n\n\n\n\nTrain List\n\n\nThe Train class is a linked list composed of Cart objects.\nBelow is the class definition\n\n\nclass Train{\n    private:\n      Cart * head;\n      Cart * tail;\n\n    public:\n      //constructor\n      Train(): head(0),tail(0){}\n\n      //add a cart to the end\n      void addLastCart(int weight);\n\n      //add a cart to the beginning\n      void addFirstCart(int weight);\n\n      //view the entire train starting from the head\n      void viewTrainForwards();\n\n      //view the train starting from the back\n      void viewTrainBackwards();\n\n      //count number of carts with given weight\n      int cartsWithWeight(int weight);\n\n      void printHead();\n\n      void printTail();\n\n};\n\n\n\n\n01000001 01101110 01100100 01110010 01100101 00100000 01101001 01110011 00100000 01110100 01101000 01100101 00100000 01110010 01101111 01101100 01101100 01101001 00100000 01100010 01100001 01100011 01101011 01110000 01100001 01100011 01101011 00100000 01101011 01101001 01101110 01100100 00100000 01101111 01100110 00100000 01100111 01110101 01111001",
+            "title": "Lab 7: Linked List"
+        },
+        {
+            "location": "/lab07/#cart-node",
+            "text": "Below is the code for a Cart struct.\nEach  Cart  object should  point  to the  Cart  before it and the  Cart  after it.\nThis makes the Train a doubly linked list.  struct Cart{\n  int weight;\n  Cart * prev;\n  Cart * next;\n  Cart(int weight): weight(weight), prev(0), next(0){};\n};",
+            "title": "Cart Node"
+        },
+        {
+            "location": "/lab07/#train-list",
+            "text": "The Train class is a linked list composed of Cart objects.\nBelow is the class definition  class Train{\n    private:\n      Cart * head;\n      Cart * tail;\n\n    public:\n      //constructor\n      Train(): head(0),tail(0){}\n\n      //add a cart to the end\n      void addLastCart(int weight);\n\n      //add a cart to the beginning\n      void addFirstCart(int weight);\n\n      //view the entire train starting from the head\n      void viewTrainForwards();\n\n      //view the train starting from the back\n      void viewTrainBackwards();\n\n      //count number of carts with given weight\n      int cartsWithWeight(int weight);\n\n      void printHead();\n\n      void printTail();\n\n};  01000001 01101110 01100100 01110010 01100101 00100000 01101001 01110011 00100000 01110100 01101000 01100101 00100000 01110010 01101111 01101100 01101100 01101001 00100000 01100010 01100001 01100011 01101011 01110000 01100001 01100011 01101011 00100000 01101011 01101001 01101110 01100100 00100000 01101111 01100110 00100000 01100111 01110101 01111001",
+            "title": "Train List"
         }
     ]
 }
