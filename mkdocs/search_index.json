@@ -212,7 +212,7 @@
         },
         {
             "location": "/dis08/",
-            "text": "Recursion\n\n\nPreviously you have learned how to make functions. \nFunctions can be called in other functions. \nBut have you ever wondered, can functions call themselves??????? :O omg!! woo no way!!\n\n\nFunctions that call themselves are called \nrecursive functions\n. \nAn example of one can be seen below:\n\n\nvoid printRecursive(){\n    cout << \"I will print forver!!! Muahaha\" << endl;\n    printRecursive();\n    return;\n}\n\n\n\n\nTracing through the code above, the \nprintRecursive()\n function is called on the third line.\nWhen this function is called, a copy of the current 'state' of the program is placed on the stack.\n\n\nThe program then begins execution at the beginning of the \nprintRecursive()\n function like any other function call.\n\n\nBase Case\n\n\nIn the example above, the printRecursive function will keep calling itself until the program runs out of memory\n(called a stack overflow in this case since we are adding to the stack each recursive call).",
+            "text": "Recursion\n\n\nPreviously you have learned how to make functions. \nFunctions can be called in other functions. \nBut have you ever wondered, can functions call themselves??????? :O omg!! woo no way!!\n\n\nFunctions that call themselves are called \nrecursive functions\n. \nAn example of one can be seen below:\n\n\nvoid printRecursive(){\n    cout << \"I will print forver!!! Muahaha\" << endl;\n    printRecursive();\n    return;\n}\n\n\n\n\nTracing through the code above, the \nprintRecursive()\n function is called on the third line.\nWhen this function is called, a copy of the current 'state' of the program is placed on the stack.\n\n\nThe program then begins execution at the beginning of the \nprintRecursive()\n function like any other function call.\n\n\nBase Case\n\n\nIn the example above, the printRecursive function will keep calling itself until the program runs out of memory\n(called a stack overflow in this case since we are adding to the stack each recursive call).\n\n\nSince we most likely do not want to be causing infinite loops, we need a way to make sure the \nrecursive call only  happens in certain cases. We do this by having a base case. Ex:\n\n\nint i = 0;\nvoid printRecursive(){\n    cout << \"I will not print forever. :(\" << endl;\n    i ++;\n    if( i != 10){\n    printRecursive()\n    }\n    return;\n}\n\n\n\n\nIn this case the line 'I will not print forever. :(' prints ten times.\nThe base case is when \ni\n is equal to 10.\nThis program will keep calling the recursive function while the base case is not true.\n\n\nCode Tracing\n\n\nDo some of the code tracing to familiarize yourself with recursion.\n\n\n1)\n\n\nint main(){\n    int n = 0;\n    cout << \"How many times will I print?\" << endl;\n    if(n == 1){\n        return 0;\n    }\n    else{\n        main();\n    }\n\n    return 0;\n}",
             "title": "Dis 8: Recursion"
         },
         {
@@ -222,8 +222,13 @@
         },
         {
             "location": "/dis08/#base-case",
-            "text": "In the example above, the printRecursive function will keep calling itself until the program runs out of memory\n(called a stack overflow in this case since we are adding to the stack each recursive call).",
+            "text": "In the example above, the printRecursive function will keep calling itself until the program runs out of memory\n(called a stack overflow in this case since we are adding to the stack each recursive call).  Since we most likely do not want to be causing infinite loops, we need a way to make sure the \nrecursive call only  happens in certain cases. We do this by having a base case. Ex:  int i = 0;\nvoid printRecursive(){\n    cout << \"I will not print forever. :(\" << endl;\n    i ++;\n    if( i != 10){\n    printRecursive()\n    }\n    return;\n}  In this case the line 'I will not print forever. :(' prints ten times.\nThe base case is when  i  is equal to 10.\nThis program will keep calling the recursive function while the base case is not true.",
             "title": "Base Case"
+        },
+        {
+            "location": "/dis08/#code-tracing",
+            "text": "Do some of the code tracing to familiarize yourself with recursion.  1)  int main(){\n    int n = 0;\n    cout << \"How many times will I print?\" << endl;\n    if(n == 1){\n        return 0;\n    }\n    else{\n        main();\n    }\n\n    return 0;\n}",
+            "title": "Code Tracing"
         }
     ]
 }
