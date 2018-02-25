@@ -21,7 +21,7 @@ pages:
    # - [dis07_1.md, "Week 7 Dis 1: Linked List Basics"]
     - [lab07.md, "Lab 7: Linked List"]
    # - [dis07_2.md, "Week 7 Dis 2: Trains, Cars, and Dynamic Memory"]
-    - [dis08_1.md, "Dis 8: Recursion"]
+    - [dis08.md, "Dis 8: Recursion"]
    # - [lab08.md, "Lab Week 8: Recursion"]
    # - [dis08_2.md, "Week 8 Dis 2: strcpy and strcmp or Merge Sort"]
    # - [dis09_1.md, "Week 9 Dis 1: Inheritance"]
