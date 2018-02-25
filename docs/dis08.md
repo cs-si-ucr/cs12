@@ -64,6 +64,45 @@ int main(){
     return 0;
 }
 ```
+2)
+```c++
+int flower(int n){
+    return n > 10 ? -10 : flower(n+1);
+    /* The above is called a "Ternary operator"
+       Ask your SI leader for what it does if you do not understand. 
+       
+       The following is equivalent:
+       
+       if (n > 10){
+           return -10;
+       }else{
+           return flower(n+1);
+       }
+       */
+}
+
+int main(){
+    cout << flower(9);
+    return 0;
+}
+```
+
+3)
+```c++
+int even(int n){
+    if(!(n%2)){
+        return n;
+    }
+    return even(n-1);
+    
+}
+
+
+int main(){
+    even(323525643);
+    return 0;
+}
+```
 
 4)
 ```c++
@@ -93,5 +132,6 @@ int main(){
     cout << one(4);
     return 0;
 }
+//00110001 00101101 00111000 00110001 00111000 00101101 00111001 00110010 00110110 00101101 00110010 00110101 00111000 00110100
 ```
 
