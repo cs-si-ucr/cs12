@@ -208,6 +208,44 @@ This program will keep calling the recursive function while the base case is not
 }
 </code></pre>
 
+<p>2)</p>
+<pre><code class="c++">int flower(int n){
+    return n &gt; 10 ? -10 : flower(n+1);
+    /* The above is called a &quot;Ternary operator&quot;
+       Ask your SI leader for what it does if you do not understand. 
+
+       The following is equivalent:
+
+       if (n &gt; 10){
+           return -10;
+       }else{
+           return flower(n+1);
+       }
+       */
+}
+
+int main(){
+    cout &lt;&lt; flower(9);
+    return 0;
+}
+</code></pre>
+
+<p>3)</p>
+<pre><code class="c++">int even(int n){
+    if(!(n%2)){
+        return n;
+    }
+    return even(n-1);
+
+}
+
+
+int main(){
+    even(323525643);
+    return 0;
+}
+</code></pre>
+
 <p>4)</p>
 <pre><code class="c++">int three(int n){
     return 300;
@@ -235,6 +273,7 @@ int main(){
     cout &lt;&lt; one(4);
     return 0;
 }
+//00110001 00101101 00111000 00110001 00111000 00101101 00111001 00110010 00110110 00101101 00110010 00110101 00111000 00110100
 </code></pre>
               
             </div>
