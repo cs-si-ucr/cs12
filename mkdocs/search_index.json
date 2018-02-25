@@ -211,19 +211,19 @@
             "title": "Train List"
         },
         {
-            "location": "/dis08_1/",
-            "text": "Midterm Review\n\n\nI have a copy of midterm 2.\nIf you have any questions, we will go over them.\n\n\nRecursion\n\n\nCopy the code below and play with it to get a feel for recursion:\n\n\nvoid recursiveFunction(int parameter) {\n    cout << \"called with (\" << parameter << ')' << endl;\n    if (parameter <= 0) {\n        cout << \"Base case reached!\" << endl;\n        return;\n    }\n    recursiveFunction(parameter-1);\n    cout << \"returned from calling with (\" << parameter-1 << ')' << endl;\n}",
+            "location": "/dis08/",
+            "text": "Recursion\n\n\nPreviously you have learned how to make functions. \nFunctions can be called in other functions. \nBut have you ever wondered, can functions call themselves??????? :O omg!! woo no way!!\n\n\nFunctions that call themselves are called \nrecursive functions\n. \nAn example of one can be seen below:\n\n\nvoid printRecursive(){\n    cout << \"I will print forver!!! Muahaha\" << endl;\n    printRecursive();\n    return;\n}\n\n\n\n\nTracing through the code above, the \nprintRecursive()\n function is called on the third line.\nWhen this function is called, a copy of the current 'state' of the program is placed on the stack.\n\n\nThe program then begins execution at the beginning of the \nprintRecursive()\n function like any other function call.\n\n\nBase Case\n\n\nIn the example above, the printRecursive function will keep calling itself until the program runs out of memory\n(called a stack overflow in this case since we are adding to the stack each recursive call).",
             "title": "Dis 8: Recursion"
         },
         {
-            "location": "/dis08_1/#midterm-review",
-            "text": "I have a copy of midterm 2.\nIf you have any questions, we will go over them.",
-            "title": "Midterm Review"
+            "location": "/dis08/#recursion",
+            "text": "Previously you have learned how to make functions. \nFunctions can be called in other functions. \nBut have you ever wondered, can functions call themselves??????? :O omg!! woo no way!!  Functions that call themselves are called  recursive functions . \nAn example of one can be seen below:  void printRecursive(){\n    cout << \"I will print forver!!! Muahaha\" << endl;\n    printRecursive();\n    return;\n}  Tracing through the code above, the  printRecursive()  function is called on the third line.\nWhen this function is called, a copy of the current 'state' of the program is placed on the stack.  The program then begins execution at the beginning of the  printRecursive()  function like any other function call.",
+            "title": "Recursion"
         },
         {
-            "location": "/dis08_1/#recursion",
-            "text": "Copy the code below and play with it to get a feel for recursion:  void recursiveFunction(int parameter) {\n    cout << \"called with (\" << parameter << ')' << endl;\n    if (parameter <= 0) {\n        cout << \"Base case reached!\" << endl;\n        return;\n    }\n    recursiveFunction(parameter-1);\n    cout << \"returned from calling with (\" << parameter-1 << ')' << endl;\n}",
-            "title": "Recursion"
+            "location": "/dis08/#base-case",
+            "text": "In the example above, the printRecursive function will keep calling itself until the program runs out of memory\n(called a stack overflow in this case since we are adding to the stack each recursive call).",
+            "title": "Base Case"
         }
     ]
 }

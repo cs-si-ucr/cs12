@@ -18,8 +18,8 @@
   <script>
     // Current page data
     var mkdocs_page_name = "Dis 8: Recursion";
-    var mkdocs_page_input_path = "dis08_1.md";
-    var mkdocs_page_url = "/dis08_1/";
+    var mkdocs_page_input_path = "dis08.md";
+    var mkdocs_page_url = "/dis08/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -112,10 +112,10 @@
     <a class="current" href="./">Dis 8: Recursion</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#midterm-review">Midterm Review</a></li>
+    <li class="toctree-l2"><a href="#recursion">Recursion</a></li>
     
 
-    <li class="toctree-l2"><a href="#recursion">Recursion</a></li>
+    <li class="toctree-l2"><a href="#base-case">Base Case</a></li>
     
 
     </ul>
@@ -153,21 +153,25 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="midterm-review">Midterm Review</h2>
-<p>I have a copy of midterm 2.
-If you have any questions, we will go over them.</p>
-<h2 id="recursion">Recursion</h2>
-<p>Copy the code below and play with it to get a feel for recursion:</p>
-<pre><code class="c++">void recursiveFunction(int parameter) {
-    cout &lt;&lt; &quot;called with (&quot; &lt;&lt; parameter &lt;&lt; ')' &lt;&lt; endl;
-    if (parameter &lt;= 0) {
-        cout &lt;&lt; &quot;Base case reached!&quot; &lt;&lt; endl;
-        return;
-    }
-    recursiveFunction(parameter-1);
-    cout &lt;&lt; &quot;returned from calling with (&quot; &lt;&lt; parameter-1 &lt;&lt; ')' &lt;&lt; endl;
+                <h2 id="recursion">Recursion</h2>
+<p>Previously you have learned how to make functions. 
+Functions can be called in other functions. 
+But have you ever wondered, can functions call themselves??????? :O omg!! woo no way!!</p>
+<p>Functions that call themselves are called <code>recursive functions</code>. 
+An example of one can be seen below:</p>
+<pre><code class="c++">void printRecursive(){
+    cout &lt;&lt; &quot;I will print forver!!! Muahaha&quot; &lt;&lt; endl;
+    printRecursive();
+    return;
 }
 </code></pre>
+
+<p>Tracing through the code above, the <code>printRecursive()</code> function is called on the third line.
+When this function is called, a copy of the current 'state' of the program is placed on the stack.</p>
+<p>The program then begins execution at the beginning of the <code>printRecursive()</code> function like any other function call.</p>
+<h2 id="base-case">Base Case</h2>
+<p>In the example above, the printRecursive function will keep calling itself until the program runs out of memory
+(called a stack overflow in this case since we are adding to the stack each recursive call).</p>
               
             </div>
           </div>
