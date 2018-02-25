@@ -65,3 +65,33 @@ int main(){
 }
 ```
 
+4)
+```c++
+int three(int n){
+    return 300;
+    
+}
+
+int two(int n){
+    if(n == 0){
+        return three(n);
+    }
+    return 1 + two(n-1);
+    
+}
+
+int one(int n){
+    if(n == 0 || n == 1){
+        return two(n*2);
+    }
+    cout << n << " ";
+    return one(n-1) + one(n-2);
+    
+}
+
+int main(){
+    cout << one(4);
+    return 0;
+}
+```
+
