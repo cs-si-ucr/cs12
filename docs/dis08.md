@@ -26,3 +26,42 @@ Base Case
 In the example above, the printRecursive function will keep calling itself until the program runs out of memory
 (called a stack overflow in this case since we are adding to the stack each recursive call).
 
+Since we most likely do not want to be causing infinite loops, we need a way to make sure the 
+recursive call only  happens in certain cases. We do this by having a base case. Ex:
+
+```c++
+int i = 0;
+void printRecursive(){
+    cout << "I will not print forever. :(" << endl;
+    i ++;
+    if( i != 10){
+	printRecursive()
+    }
+    return;
+}
+```
+
+In this case the line 'I will not print forever. :(' prints ten times.
+The base case is when `i` is equal to 10.
+This program will keep calling the recursive function while the base case is not true.
+
+Code Tracing
+---
+Do some of the code tracing to familiarize yourself with recursion.
+
+1)
+```c++
+int main(){
+    int n = 0;
+    cout << "How many times will I print?" << endl;
+    if(n == 1){
+        return 0;
+    }
+    else{
+        main();
+    }
+					    
+    return 0;
+}
+```
+
