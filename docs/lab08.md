@@ -7,7 +7,7 @@ Below are a few exercises to practice on.
 
 Exercise 1
 ---
-Write a function that takes in a pointer and recursively prints an array in order.
+Write a function that takes in a pointer and recursively prints a null terimnated array in order.
 You are given the function header:
 
 ```c++
@@ -18,7 +18,7 @@ void printArrayForward(char * ptr){
 
 Exercise 2
 ---
-Write a function that takes in a pointer and recursively prints an array in **reverse** order.
+Write a function that takes in a pointer and recursively prints a null terminated array in **reverse** order.
 You are given the function header:
 
 ```c++
