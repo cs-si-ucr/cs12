@@ -18,7 +18,7 @@ void printArrayForward(char * ptr){
 
 Exercise 2
 ---
-Write a function that takes in a pointer and recursively prints an array in *reverse* order.
+Write a function that takes in a pointer and recursively prints an array in **reverse** order.
 You are given the function header:
 
 ```c++
@@ -87,4 +87,4 @@ void stackOverflow(){
 
 Exercise 8
 ---
-Ask your SI leader for help if you need it and good job doing the lab :+1:
+Ask your SI leader for help if you need it and good job doing the lab :)
