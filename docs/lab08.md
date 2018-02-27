@@ -1,7 +1,8 @@
 Intro
 ---
 Recursion does not involve new syntax. Instead it is just a new way of attacking a problem.
-If you are struggling to grap recursion, the best way to get better is to practice :)
+
+If you are struggling to grasp recursion, the best way to get better is to practice :)
 Below are a few exercises to practice on.
 
 Exercise 1
@@ -17,7 +18,7 @@ void printArrayForward(char * ptr){
 
 Exercise 2
 ---
-Write a function that takes in a pointer and recursively prints an array in reverse order.
+Write a function that takes in a pointer and recursively prints an array in *reverse* order.
 You are given the function header:
 
 ```c++
@@ -84,4 +85,6 @@ void stackOverflow(){
 }
 ```
 
-
+Exercise 8
+---
+Ask your SI leader for help if you need it and good job doing the lab :+1:
