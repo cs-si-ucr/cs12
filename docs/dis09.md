@@ -15,7 +15,7 @@ class Der : public Base {
 ```
 A derived class inherits members and functions of the base class it derives from.
 For example, lets say the base class `Base` has a function `foo()`. 
-Given the instance `obj` of the class `der`, we can say:
+Given the instance `obj` of the class `Der`, we can say:
 ```c++
 obj.foo();
 ```
@@ -43,7 +43,7 @@ class Base:
 ```
 
 Protected allows only instances of the class and instances of derived classes to access the member functions/variables.
-Using the 'obj` variable mentioned above, `obj` would have access to strings `one` and `three` but not `two`.
+Using the `obj` variable mentioned above, `obj` would have access to strings `one` and `three` but not `two`.
 
 Functions
 ---
