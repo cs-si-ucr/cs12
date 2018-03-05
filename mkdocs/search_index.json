@@ -279,6 +279,26 @@
             "location": "/lab08/#exercise-8",
             "text": "Ask your SI leader for help if you need it and good job doing the lab :)",
             "title": "Exercise 8"
+        },
+        {
+            "location": "/dis09/",
+            "text": "Derived Clasess\n\n\nSometimes classes can \"derive\" other classes...\n\n\nGiven Base class \nBase\n, below is an example of a derived class:\n\n\nclass Der : public Base {\n  public:\n    // public members/functions\n  private:\n    // private memberes/functions\n};\n\n\n\n\n\nA derived class inherits members and functions of the base class it derives from.\nFor example, lets say the base class \nBase\n has a function \nfoo()\n. \nGiven the instance \nobj\n of the class \nder\n, we can say:\n\n\nobj.foo();\n\n\n\n\nwithout defining the \nfoo()\n function in the derived class \nDer\n.\nIt simply calls the function from its base class.\n\n\nProtected key word\n\n\nPrivate members of the base class are still only accessible to instances of the base class. \nIn order to let the derived class have access to certain member variables or functions,\nwe use the \nprotected\n key word instead of private.\n\n\nFor example:\n\n\nclass Base:\n  public: // any one can access these members\n    String one;\n\n  private: // only instances of the Base class can access these members\n    String two;\n\n  protected: // instances of the Base class and any instances of derived classes can access these members\n    String three;\n\n\n\n\nProtected allows only instances of the class and instances of derived classes to access the member functions/variables.\nUsing the 'obj\nvariable mentioned above,\nobj\nwould have access to strings\none\nand\nthree\nbut not\ntwo`.\n\n\nFunctions\n\n\nIn a derived class, if you do not override a base class function, it will call the base class function\nyou call call a base class function inside of a derived class function by:",
+            "title": "Dis 9: Inheritance"
+        },
+        {
+            "location": "/dis09/#derived-clasess",
+            "text": "Sometimes classes can \"derive\" other classes...  Given Base class  Base , below is an example of a derived class:  class Der : public Base {\n  public:\n    // public members/functions\n  private:\n    // private memberes/functions\n};  A derived class inherits members and functions of the base class it derives from.\nFor example, lets say the base class  Base  has a function  foo() . \nGiven the instance  obj  of the class  der , we can say:  obj.foo();  without defining the  foo()  function in the derived class  Der .\nIt simply calls the function from its base class.",
+            "title": "Derived Clasess"
+        },
+        {
+            "location": "/dis09/#protected-key-word",
+            "text": "Private members of the base class are still only accessible to instances of the base class. \nIn order to let the derived class have access to certain member variables or functions,\nwe use the  protected  key word instead of private.  For example:  class Base:\n  public: // any one can access these members\n    String one;\n\n  private: // only instances of the Base class can access these members\n    String two;\n\n  protected: // instances of the Base class and any instances of derived classes can access these members\n    String three;  Protected allows only instances of the class and instances of derived classes to access the member functions/variables.\nUsing the 'obj variable mentioned above, obj would have access to strings one and three but not two`.",
+            "title": "Protected key word"
+        },
+        {
+            "location": "/dis09/#functions",
+            "text": "In a derived class, if you do not override a base class function, it will call the base class function\nyou call call a base class function inside of a derived class function by:",
+            "title": "Functions"
         }
     ]
 }
