@@ -47,5 +47,24 @@ Using the 'obj` variable mentioned above, `obj` would have access to strings `on
 
 Functions
 ---
-In a derived class, if you do not override a base class function, it will call the base class function
-you call call a base class function inside of a derived class function by:
+In a derived class, if you do not override a base class function, it will call the base class function.
+You can however override the base class function.
+
+
+Abstract Classes
+---
+Some classes can be marked as 'Abstract' classes.
+These classes can not have instances.
+An abstract class is defined as abstract when the class has a virtual function:
+
+```c++
+virtual void function();
+```
+The inclusion of this function alone makes a class virtual.
+
+Any classes deriving from an Abstract class must define all virtual functions.
+
+Some virtual functions are also "pure virutal functions". For example:
+```c++
+virtual void function() = 0;
+``` 
