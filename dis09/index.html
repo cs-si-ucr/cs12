@@ -162,6 +162,9 @@
                 <li class="toctree-l3"><a href="#functions">Functions</a></li>
                 
             
+                <li class="toctree-l3"><a href="#virtual-functions">Virtual Functions</a></li>
+                
+            
                 <li class="toctree-l3"><a href="#abstract-classes">Abstract Classes</a></li>
                 
             
@@ -227,7 +230,7 @@ It simply calls the function from its base class.</p>
 In order to let the derived class have access to certain member variables or functions,
 we use the <code>protected</code> key word instead of private.</p>
 <p>For example:</p>
-<pre><code class="c++">class Base:
+<pre><code class="c++">class Base{
   public: // any one can access these members
     String one;
 
@@ -236,25 +239,58 @@ we use the <code>protected</code> key word instead of private.</p>
 
   protected: // instances of the Base class and any instances of derived classes can access these members
     String three;
+};
 </code></pre>
 
 <p>Protected allows only instances of the class and instances of derived classes to access the member functions/variables.
 Using the <code>obj</code> variable mentioned above, <code>obj</code> would have access to strings <code>one</code> and <code>three</code> but not <code>two</code>.</p>
 <h2 id="functions">Functions</h2>
 <p>In a derived class, if you do not override a base class function, it will call the base class function.
-You can however override the base class function.</p>
-<h2 id="abstract-classes">Abstract Classes</h2>
-<p>Some classes can be marked as 'Abstract' classes.
-These classes can not have instances.
-An abstract class is defined as abstract when the class has a virtual function:</p>
-<pre><code class="c++">virtual void function();
+You can however override the base class function be defining the same function in the derived class.
+For example, given the class <code>Base</code> above has a function <code>foo()</code>, the derived <code>Derv</code> can override the
+function like so:</p>
+<pre><code class="c++">class Der{
+  public: // or private your choice
+    void foo();
+};
 </code></pre>
 
-<p>The inclusion of this function alone makes a class virtual.</p>
-<p>Any classes deriving from an Abstract class must define all virtual functions.</p>
-<p>Some virtual functions are also "pure virutal functions". For example:</p>
+<h2 id="virtual-functions">Virtual Functions</h2>
+<p>Things get tricky with inheritance when we use pointers.
+Using a <code>Base</code> class pointer, both of the following are valid:</p>
+<pre><code class="c++">Base * daddy = new Base();
+Base * kiddo = new Der();
+</code></pre>
+
+<p>Base pointers can point to instances of derived classes.
+However, imagine calling the function <code>foo()</code> using the <code>kiddo</code> pointer: <code>kiddo-&gt;foo();</code>.
+Which <code>foo()</code> is called? The <code>Base</code> class <code>foo()</code> or the <code>Der</code> class's <code>foo()</code>?</p>
+<p>In this instance, the Base class's <code>foo()</code> will be called. However, if the base class
+defined <code>foo()</code> using the <code>virutal</code> keyword, then the program will decide at runtime which <code>foo()</code> to call.
+For example:</p>
+<pre><code class="c++">class Base{
+  public:
+    virtual void foo();
+};
+
+class Der: public Base{
+  public:
+    void foo();
+};
+</code></pre>
+
+<p>The type of the <code>Base*</code> will be resolved at runtime and the appropiate function,
+either the Der classes' <code>foo()</code> or the Base classes's <code>foo()</code>, will be called.
+If the <code>Base*</code> was pointing to an instance of the <code>Base</code> class then it would call the <code>Base</code> classes <code>foo()</code>.
+If the <code>Base*</code> was pointing to an instance of the <code>Der</code> class then it would call the <code>Der</code> classes <code>foo()</code>.</p>
+<h2 id="abstract-classes">Abstract Classes</h2>
+<p>Some classes can be marked as 'Abstract' classes.
+These classes can not have instances.</p>
+<p>An abstract class is defined as abstract when the class has at least one pure virtual function:</p>
 <pre><code class="c++">virtual void function() = 0;
 </code></pre>
+
+<p>Any classes deriving from an Abstract class must define all virtual functions.</p>
               
             </div>
           </div>
