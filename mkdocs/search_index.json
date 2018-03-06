@@ -233,7 +233,7 @@
         {
             "location": "/lab08/",
             "text": "Intro\n\n\nRecursion does not involve new syntax. Instead it is just a new way of attacking a problem.\n\n\nIf you are struggling to grasp recursion, the best way to get better is to practice :)\nBelow are a few exercises to practice on.\n\n\nExercise 1\n\n\nWrite a function that takes in a pointer and recursively prints a null terimnated array in order.\nYou are given the function header:\n\n\nvoid printArrayForward(char * ptr){\n    //K\n}\n\n\n\n\nExercise 2\n\n\nWrite a function that takes in a pointer and recursively prints a null terminated array in \nreverse\n order.\nYou are given the function header:\n\n\nvoid printArrayBackwards(char * ptr){\n    //r\n}\n\n\n\n\nExercise 3\n\n\nYou are given a pointer to the beginning of an array and a pointer to the end of the same array.\nWrite a function that passes in both of these pointers and reverses the order of the array recursively.\n\n\nvoid reverseArray(char * left, char * right){\n  //i\n}\n\n\n\n\nExcercise 4\n\n\nWrite a function that takes in a number \nn\n and returns the nth number of the fibonnaci sequence recursively.\nRemeber that the fibonacci sequence is made by summing the two numbers prior in the list.\n\n\nex: 1, 1, 2, 3, 5, 8, 13 ....\n\n\nint fibonucci(int n){\n   //s\n}\n\n\n\n\nExcercise 5\n\n\nWrite a function that recursively calculates the factorial of a number n.\nRember that the factorial is calculated by multiplying all the numbers smaller than n.\n\n\nint factorial(int n){\n    //M\n}\n\n\n\n\nExcercise 6\n\n\nWrite a function that returns the greatest common denominator of two numbers a and b recursively.\nThere is a specific algorithm to this one to make this function easy. \nAsk your SI leader if you need help :)\n\n\nint gcd(int a, int b){\n  //il\n}\n\n\n\n\nExercise 7\n\n\nWrite a function that crashes your program with a stack overflow.\nYes, we inted for you to write a program that breaks.\n\n\nvoid stackOverflow(){\n   //ler\n}\n\n\n\n\nExercise 8\n\n\nAsk your SI leader for help if you need it and good job doing the lab :)",
-            "title": "Week 8: Recursionsionsionsion"
+            "title": "Lab 8: Recursionsionsionsion"
         },
         {
             "location": "/lab08/#intro",
@@ -312,8 +312,13 @@
         },
         {
             "location": "/lab09/",
-            "text": "Excercise\n\n\nToday you will be making a game.\nWe have provided a sizeable amount of code.\nCopy it into you workspace by tpying the command below into your terminal:\n\n```bash\ngit clone https://github.com/Andre-Castro/cs12-lab9\n\n\n\n\nThere are 5 things for you to implement in this lab.\n1. Bulbasaur's attack function\n2. Charmander's attack function\n3. Squirtle attack function\n4. The \nPokemon * Breeder()\n function in main.cpp\n5. The \nviewTeam\n function in Trainer.cpp",
-            "title": "Week 9: Polymorphism"
+            "text": "Excercise\n\n\nToday you will be making a game.\nWe have provided a sizeable amount of code.\nCopy it into you workspace by tpying the command below into your terminal:\n\n\ngit clone https://github.com/Andre-Castro/cs12-lab9\n\n\n\n\nThere are 5 things for you to implement in this lab.\n1. Bulbasaur's attack function & constructor\n2. Charmander's attack function & constructor\n3. Squirtle attack function & constructor\n4. The \nPokemon * Breeder()\n function in main.cpp\n5. The \nviewTeam\n function in Trainer.cpp",
+            "title": "Lab 9: Polymorphism"
+        },
+        {
+            "location": "/lab09/#excercise",
+            "text": "Today you will be making a game.\nWe have provided a sizeable amount of code.\nCopy it into you workspace by tpying the command below into your terminal:  git clone https://github.com/Andre-Castro/cs12-lab9  There are 5 things for you to implement in this lab.\n1. Bulbasaur's attack function & constructor\n2. Charmander's attack function & constructor\n3. Squirtle attack function & constructor\n4. The  Pokemon * Breeder()  function in main.cpp\n5. The  viewTeam  function in Trainer.cpp",
+            "title": "Excercise"
         }
     ]
 }
