@@ -1,28 +1,18 @@
-Terminology
----
+Excercise
+```
+Today you will be making a game.
+We have provided a sizeable amount of code.
+Copy it into you workspace by tpying the command below into your terminal:
 
-* Pure Virtual
-* Virtual
-* Polymorphism
-* Base class
-* Derived class
+```bash
+git clone https://github.com/Andre-Castro/cs12-lab9
+```
 
+There are 5 things for you to implement in this lab.
+1. Bulbasaur's attack function
+2. Charmander's attack function
+3. Squirtle attack function
+4. The `Pokemon * Breeder()` function in main.cpp
+5. The `viewTeam` function in Trainer.cpp
 
-Questions
----
-
-* Do we implement pure virtual methods?
-
-* Can we implement virtual methods?
-
-* Do we ever need to implement methods in a pure virtual class?
-
-
-Game
----
-
-Today, we will make a game.
-
-The starter code is on my cloud9 workspace.
-<!-- TODO: put code in repo, and link to on this page -->
 
