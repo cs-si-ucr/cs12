@@ -309,6 +309,11 @@
             "location": "/dis09/#abstract-classes",
             "text": "Some classes can be marked as 'Abstract' classes.\nThese classes can not have instances.  An abstract class is defined as abstract when the class has at least one pure virtual function:  virtual void function() = 0;  Any classes deriving from an Abstract class must define all virtual functions.",
             "title": "Abstract Classes"
+        },
+        {
+            "location": "/lab09/",
+            "text": "Excercise\n\n\nToday you will be making a game.\nWe have provided a sizeable amount of code.\nCopy it into you workspace by tpying the command below into your terminal:\n\n```bash\ngit clone https://github.com/Andre-Castro/cs12-lab9\n\n\n\n\nThere are 5 things for you to implement in this lab.\n1. Bulbasaur's attack function\n2. Charmander's attack function\n3. Squirtle attack function\n4. The \nPokemon * Breeder()\n function in main.cpp\n5. The \nviewTeam\n function in Trainer.cpp",
+            "title": "Week 9: Polymorphism"
         }
     ]
 }

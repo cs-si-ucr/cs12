@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Dis 5: Arrays - CS 12 SI: Spring 2017</title>
+  <title>Week 9: Polymorphism - CS 12 SI: Spring 2017</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -20,7 +20,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Dis 5: Arrays";
+    var mkdocs_page_name = "Week 9: Polymorphism";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -99,18 +99,8 @@
 <li>
           
             <li>
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Dis 5: Arrays</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#arrays">Arrays</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#code-tracing">Code Tracing</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis05/">Dis 5: Arrays</a>
         
     </li>
 <li>
@@ -165,8 +155,12 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../lab09/">Week 9: Polymorphism</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Week 9: Polymorphism</a>
+        
+            <ul>
+            
+            </ul>
         
     </li>
 <li>
@@ -193,7 +187,7 @@
     
       
     
-    <li>Dis 5: Arrays</li>
+    <li>Week 9: Polymorphism</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -203,69 +197,21 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="arrays">Arrays</h2>
-<p>Similar to <code>vector</code> an array is a list of objects of a certain type.
-Arrays however are more primitive and are a basic type in c++.
-Nothing has to be included to use them, (no <code>#include</code> necessary)</p>
-<p>An array can be declared like so:</p>
-<pre><code class="c++">//datatype name[number of elements]
-int arr[10]; // an array called 'arr' that holds 10 integers
-char c_arr[20]; // an array called 'c_arr' that holds 20 char's
+                <p>Excercise</p>
+<pre><code>Today you will be making a game.
+We have provided a sizeable amount of code.
+Copy it into you workspace by tpying the command below into your terminal:
+
+```bash
+git clone https://github.com/Andre-Castro/cs12-lab9
 </code></pre>
 
-<p>However, arrays do not have convenient member functions like vectors do.
-Arrays do not have <code>.at()</code>, <code>.push_back()</code>, <code>.size()</code> etc.</p>
-<p>Arrays have a set size at creation specified in the square brackets as seen above.
-A size must be specified and specifying no size will result in a compile time error.
-The size of the array cannot change.</p>
-<p>Instead of using <code>.at()</code> arrays indicies can be accessed and set using the square brackets <code>[]</code>.
-For example:</p>
-<pre><code class="c++">int arr[3];
-arr[0] = 1;
-arr[1] = 2;
-arr[2] = 3;
-
-for(int i = 0; i &lt; 3; i++){
-    cout &lt;&lt; arr[i] &lt;&lt; &quot; &quot;;
-}
-cout &lt;&lt; endl;
-
-</code></pre>
-
-<p>will result in the following output:</p>
-<pre><code class="bash">1 2 3 
-
-</code></pre>
-
-<h2 id="code-tracing">Code Tracing</h2>
-<p>What is the output of the following code?</p>
-<pre><code class="c++">
-#include &lt;iostream&gt;
-
-using namespace std;
-
-void setChar(char arr[], char c, int pos){
-    arr[pos] = c;
-    return;
-}
-
-int main(){
-    char c_arr[6];
-    setChar(c_arr, 'c', 0);
-    setChar(c_arr, 'a', 1);
-    setChar(c_arr, 'r', 2);
-    setChar(c_arr, 'e', 3);
-    setChar(c_arr, 'f', 4);
-    setChar(c_arr, 'u', 5);
-    setChar(c_arr, 'l', 6);
-
-    for(int i = 0; i &lt; 7; i ++){
-       cout &lt;&lt; c_arr[i];
-    }
-
-    return 0;
-}
-</code></pre>
+<p>There are 5 things for you to implement in this lab.
+1. Bulbasaur's attack function
+2. Charmander's attack function
+3. Squirtle attack function
+4. The <code>Pokemon * Breeder()</code> function in main.cpp
+5. The <code>viewTeam</code> function in Trainer.cpp</p>
               
             </div>
           </div>
@@ -273,10 +219,8 @@ int main(){
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../lab05/" class="btn btn-neutral float-right" title="Lab 5: Mock Midterm"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../lab04/" class="btn btn-neutral" title="Lab 4: Classes, Part 2"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../dis09/" class="btn btn-neutral" title="Dis 9: Inheritance"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -302,10 +246,8 @@ int main(){
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../lab04/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../dis09/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../lab05/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
