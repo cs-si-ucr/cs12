@@ -312,12 +312,12 @@
         },
         {
             "location": "/lab09/",
-            "text": "Excercise\n\n\nToday you will be making a game.\nWe have provided a sizeable amount of code.\nCopy it into you workspace by tpying the command below into your terminal:\n\n\ngit clone https://github.com/Andre-Castro/cs12-lab9\n\n\n\n\nThere are 5 things for you to implement in this lab.\n1. Bulbasaur's attack function & constructor\n2. Charmander's attack function & constructor\n3. Squirtle attack function & constructor\n4. The \nPokemon * Breeder()\n function in main.cpp\n5. The \nviewTeam\n function in Trainer.cpp",
+            "text": "Excercise\n\n\nToday you will be making a game.\nWe have provided a sizeable amount of code.\nCopy it into you workspace by typing the command below into your terminal:\n\n\ngit clone https://github.com/Andre-Castro/cs12-lab9\n\n\n\n\nThere are 5 things for you to implement in this lab.\n\n\n\n\nBulbasaur's attack function & constructor\n\n\nCharmander's attack function & constructor\n\n\nSquirtle attack function & constructor\n\n\nThe \nPokemon * Breeder()\n function in main.cpp\n\n\nThe \nviewTeam\n function in Trainer.cpp",
             "title": "Lab 9: Polymorphism"
         },
         {
             "location": "/lab09/#excercise",
-            "text": "Today you will be making a game.\nWe have provided a sizeable amount of code.\nCopy it into you workspace by tpying the command below into your terminal:  git clone https://github.com/Andre-Castro/cs12-lab9  There are 5 things for you to implement in this lab.\n1. Bulbasaur's attack function & constructor\n2. Charmander's attack function & constructor\n3. Squirtle attack function & constructor\n4. The  Pokemon * Breeder()  function in main.cpp\n5. The  viewTeam  function in Trainer.cpp",
+            "text": "Today you will be making a game.\nWe have provided a sizeable amount of code.\nCopy it into you workspace by typing the command below into your terminal:  git clone https://github.com/Andre-Castro/cs12-lab9  There are 5 things for you to implement in this lab.   Bulbasaur's attack function & constructor  Charmander's attack function & constructor  Squirtle attack function & constructor  The  Pokemon * Breeder()  function in main.cpp  The  viewTeam  function in Trainer.cpp",
             "title": "Excercise"
         }
     ]
