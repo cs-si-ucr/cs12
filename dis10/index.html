@@ -177,7 +177,7 @@
 <p>Determine the Big O (worst case) runtime of the following sections of code.</p>
 <p>Be sure to define what your basic unit of work is for each section.</p>
 <pre><code class="c++">// snippet 1
-int n = 20;
+int n;
 for (unsigned i = 0; i &lt; n; ++i) {
     cout &lt;&lt; n - i &lt;&lt; endl;
 }
@@ -189,7 +189,7 @@ vector&lt;int&gt; v(n);
 </code></pre>
 
 <pre><code class="c++">// snippet 3
-int n = 30;
+int n;
 for (int i = 0; i &lt; n; ++i) {
     for (int j = 0; j &lt; n; ++i) {
         cout &lt;&lt; '.';
@@ -198,8 +198,8 @@ for (int i = 0; i &lt; n; ++i) {
 </code></pre>
 
 <pre><code class="c++">// snippet 4
-int n = 30;
-int m = 100;
+int n;
+int m;
 for (int i = 0; i &lt; n; ++i) {
     for (int j = 0; j &lt; m; ++i) {
         cout &lt;&lt; '.';
@@ -208,7 +208,7 @@ for (int i = 0; i &lt; n; ++i) {
 </code></pre>
 
 <pre><code class="c++">// snippet 5
-int n = 4096;
+int n;
 for (int i = 1; i &lt; n; i *= 2) {
     cout &lt;&lt; '.' &lt;&lt; endl;
 }
