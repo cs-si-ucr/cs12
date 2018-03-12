@@ -7,7 +7,7 @@ Be sure to define what your basic unit of work is for each section.
 
 ```c++
 // snippet 1
-int n = 20;
+int n;
 for (unsigned i = 0; i < n; ++i) {
     cout << n - i << endl;
 }
@@ -21,7 +21,7 @@ vector<int> v(n);
 
 ```c++
 // snippet 3
-int n = 30;
+int n;
 for (int i = 0; i < n; ++i) {
     for (int j = 0; j < n; ++i) {
         cout << '.';
@@ -31,8 +31,8 @@ for (int i = 0; i < n; ++i) {
 
 ```c++
 // snippet 4
-int n = 30;
-int m = 100;
+int n;
+int m;
 for (int i = 0; i < n; ++i) {
     for (int j = 0; j < m; ++i) {
         cout << '.';
@@ -42,7 +42,7 @@ for (int i = 0; i < n; ++i) {
 
 ```c++
 // snippet 5
-int n = 4096;
+int n;
 for (int i = 1; i < n; i *= 2) {
     cout << '.' << endl;
 }
