@@ -319,6 +319,21 @@
             "location": "/lab09/#excercise",
             "text": "Today you will be making a game.\nWe have provided a sizeable amount of code.\nCopy it into you workspace by typing the command below into your terminal:  git clone https://github.com/Andre-Castro/cs12-lab9  There are 5 things for you to implement in this lab.   Bulbasaur's attack function & constructor  Charmander's attack function & constructor  Squirtle attack function & constructor  The  Pokemon * Breeder()  function in main.cpp  The  viewTeam  function in Trainer.cpp",
             "title": "Excercise"
+        },
+        {
+            "location": "/dis10/",
+            "text": "Big O\n\n\nDetermine the Big O (worst case) runtime of the following sections of code.\n\n\nBe sure to define what your basic unit of work is for each section.\n\n\n// snippet 1\nint n = 20;\nfor (unsigned i = 0; i < n; ++i) {\n    cout << n - i << endl;\n}\n\n\n\n\n// snippet 2\nint n = 100;\nvector<int> v(n);\n\n\n\n\n// snippet 3\nint n = 30;\nfor (int i = 0; i < n; ++i) {\n    for (int j = 0; j < n; ++i) {\n        cout << '.';\n    }\n}\n\n\n\n\n// snippet 4\nint n = 30;\nint m = 100;\nfor (int i = 0; i < n; ++i) {\n    for (int j = 0; j < m; ++i) {\n        cout << '.';\n    }\n}\n\n\n\n\n// snippet 5\nint n = 4096;\nfor (int i = 1; i < n; i *= 2) {\n    cout << '.' << endl;\n}\n\n\n\n\nReview\n\n\nOpen zybooks.\nI'll ask questions about each topic.\nIf there is anything we need to cover in particular, we will cover it.",
+            "title": "Dis 10: Searching, Sorting, and Runtime"
+        },
+        {
+            "location": "/dis10/#big-o",
+            "text": "Determine the Big O (worst case) runtime of the following sections of code.  Be sure to define what your basic unit of work is for each section.  // snippet 1\nint n = 20;\nfor (unsigned i = 0; i < n; ++i) {\n    cout << n - i << endl;\n}  // snippet 2\nint n = 100;\nvector<int> v(n);  // snippet 3\nint n = 30;\nfor (int i = 0; i < n; ++i) {\n    for (int j = 0; j < n; ++i) {\n        cout << '.';\n    }\n}  // snippet 4\nint n = 30;\nint m = 100;\nfor (int i = 0; i < n; ++i) {\n    for (int j = 0; j < m; ++i) {\n        cout << '.';\n    }\n}  // snippet 5\nint n = 4096;\nfor (int i = 1; i < n; i *= 2) {\n    cout << '.' << endl;\n}",
+            "title": "Big O"
+        },
+        {
+            "location": "/dis10/#review",
+            "text": "Open zybooks.\nI'll ask questions about each topic.\nIf there is anything we need to cover in particular, we will cover it.",
+            "title": "Review"
         }
     ]
 }
