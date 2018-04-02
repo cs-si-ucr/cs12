@@ -2,32 +2,32 @@ site_name: "CS 12 SI: Spring 2017"
 pages:
     - [index.md, "Home"]
     - [dis01.md, "Discussion 1: CS 10 Review"]
-   # - [lab01_2.md, "Lab 1: CS 10 Review"]
+   # - [lab01_2.md, "Lab 1: CS 10 Review"] //(old)
     - [lab01.md, "Lab 1: Selection Sort Case Study"]
-    - [lab02.md, "Lab 2: Streams"]
-   # - [dis02_2.md, "Week 2 Dis 2: Merge Case Study"]
-    - [dis03.md, "Discussion 3: Classes"]
-    - [lab03.md, "Lab 3: Classes"]
-   # - [dis03_2.md, "Week 3 Dis 2: Binary Search Case Study"]
-   # - [dis04.md, "Discussion 4: Classes, Part 2"]
-    - [lab04.md, "Lab 4: Classes, Part 2"]
-   # - [dis04_2.md, "Week 4 Dis 2: Rectangle"]
-    - [dis05.md, "Dis 5: Arrays"]
-    - [lab05.md, "Lab 5: Mock Midterm"]
-   # - [dis05_2.md, "Week 5 Dis 2: Cstrings"]
-    - [dis06.md, "Dis 6: Pointers and Dynamic Memory"]
-    - [lab06.md, "Lab 6: Dynamic Memory, and Pointers"]
-   # - [dis06_2.md, "Week 6 Dis 2: Choose Your Own Exercise"]
-   # - [dis07_1.md, "Week 7 Dis 1: Linked List Basics"]
-    - [lab07.md, "Lab 7: Linked List"]
-   # - [dis07_2.md, "Week 7 Dis 2: Trains, Cars, and Dynamic Memory"]
-    - [dis08.md, "Dis 8: Recursion"]
-    - [lab08.md, "Lab 8: Recursionsionsionsion"]
-   # - [dis08_2.md, "Week 8 Dis 2: strcpy and strcmp or Merge Sort"]
-    - [dis09.md, "Dis 9: Inheritance"]
-    - [lab09.md, "Lab 9: Polymorphism"]
-   # - [dis09_2.md, "Week 9 Dis 2: Lab9, part 2"]
-    - [dis10.md, "Dis 10: Searching, Sorting, and Runtime"]
-   # - [lab10.md, "Lab Week 10: Big-O, and Review"]
+   # - [lab02.md, "Lab 2: Streams"]
+   # - [dis02_2.md, "Week 2 Dis 2: Merge Case Study"] //(old)
+   # - [dis03.md, "Discussion 3: Classes"]
+   # - [lab03.md, "Lab 3: Classes"]
+   # - [dis03_2.md, "Week 3 Dis 2: Binary Search Case Study"] //(old)
+   # - [dis04.md, "Discussion 4: Classes, Part 2"] //(old)
+   # - [lab04.md, "Lab 4: Classes, Part 2"]
+   # - [dis04_2.md, "Week 4 Dis 2: Rectangle"] //(old)
+   # - [dis05.md, "Dis 5: Arrays"]
+   # - [lab05.md, "Lab 5: Mock Midterm"]
+   # - [dis05_2.md, "Week 5 Dis 2: Cstrings"] //(old)
+   # - [dis06.md, "Dis 6: Pointers and Dynamic Memory"]
+   # - [lab06.md, "Lab 6: Dynamic Memory, and Pointers"]
+   # - [dis06_2.md, "Week 6 Dis 2: Choose Your Own Exercise"] //(old)
+   # - [dis07_1.md, "Week 7 Dis 1: Linked List Basics"] //(old)
+   # - [lab07.md, "Lab 7: Linked List"]
+   # - [dis07_2.md, "Week 7 Dis 2: Trains, Cars, and Dynamic Memory"] //(old)
+   # - [dis08.md, "Dis 8: Recursion"]
+   # - [lab08.md, "Lab 8: Recursionsionsionsion"]
+   # - [dis08_2.md, "Week 8 Dis 2: strcpy and strcmp or Merge Sort"] //(old)
+   # - [dis09.md, "Dis 9: Inheritance"]
+   # - [lab09.md, "Lab 9: Polymorphism"]
+   # - [dis09_2.md, "Week 9 Dis 2: Lab9, part 2"] //(old)
+   # - [dis10.md, "Dis 10: Searching, Sorting, and Runtime"]
+   # - [lab10.md, "Lab Week 10: Big-O, and Review"] //(old)
 theme: readthedocs
 
