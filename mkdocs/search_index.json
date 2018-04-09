@@ -59,6 +59,36 @@
             "location": "/lab01/#starter-code",
             "text": "Take a look at the starter code below.  We will complete either  fillVec  or  printVec  together.  #include <iostream>\n#include <vector>\n#include <cstdlib>\n#include <ctime>\n\n// This is a program that will run a SELECTION SORT on a vector\n\nusing namespace std;\n\nint min(const vector<int>& v, int);\nvoid selectionSort(vector<int>& v);\nvoid fillVec(vector<int>& v);\nvoid printVec(const vector<int>& v);\n\nint main() {\n    srand(time(0));\n\n    vector<int> test(10);\n\n    fillVec(test);\n    printVec(test);\n    selectionSort(test);\n    printVec(test);\n\n    return 0;\n}\n\n/* This function gets the position of the smallest element in the vector\n *\n * Accepts:\n *     const vector<int>& v - the vector to search\n *     int start            - the position to start looking for the smallest value\n * Returns:\n *     int - the position of the smallest element (-1 if there is no value)\n */\nint min(const vector<int>& v, int start) {\n    return -1;\n}\n\n/* Performs selection sort on the vector\n *\n * Accepts:\n *     vector<int>& v - the vector to sort\n * Returns:\n *     void\n */\nvoid selectionSort(vector<int>& v) {\n}\n\n/* Fills a vector with random values in [0, v.size()]\n * Accepts:\n *     vector<int>& v - the vector to fill with random data\n * Returns:\n *     void\n */\nvoid fillVec(vector<int>& v) {\n}\n\n/* Prints a vector to stdout\n *\n * Accepts:\n *     vector<int>& v - the vector to print\n * Returns:\n *     void\n */\nvoid printVec(const vector<int>& v) {\n}",
             "title": "Starter Code"
+        },
+        {
+            "location": "/lab02/",
+            "text": "Exercise 1\n\n\nWrite a program that lists all of its arguments.\n\n\nExample:\n\n\n$ ./a.out hi there 2 3 4 20\nhi there 2 3 4 20\n$\n\n\n\n\nExercise 2\n\n\nWrite a program that takes each integer in a file and outputs it on new file on separate lines.\nYou should ask for the name of the input and output files from the user.\n\n\nDo \nnot\n allow the input and output filenames to be the same!\n\n\nBonus 1\n:\nIf the file contains non-integer terms, do not put them in the resulting file.\n\n\nBonus 2\n:\nAllow the user to pass in filenames via command line arguments.\nThe first argument should be the input file name.\nThe second should be the output file name.\n\n\nIf only one argument is passed in, assume it is the input file name and ask for the output file name.\n\n\nIf no arguments are passed in, ask for both the input and output file names.\n\n\n\n\n\nExercise 3\n\n\nGiven a file containing a list of pairs of integers in the following format:\n\n\n\n\n0 1 \n\n3 1 \n\n9 10 \n\n16 93 \n\n20 90 \n\n3 9 \n\n\n\n\nWrite a program that outputs the sum of each pair of numbers on a newline in another file.\n\n\nThe file will only contain integers and will always be in the above format (hint, you can use\nthat to your advantage...)\n\n\nWrite your own sample file. The file names for both input and output are specified on the command line.\n\n\nBonus\n:\nIf the file contains non-integer terms, ignore them.\n\n\nExercise 4\n\n\nWrite a program that prompts the user to enter a pair of integers.\nRead those integers as \nstrings\n (either as one large string or two sepearte ones)\nand outputs thier sum to the terminal. \n\n\nThis program continuously prompts the user until they enter 'q'.\n\n\nHint: You will be needing string streams to do this.\n\n\nExtra Help\n\n\n\n\nC++.com Tutorial for File I/O",
+            "title": "Lab 2: Streams"
+        },
+        {
+            "location": "/lab02/#exercise-1",
+            "text": "Write a program that lists all of its arguments.  Example:  $ ./a.out hi there 2 3 4 20\nhi there 2 3 4 20\n$",
+            "title": "Exercise 1"
+        },
+        {
+            "location": "/lab02/#exercise-2",
+            "text": "Write a program that takes each integer in a file and outputs it on new file on separate lines.\nYou should ask for the name of the input and output files from the user.  Do  not  allow the input and output filenames to be the same!  Bonus 1 :\nIf the file contains non-integer terms, do not put them in the resulting file.  Bonus 2 :\nAllow the user to pass in filenames via command line arguments.\nThe first argument should be the input file name.\nThe second should be the output file name.  If only one argument is passed in, assume it is the input file name and ask for the output file name.  If no arguments are passed in, ask for both the input and output file names.",
+            "title": "Exercise 2"
+        },
+        {
+            "location": "/lab02/#exercise-3",
+            "text": "Given a file containing a list of pairs of integers in the following format:   0 1  \n3 1  \n9 10  \n16 93  \n20 90  \n3 9    Write a program that outputs the sum of each pair of numbers on a newline in another file.  The file will only contain integers and will always be in the above format (hint, you can use\nthat to your advantage...)  Write your own sample file. The file names for both input and output are specified on the command line.  Bonus :\nIf the file contains non-integer terms, ignore them.",
+            "title": "Exercise 3"
+        },
+        {
+            "location": "/lab02/#exercise-4",
+            "text": "Write a program that prompts the user to enter a pair of integers.\nRead those integers as  strings  (either as one large string or two sepearte ones)\nand outputs thier sum to the terminal.   This program continuously prompts the user until they enter 'q'.  Hint: You will be needing string streams to do this.",
+            "title": "Exercise 4"
+        },
+        {
+            "location": "/lab02/#extra-help",
+            "text": "C++.com Tutorial for File I/O",
+            "title": "Extra Help"
         }
     ]
 }

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Lab 2: Streams - CS 12 SI: Spring 2017</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Lab 2: Streams";
+    var mkdocs_page_input_path = "lab02.md";
+    var mkdocs_page_url = "/lab02/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> CS 12 SI: Spring 2017</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dis01/">Discussion 1: CS 10 Review</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lab01/">Lab 1: Selection Sort Case Study</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Lab 2: Streams</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#exercise-1">Exercise 1</a></li>
+    
+
+    <li class="toctree-l2"><a href="#exercise-2">Exercise 2</a></li>
+    
+
+    <li class="toctree-l2"><a href="#exercise-3">Exercise 3</a></li>
+    
+
+    <li class="toctree-l2"><a href="#exercise-4">Exercise 4</a></li>
+    
+
+    <li class="toctree-l2"><a href="#extra-help">Extra Help</a></li>
+    
+
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">CS 12 SI: Spring 2017</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Lab 2: Streams</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="exercise-1">Exercise 1</h2>
+<p>Write a program that lists all of its arguments.</p>
+<p>Example:</p>
+<pre><code class="bash">$ ./a.out hi there 2 3 4 20
+hi there 2 3 4 20
+$
+</code></pre>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Write a program that takes each integer in a file and outputs it on new file on separate lines.
+You should ask for the name of the input and output files from the user.</p>
+<p>Do <em><strong>not</strong></em> allow the input and output filenames to be the same!</p>
+<p><strong>Bonus 1</strong>:
+If the file contains non-integer terms, do not put them in the resulting file.</p>
+<p><strong>Bonus 2</strong>:
+Allow the user to pass in filenames via command line arguments.
+The first argument should be the input file name.
+The second should be the output file name.</p>
+<p>If only one argument is passed in, assume it is the input file name and ask for the output file name.</p>
+<p>If no arguments are passed in, ask for both the input and output file names.</p>
+<!-- note to maintainer: this is very similar to their lab, but presumably harder.
+     Make sure this is only given after the deadline. If that cannot be done,
+     comment this exercise out. -->
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Given a file containing a list of pairs of integers in the following format:</p>
+<blockquote>
+<p>0 1 <br>
+3 1 <br>
+9 10 <br>
+16 93 <br>
+20 90 <br>
+3 9 <br></p>
+</blockquote>
+<p>Write a program that outputs the sum of each pair of numbers on a newline in another file.</p>
+<p>The file will only contain integers and will always be in the above format (hint, you can use
+that to your advantage...)</p>
+<p>Write your own sample file. The file names for both input and output are specified on the command line.</p>
+<p><strong>Bonus</strong>:
+If the file contains non-integer terms, ignore them.</p>
+<h2 id="exercise-4">Exercise 4</h2>
+<p>Write a program that prompts the user to enter a pair of integers.
+Read those integers as <strong>strings</strong> (either as one large string or two sepearte ones)
+and outputs thier sum to the terminal. </p>
+<p>This program continuously prompts the user until they enter 'q'.</p>
+<p>Hint: You will be needing string streams to do this.</p>
+<h2 id="extra-help">Extra Help</h2>
+<ul>
+<li><a href="http://www.cplusplus.com/doc/tutorial/files/">C++.com Tutorial for File I/O</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../lab01/" class="btn btn-neutral" title="Lab 1: Selection Sort Case Study"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../lab01/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>
