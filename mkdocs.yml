@@ -5,7 +5,7 @@ pages:
    # - [lab01_2.md, "Lab 1: CS 10 Review"] //(old)
     - [lab01.md, "Lab 1: Selection Sort Case Study"]
     - [lab02.md, "Lab 2: Streams"]
-    - [dis02_2.md, "Week 2 Dis 2: Merge Case Study"] #//(old)
+   # - [dis02_2.md, "Week 2 Dis 2: Merge Case Study"] #//(old)
    # - [dis03.md, "Discussion 3: Classes"]
    # - [lab03.md, "Lab 3: Classes"]
    # - [dis03_2.md, "Week 3 Dis 2: Binary Search Case Study"] //(old)
